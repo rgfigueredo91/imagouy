@@ -15,10 +15,10 @@ const HesGallery = {
     // Global
     disableScrolling: false,
     hostedStyles: true,
-    animations: true,
+    animations: false,
     keyboardControl: true,
     minResolution: 0,
-    autoInit: true,
+    autoInit: false,
 
     // Local
     wrapAround: false,
