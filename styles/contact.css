@@ -424,3 +424,73 @@ button {
 	justify-content: center;
 	}
 
+.formulario {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	}
+
+.form-elements {
+	width: 80%;
+	
+	}
+
+.pure-group {
+	width: 80%;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	border:none;
+	}
+
+#name {
+	width: 80%;
+	height: 40px;
+	text-align: center;
+	}
+
+#message{
+	width: 80%;
+	text-align: center;
+	margin-top: 20px;
+	}
+
+#email {
+	width: 80%;
+	text-align: center;
+	height: 40px;
+	margin-top: 20px;
+	}
+
+button {
+	width: 80%;
+	cursor: pointer;
+	margin-top: 20px;
+	height: 40px;
+	border: none;
+	background-color: black;
+	color: white;
+	transition: .6 ease-in-out
+	}
+
+button:hover {
+	background: white
+	color: black;
+	transition: .6 ease-in-out
+	}
+
+.thankyou_message {
+	font-size: 15px;
+	line-height: 20px;
+	}
+
+.h3 {
+	font-weight: 100;
+	margin-top: 20px;
+	text-align: center;
+	line-height: 20px;
+	}
