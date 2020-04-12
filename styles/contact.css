@@ -2,9 +2,6 @@ html {
     overflow-y:scroll;
 	}
 
-
-
-
 * {
 	margin-top: 0;
 	padding: 0;
@@ -12,13 +9,10 @@ html {
 	margin: 0;
 	}
 
-.body1 {
+body {
 	display: flex;
 	flex-direction: column;
 	}
-#gform {
-	margin-top: 150px;
-}
 
 /*--barra fija arriba--*/
 
@@ -153,7 +147,7 @@ html {
 /*--parametros generales del cuerpo de imagenes--*/
 
 .main {
-	margin-top: 350px;
+	margin-top: 300px;
 	height: 100%;
 	width: 100%;	
 	display: flex;
