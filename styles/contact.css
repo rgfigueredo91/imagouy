@@ -167,6 +167,7 @@ body {
 	flex-direction: column;
 }
 .pure-group {
+	width: 500px;
 	text-align: center;
 	justify-content: center;
 	display: flex;
