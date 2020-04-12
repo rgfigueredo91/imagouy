@@ -211,14 +211,17 @@ body {
 	color: black;
 	text-decoration: none;
 	z-index: 9999;
+
 	}
+
 
 .titlephone a{
 	color: white;
 	text-decoration: none;
 	}
 
-.phonenavbar {	
+.phonenavbar {
+	
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
@@ -227,7 +230,6 @@ body {
 	z-index: 999;
 	height: 80px;
 	background-color: black;
-	
 	}
 
 .nav-toggle {
@@ -240,6 +242,7 @@ body {
 	height: 100%;
 	display: flex;
 	align-items: center;
+
 	justify-content: center;
 	width: 10%;
 	margin-right: 25px;
@@ -284,17 +287,20 @@ body {
 	}
 
 .navphone ul {
-	height: 100%;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-top: -45px;
+	
 	}
 
 .navphone li {
+
+	height: 1px;
 	margin-top: 3em;
 	margin-bottom: 1em;	
 	}
@@ -361,5 +367,26 @@ body {
 .andres{
 	width: 200px;
 	}
+
+#instagram:hover i{	
+	transform: scale(1);
+	color: black;
+	}
+
+#facebook:hover i{	
+	transform: scale(1);
+	color: black;
+	}
+
+#linkedin:hover i{
+	transform: scale(1);
+	color: black;
+	}
+
+#github:hover i{
+	transform: scale(1);
+	color: black;
+	}
+
 
 }

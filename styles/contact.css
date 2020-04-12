@@ -325,17 +325,20 @@ button:hover {
 	}
 
 .navphone ul {
-	height: 100%;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-top: -45px;
+	
 	}
 
 .navphone li {
+
+	height: 1px;
 	margin-top: 3em;
 	margin-bottom: 1em;	
 	}
@@ -435,5 +438,24 @@ button {
 	text-align: center;
 	line-height: 20px;
 	}
+	
+#instagram:hover i{	
+	transform: scale(1);
+	color: black;
+	}
 
+#facebook:hover i{	
+	transform: scale(1);
+	color: black;
+	}
+
+#linkedin:hover i{
+	transform: scale(1);
+	color: black;
+	}
+
+#github:hover i{
+	transform: scale(1);
+	color: black;
+	}
 }
