@@ -230,61 +230,7 @@ button:hover {
 
 @media only screen and (max-width: 1000px) and (min-width: 850px)  {
 
-.formulario {
-	width: 500px;
-}
-.form-elements {
-	width: 500px;
-	justify-content: center;
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-}
-.pure-group {
-	text-align: center;
-	justify-content: center;
-	display: flex;
-	flex-direction: column;
-	border:none;
-}
-#name {
-	width: 500px;
-	height: 40px;
-	text-align: center;
-}
-#message{
-	width: 500px;
-	text-align: center;
-	margin-top: 20px;
-}
-#email {
-	width: 500px;
-	text-align: center;
-	height: 40px;
-	margin-top: 20px;
-}
 
-button {
-	cursor: pointer;
-	margin-top: 20px;
-	height: 40px;
-	border: none;
-	background-color: black;
-	color: white;
-}
-
-.thankyou_message {
-	font-size: 15px;
-	line-height: 20px;
-
-}
-.h3 {
-	font-weight: 100;
-	margin-top: 20px;
-	text-align: center;
-	line-height: 20px;
-
-}
 }
 /*--mobile responsive--*/
 
@@ -418,6 +364,7 @@ button {
 
 
 .main {
+	margin-top: 150px;
 	height: 100%;
 	width: 100%;	
 	display: flex;
@@ -425,7 +372,7 @@ button {
 	}
 
 .formulario {
-	width: 100%;
+	width: 80%;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -434,12 +381,11 @@ button {
 	}
 
 .form-elements {
-	width: 80%;
-	
+	width: 100%;
 	}
 
 .pure-group {
-	width: 80%;
+	width: 100%;
 	text-align: center;
 	justify-content: center;
 	display: flex;
@@ -448,26 +394,26 @@ button {
 	}
 
 #name {
-	width: 80%;
+	width: 100%;
 	height: 40px;
 	text-align: center;
 	}
 
 #message{
-	width: 80%;
+	width: 100%;
 	text-align: center;
 	margin-top: 20px;
 	}
 
 #email {
-	width: 80%;
+	width: 100%;
 	text-align: center;
 	height: 40px;
 	margin-top: 20px;
 	}
 
 button {
-	width: 80%;
+	width: 100%;
 	cursor: pointer;
 	margin-top: 20px;
 	height: 40px;
@@ -477,11 +423,6 @@ button {
 	transition: .6 ease-in-out
 	}
 
-button:hover {
-	background: white
-	color: black;
-	transition: .6 ease-in-out
-	}
 
 .thankyou_message {
 	font-size: 15px;
@@ -494,3 +435,5 @@ button:hover {
 	text-align: center;
 	line-height: 20px;
 	}
+
+}
