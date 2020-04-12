@@ -91,44 +91,42 @@
 
 
 		<div class="main">
-
-						<body>
-						 
-
-						   
+						<div class="formulario">
 						  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
 						  action="https://script.google.com/macros/s/AKfycbyxbVUkYGnCGeXQDGp50DVJxeLZMb_0L4ZQ-Z1L/exec">
 						    <!-- change the form action to your script url -->
 
 						    <div class="form-elements">
 						      <fieldset class="pure-group">
-						        <label for="name">Name: </label>
-						        <input id="name" name="name" placeholder="What your Mom calls you" />
+						        <label for="name"></label>
+						        <input id="name" name="name" placeholder="Name" />
 						      </fieldset>
 
-						      <fieldset class="pure-group">
-						        <label for="message">Message: </label>
-						        <textarea id="message" name="message" rows="10"
-						        placeholder="Tell us what's on your mind..."></textarea>
-						      </fieldset>
-
-						      <fieldset class="pure-group">
-						        <label for="email"><em>Your</em> Email Address:</label>
+						         <fieldset class="pure-group">
+						        <label for="email"></label>
 						        <input id="email" name="email" type="email" value=""
-						        required placeholder="your.name@email.com"/>
+						        required placeholder="Your e-mail"/>
 						        <span class="email-invalid" style="display:none">
 						          Must be a valid email address</span>
 						      </fieldset>
 
+						      <fieldset class="pure-group">
+						        <label for="message"></label>
+						        <textarea id="message" name="message" rows="10"
+						        placeholder=""></textarea>
+						      </fieldset>
+
+						   
+
 
 						      <button >
-						        Send</button>
+						        Contact us</button>
 						    </div>
 
 						    <!-- Customise the Thankyou Message People See when they submit the form: -->
 						    <div class="thankyou_message" style="display:none;">
-						      <h2><em>Thanks</em> for contacting us!
-						        We will get back to you soon!</h2>
+						      <h3 class="h3">Thanks for contacting us</h3>
+						      <h3 class="h3">We will get back to you soon!</h3>
 						    </div>
 
 						  </form>
@@ -137,8 +135,7 @@
 						  <script data-cfasync="false" type="text/javascript"
 						  src="form-submission-handler.js"></script>
 						<!-- END -->
-
-						</body>
+						</div>
 
 
 		</div>
