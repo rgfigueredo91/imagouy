@@ -156,7 +156,9 @@ body {
 	justify-content: center;
 	}
 
-
+.formulario {
+	width: 500px;
+}
 .form-elements {
 	width: 500px;
 	justify-content: center;
