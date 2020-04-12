@@ -174,14 +174,17 @@ body {
 	border:none;
 }
 #name {
+	width: 500px;
 	height: 40px;
 	text-align: center;
 }
 #message{
+	width: 500px;
 	text-align: center;
 	margin-top: 20px;
 }
 #email {
+	width: 500px;
 	text-align: center;
 	height: 40px;
 	margin-top: 20px;
