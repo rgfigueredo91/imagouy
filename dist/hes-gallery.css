@@ -28,8 +28,7 @@
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+
   z-index: 99999;
 }
 
