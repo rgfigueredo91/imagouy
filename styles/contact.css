@@ -2,6 +2,9 @@ html {
     overflow-y:scroll;
 	}
 
+
+
+
 * {
 	margin-top: 0;
 	padding: 0;
@@ -13,6 +16,9 @@ html {
 	display: flex;
 	flex-direction: column;
 	}
+#gform {
+	margin-top: 150px;
+}
 
 /*--barra fija arriba--*/
 
