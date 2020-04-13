@@ -74,9 +74,7 @@
   transform: scale(1);
 }
 
-#hg-pic-cont.hg-transition {
-  transform: scale(0.1);
-}
+
 
 #hg-subtext {
   color: #ddd;
