@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.3s;
+  transition: 1s;
   z-index: 99999;
 }
 
@@ -70,7 +70,7 @@
   z-index: 12;
   position: relative;
   background-color: white;
-  transition: transform 0.3s;
+  transition: transform 0;
   transform: scale(1);
 }
 
