@@ -128,13 +128,34 @@ S
 						      </fieldset>
 
 						   
+						<form method="post" onsubmit="return submitUserForm();">
+						    <div class="g-recaptcha" data-sitekey="6LcE4ukUAAAAAEEtRG9_BqDzNQwTz0zuGhAZnnPl" data-callback="verifyCaptcha"></div>
+						    <div id="g-recaptcha-error"></div>
+						    <input type="submit" name="submit" value="Submit" />
+						</form>
+						<script src='https://www.google.com/recaptcha/api.js'></script>
+
+						<script>
+							function submitUserForm() {
+							    var response = grecaptcha.getResponse();
+							    if(response.length == 0) {
+							        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+							        return false;
+							    }
+							    return true;
+							}
+							 
+							function verifyCaptcha() {
+							    document.getElementById('g-recaptcha-error').innerHTML = '';
+							}
+						</script>
 
 
 						      <button >
 						        Contact us</button>
 						    </div>
 
-						    <div class="g-recaptcha" data-sitekey="6LcE4ukUAAAAAEEtRG9_BqDzNQwTz0zuGhAZnnPl"></div>
+
 
 						    <!-- Customise the Thankyou Message People See when they submit the form: -->
 						    <div class="thankyou_message" style="display:none;">
