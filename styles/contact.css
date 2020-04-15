@@ -149,7 +149,7 @@ body {
 /*--parametros generales del cuerpo de imagenes--*/
 
 .main {
-	margin-top: 300px;
+	margin-top: 240px;
 	height: 100%;
 	width: 100%;	
 	display: flex;
@@ -178,6 +178,12 @@ body {
 	flex-direction: column;
 	border:none;
 	}
+
+.g-recaptcha {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}	
 
 #name {
 	width: 500px;
