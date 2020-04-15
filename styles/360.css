@@ -161,6 +161,15 @@ body {
 	color: black;
 	}
 
+
+#panorama img{
+	height: 400;
+	width: 800;
+	z-index: 3;
+}
+
+
+
 /*--tablet responsive--*/
 
 @media only screen and (max-width: 1000px) and (min-width: 850px)  {
