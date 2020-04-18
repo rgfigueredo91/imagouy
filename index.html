@@ -96,7 +96,7 @@
       
 <!--barra fija arriba desktop-->
 
-		<header class="navbar">
+		<header class="navbar" id="navbar">
 			<div class="wrapper1">
 				<h1 class="title"><a href="/">imago</h1></a>
 			</div>
@@ -321,6 +321,22 @@
             wrapAround: true
         });
 
+    </script>
+
+    <script type="text/javascript">
+    	var lastScrollTop = 0;
+    		navbar = document.getElementById("navbar");
+    		window.addEventListener("scroll", function() {
+    			var scrollTop = window.pageYOffset || document
+    				.documentElement.scrollTop;
+    				if (scrollTop > lastScrollTop) {
+    					navbar.style.top="-100px";
+    				} else {
+    					navbar.style.top="0";
+    				}
+    				lastScrollTop = scrollTop;
+    				
+    		} )
     </script>
 
 	</body>
