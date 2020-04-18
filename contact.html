@@ -103,7 +103,7 @@
 		<div class="main">
 						<div class="formulario">
 						  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-						  action="https://script.google.com/macros/s/AKfycbyxbVUkYGnCGeXQDGp50DVJxeLZMb_0L4ZQ-Z1L/exec" id="myForm">
+						  action="https://script.google.com/macros/s/AKfycbyxbVUkYGnCGeXQDGp50DVJxeLZMb_0L4ZQ-Z1L/exec" id="contact-form" method="post" action="contact.php" role="form">
 						    <!-- change the form action to your script url -->
 
 						    <div class="form-elements">
@@ -141,28 +141,7 @@
 						      <h3 class="h3">Thanks for contacting us</h3>
 						      <h3 class="h3">We will get back to you soon!</h3>
 						    </div>
-
-						<script>
-
-						    $('#myForm').submit(function(event) {
-						        console.log('form submitted.');
-
-						        if (!grecaptcha.getResponse()) {
-						            console.log('captcha not yet completed.');
-
-						            event.preventDefault(); //prevent form submit
-						            grecaptcha.execute();
-						        } else {
-						            console.log('form really submitted.');
-						        }
-						    });
-
-						    onCompleted = function() {
-						        console.log('captcha completed.');
-						        $('#myForm').submit();
-						        alert('wait to check for "captcha completed" in the console.');
-						    }
-						</script>
+			
 						
 						  </form>
 
