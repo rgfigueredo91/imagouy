@@ -155,7 +155,9 @@ body {
 	display: flex;
 	justify-content: center;
 	}
-
+label, input, textarea {
+	display: block;
+}
 .formulario {
 	width: 100%;
 	justify-content: center;
