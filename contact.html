@@ -103,7 +103,7 @@
 		<div class="main">
 						<div class="formulario">
 						  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-						  action="https://script.google.com/macros/s/AKfycbyxbVUkYGnCGeXQDGp50DVJxeLZMb_0L4ZQ-Z1L/exec">
+						  action="https://script.google.com/macros/s/AKfycbyxbVUkYGnCGeXQDGp50DVJxeLZMb_0L4ZQ-Z1L/exec" id="myForm">
 						    <!-- change the form action to your script url -->
 
 						    <div class="form-elements">
@@ -144,6 +144,28 @@
 						    </div>
 
 						  </form>
+						  
+							<script>
+
+						    $('#myForm').submit(function(event) {
+						        console.log('form submitted.');
+
+						        if (!grecaptcha.getResponse()) {
+						            console.log('captcha not yet completed.');
+
+						            event.preventDefault(); //prevent form submit
+						            grecaptcha.execute();
+						        } else {
+						            console.log('form really submitted.');
+						        }
+						    });
+
+						    onCompleted = function() {
+						        console.log('captcha completed.');
+						        $('#myForm').submit();
+						        alert('wait to check for "captcha completed" in the console.');
+						    }
+						</script>
 
 						  <!-- Submit the Form to Google Using "AJAX" -->
 						  <script data-cfasync="false" type="text/javascript"
@@ -151,7 +173,7 @@
 						<!-- END -->
 						</div>
 
-
+						
 		</div>
 
 	</body>
