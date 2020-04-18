@@ -12,21 +12,21 @@ $(document).ready(function () {
     statusElm.empty()
 
     if(email.length > 5 && email.includes('@') && email.includes('.')) {
-      statusElm.append('Email is valid')
+      statusElm.append('')
     } else {
       event.preventDefault()
       statusElm.append('<div>Email is not valid</div>')
     }
 
     if(subject.length >= 2) {
-      statusElm.append('Subject is valid')
+      statusElm.append('')
     } else {
       event.preventDefault()
       statusElm.append('<div>Subject is not valid</div>')
     }
 
     if(message.length > 20) {
-      statusElm.append('Message is valid')
+      statusElm.append('')
     } else {
       event.preventDefault()
       statusElm.append('<div>Message is not valid</div>')
