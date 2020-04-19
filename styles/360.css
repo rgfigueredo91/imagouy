@@ -152,7 +152,7 @@ body {
 	margin: 2vh;
 	margin-top: 180px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 350px 350px;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
@@ -180,7 +180,7 @@ body {
 .main {
 	margin-top: 180px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 350px 350px;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
