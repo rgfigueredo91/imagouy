@@ -189,7 +189,9 @@ body {
 	transition: .6 ease-in-out
 	}
 
-
+.fileupload {
+	text-align: center;
+}
 /*--tablet responsive--*/
 
 @media only screen and (max-width: 1000px) and (min-width: 850px)  {
