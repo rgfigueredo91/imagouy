@@ -157,7 +157,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	}
-label, input, textarea {
+.label1, input, textarea {
 	min-width: 500px;
 	text-align: center;
 	font-size: 15px;
@@ -221,7 +221,7 @@ label, input, textarea {
 	align-items: center;
 	}
 
-label, input, textarea {
+.label1, input, textarea {
 	min-width: 500px;
 	
 	text-align: center;
@@ -238,6 +238,8 @@ label, input, textarea {
 }
 
 }
+
+/*--mobile responsive--*/
 
 /*--mobile responsive--*/
 
@@ -373,7 +375,6 @@ label, input, textarea {
 	}
 
 .main {
-	margin-top: 150px;
 	position: relative;
 	height: 100%;
 	width: 100%;	
@@ -383,7 +384,7 @@ label, input, textarea {
 	align-items: center;
 	}
 
-label, input, textarea {
+.label1, input, textarea {
 	margin-left: 20px;
 	min-width: 0px;
 	text-align: center;
