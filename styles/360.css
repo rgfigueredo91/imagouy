@@ -33,6 +33,11 @@ body {
 	justify-content: center;
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #000;
+	transition: .5s
+	}
+
+#navbar {
+	transition: .5s
 	}
 
 /*--barra fija arriba titulo imago--*/
