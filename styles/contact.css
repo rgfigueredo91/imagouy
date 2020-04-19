@@ -154,18 +154,24 @@ body {
 	width: 100%;	
 	display: flex;
 	justify-content: center;
+
 	}
 label, input, textarea {
 	display: block;
+	text-align: center;
+	font-size: 15px;
+	width: 500px;
+	line-height: 40px;
+	margin-top: 20px;
 }
 
+.status {
+	color: red;
+	text-align: center;
+	font-size: 15px;
+}
 
-
-
-
-
-
-button {
+.submit {
 	width: 500px;
 	cursor: pointer;
 	margin-top: 20px;
@@ -176,7 +182,7 @@ button {
 	transition: .6 ease-in-out
 	}
 
-button:hover {
+.submit:hover {
 	background: white
 	color: black;
 	transition: .6 ease-in-out
@@ -187,6 +193,22 @@ button:hover {
 
 @media only screen and (max-width: 1000px) and (min-width: 850px)  {
 
+.submit {
+	width: 500px;
+	cursor: pointer;
+	margin-top: 20px;
+	height: 40px;
+	border: none;
+	background-color: black;
+	color: white;
+	transition: .6 ease-in-out
+	}
+
+.submit:hover {
+	background: white
+	color: black;
+	transition: .6 ease-in-out
+	}
 
 }
 /*--mobile responsive--*/
