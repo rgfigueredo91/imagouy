@@ -210,6 +210,29 @@ label, input, textarea {
 	transition: .6 ease-in-out
 	}
 
+.main {
+	margin-top: 250px;
+	height: 100%;
+	width: 100%;	
+	display: flex;
+	justify-content: center;
+	}
+
+label, input, textarea {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	width: 500px;
+	line-height: 40px;
+	margin-top: 20px;
+}
+
+.status {
+	color: red;
+	text-align: center;
+	font-size: 15px;
+}
+
 }
 /*--mobile responsive--*/
 
