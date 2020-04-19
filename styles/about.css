@@ -177,8 +177,11 @@ body {
 
 .rodrigo {
 	margin-right: 20px;
+	cursor: pointer;
 	}
-
+.andres {
+	cursor: pointer;
+}
 .main p{
 	letter-spacing: 1px;
 	font-size: 13px;
