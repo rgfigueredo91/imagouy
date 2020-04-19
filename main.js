@@ -15,21 +15,21 @@ $(document).ready(function () {
       statusElm.append('')
     } else {
       event.preventDefault()
-      statusElm.append('<div>Email is not valid</div>')
+      statusElm.append('<div>please write a valid e-mail</div>')
     }
 
-    if(subject.length >= 2) {
+    if(subject.length >= 1) {
       statusElm.append('')
     } else {
       event.preventDefault()
-      statusElm.append('<div>Subject is not valid</div>')
+      statusElm.append('<div>please wirte the subject</div>')
     }
 
-    if(message.length > 20) {
+    if(message.length > 10) {
       statusElm.append('')
     } else {
       event.preventDefault()
-      statusElm.append('<div>Message is not valid</div>')
+      statusElm.append('<div>please write a longer message</div>')
     }
 
 
