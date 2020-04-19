@@ -214,9 +214,11 @@ label, input, textarea {
 .main {
 	margin-top: 250px;
 	height: 100%;
-	width: 500px;	
+	width: 100%;	
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	}
 
 label, input, textarea {
