@@ -350,5 +350,6 @@ body {
 	}
 iframe {
 	margin-bottom: 15px;
+	filter: grayscale(0);
 }
 }
