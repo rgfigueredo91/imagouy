@@ -373,6 +373,7 @@ label, input, textarea {
 	}
 
 .main {
+	margin-top: 150px;
 	position: relative;
 	height: 100%;
 	width: 100%;	
@@ -383,7 +384,7 @@ label, input, textarea {
 	}
 
 label, input, textarea {
-	margin-left: 30px;
+	margin-left: 20px;
 	min-width: 0px;
 	text-align: center;
 	font-size: 15px;
@@ -399,7 +400,7 @@ label, input, textarea {
 }
 
 .submit {
-	margin-left: 60px;
+	margin-left: 40px;
 	width: 80%;
 	cursor: pointer;
 	margin-top: 20px;
