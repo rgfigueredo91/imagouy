@@ -150,7 +150,7 @@ body {
 .main {
 
 	margin: 2vh;
-	margin-top: 180px;
+	margin-top: 170px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 350px 350px;
@@ -178,7 +178,7 @@ body {
 	}
 
 .main {
-	margin-top: 180px;
+	margin-top: 170px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 350px 350px;
