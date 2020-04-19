@@ -238,6 +238,7 @@ label, input, textarea {
 }
 
 }
+
 /*--mobile responsive--*/
 
 @media only screen and (max-width: 850px) {
@@ -371,18 +372,35 @@ label, input, textarea {
 	transition: opacity 200ms ease-in-out 200ms;
 	}
 
-
 .main {
-	margin-top: 150px;
+	position: relative;
 	height: 100%;
 	width: 100%;	
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	}
 
+label, input, textarea {
+	margin-left: 30px;
+	min-width: 0px;
+	text-align: center;
+	font-size: 15px;
+	width: 80%;
+	line-height: 40px;
+	margin-top: 20px;
+}
 
-button {
-	width: 100%;
+.status {
+	color: red;
+	text-align: center;
+	font-size: 15px;
+}
+
+.submit {
+	margin-left: 60px;
+	width: 80%;
 	cursor: pointer;
 	margin-top: 20px;
 	height: 40px;
@@ -391,7 +409,8 @@ button {
 	color: white;
 	transition: .6 ease-in-out
 	}
-	
+
+
 #instagram:hover i{	
 	transform: scale(1);
 	color: black;
@@ -411,4 +430,6 @@ button {
 	transform: scale(1);
 	color: black;
 	}
+
+
 }
