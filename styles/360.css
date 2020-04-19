@@ -336,5 +336,7 @@ body {
 	width: 92.5%;
 	height: 100vh;
 	}
-
+iframe {
+	margin-bottom: 15px;
+}
 }
