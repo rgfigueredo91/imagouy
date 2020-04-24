@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 
 
-     if(name.length > 2) {
+    if(name.length >= 5) {
       statusElm.append('')
     } else {
       event.preventDefault()
