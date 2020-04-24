@@ -31,7 +31,7 @@ $(document).ready(function () {
       statusElm.append('')
     } else {
       event.preventDefault()
-      statusElm.append('<div>please wirte the subject</div>')
+      statusElm.append('<div>please write the subject</div>')
     }
 
     if(message.length > 10) {
