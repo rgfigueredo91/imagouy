@@ -237,7 +237,6 @@
 				<div class="preload" id="imagen39"><!--1x1 cuadradogiff-->
 					<img src="img/gifsmall.gif">	
 				</div>
-			
 			<!-- fin img gifs!-->
 			<!-- imagenes posta -->
 				<div class="img" id="imagen1"><!--1x1 small-->
@@ -378,7 +377,7 @@
 			</div>
 			<div class="lightbox-controls">
 				<div class="prev" onclick="prev()"> b </div>
-				<div class="next" onclick="next()"> > </div>
+				<div class="next" onclick="next()"> n </div>
 			</div>
 		</div>
 <!-- end lightbox-->
@@ -399,15 +398,11 @@
 			})
 		</script>
 <!--end navbar move -->
-		<script>
-			var images = document.querySelectorAll('.santipuede');
-			for(i=0; i<images.length; i++) {
-				images[i].addEventListener("load", myFunction,);
-						}
-			function myFunction() {
-			document.querySelectorAll(".santipuede").forEach(el=>el.style.opacity="1");
-					}
-		</script>
+
+<!--preload script-->
+		<script src="carga.js"></script>
+<!--end preload script-->
+
 <!--lightbox script-->
 		<script src="script.js"></script>
 <!--end lightbox script-->

@@ -152,8 +152,7 @@ body {
 	filter: grayscale(1) brightness(1.05);
 	transition: .7s ease;}
 
-	
-.santipuede {
+.img {
 	opacity: 0;
 }
 
