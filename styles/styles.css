@@ -538,6 +538,12 @@ body {
 	filter: grayscale(0);
 	margin-top: 5px;}
 
+
+.img {
+	opacity: 0;
+}
+
+
 #instagram:hover i{	
 	transform: scale(1);
 	color: black;}
@@ -645,11 +651,8 @@ body {
 .lightbox .lightbox-controls div.next{
 	right: 30px;}
 
-.santipuede {
-	opacity: 0;}
-
 .preload {
-	display: none;
+	
 }
 
 }
