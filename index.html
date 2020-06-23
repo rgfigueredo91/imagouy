@@ -1,344 +1,638 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-		<meta charset="UTF-8"/> 
-		<title>Imago Rendering Studio</title>
 
-		<meta name="description" content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay."/>
-		<meta name="keywords" content="imago - Rendering Visualization Studio"/>
-		<meta name="author" content="Rodrigo Figueredo"/>
-		<meta name="viewport" content="=width=device-width, initial-scale=1.0"/>
-		<meta property="og:type" content="website"/>
-		<meta property="og:title" content="Imago Rendering Studio"/>
-		<meta name="google-site-verification" content="E0SpeRDXnyyyYe_az7hMb6PirOHIawPyVZi6EA_HKSc" />
-		<meta property="og:description" content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay."/>
-		<meta property="og:url" content="https://imago.uy"/>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="UTF-8" />
+	<title>Imago Rendering Studio</title>
 
-		<link rel="stylesheet" type="text/css" href="styles/styles.css">
-		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<meta name="description"
+		content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay." />
+	<meta name="keywords" content="imago - Rendering Visualization Studio" />
+	<meta name="author" content="Rodrigo Figueredo" />
+	<meta name="viewport" content="=width=device-width, initial-scale=1.0" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Imago Rendering Studio" />
+	<meta name="google-site-verification" content="E0SpeRDXnyyyYe_az7hMb6PirOHIawPyVZi6EA_HKSc" />
+	<meta property="og:description"
+		content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay." />
+	<meta property="og:url" content="https://imago.uy" />
 
-		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
-		<link rel="preload" as="image" href="img/img window/1x1Sf.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Vb.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Hc.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Va.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sd.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Ba.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sb.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Bc.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sc.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Hb.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Se.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Vc.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sg.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Hd.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Vd.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Bb.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Bd.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Va.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sa.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Ha.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Vf.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1He.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Vg.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sj.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Be.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Bf.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sk.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sl.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Hf.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sm.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Vh.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Hg.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sn.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Hh.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Hi.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/2x1Hj.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1So.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sp.jpg" type="image/jpg" crossorigin="anonymous">
-		<link rel="preload" as="image" href="img/img window/1x1Sq.jpg" type="image/jpg" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-		<link rel="stylesheet" href="src/hes-gallery.css">
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
 
-	</head>
+	<link rel="stylesheet" href="src/hes-gallery.css">
 
-	<body>
-		
-		<!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v6.0'
-          });
-        };
+</head>
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+<body>
 
-      <!-- Your customer chat code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="108697060701498"
-  theme_color="#000000"
-  logged_in_greeting="Hi! How can we help you?"
-  logged_out_greeting="Hi! How can we help you?">
-      </div>
-      
-<!--barra fija arriba desktop-->
+	<!-- Load Facebook SDK for JavaScript -->
+	<div id="fb-root"></div>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v6.0'
+			});
+		};
 
-		<header class="navbar" id="navbar">
-			<div class="wrapper1">
-				<h1 class="title"><a href="/">imago</h1></a>
-			</div>
-			<div class="wrapper2">
-				<ul class="menu">
-					<li class="items"><a href="/" id="link-font">portfolio</a></li>
-					<li class="items"><a href="about.html" id="link-font">about</a></li>
-					<li class="items"><a href="360.html" id="link-font">360</a></li>
-					<li class="items"><a href="contact.html" id="link-font">contact</a></li>
-				</ul>
-			</div>
-				<ul class="social-menu">
-					<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i class="fa fa-instagram"></i></a></li>
-					<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li class="social-icon" id="github"><a href="https://github.com/rgfigueredo91" target="_blank"><i class="fa fa-github"></i></a></li>
-					<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				</ul>
-			
-		</header>
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
+	<!-- Your customer chat code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="108697060701498" theme_color="#000000"
+		logged_in_greeting="Hi! How can we help you?" logged_out_greeting="Hi! How can we help you?">
+	</div>
 
-<!--barra fija arriba telefono navbar-->
-		<section class="phonenavbar">
+	<!--barra fija arriba desktop-->
 
-			<h1 class="titlephone"><a href="/">imago</h1></a>
-			<input type="checkbox" id="nav-toggle" class="nav-toggle">
-				<nav class="navphone">
-					<ul>
-						<li><a href="/">portfolio</a></li>
-						<li><a href="about.html">about</a></li>
-						<li><a href="360.html">360</a></li>
-						<li><a href="contact.html">contact</a></li>
-						<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i class="fa fa-instagram"></i></a></li>
-						<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li class="social-icon" id="github"><a href="https://github.com/rgfigueredo91" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i class="fa fa-facebook"></i></a></li>
-					</ul>
-				</nav>
-				<label for="nav-toggle" class="nav-toggle-label">
-					<span></span>
-				</label>
-		</section>
-
-<!--seccion imagenes-->
-		<div class="main">
-
-				<div class="hes-gallery" data-wrap="false" data-img-count="false">
-
-					<div class="img" id="imagen1"><!--1x1 small-->
-						<img src="img/1x1Sf.jpg" alt="image1" data-fullsize="img/img window/1x1Sf.jpg" data-subtext='Project by Soledad Añón & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen2"><!--2x1 vertical-->
-						<img src="img/2x1Vb.jpg" alt="image2" data-fullsize="img/img window/2x1Vb.jpg" data-subtext='Project by Andrés Baptista & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-	
-					<div class="img" id="imagen3"><!--2x1 horizontal-->
-						<img src="img/2x1Hb.jpg" alt="image3" data-fullsize="img/img window/2x1Hb.jpg" data-subtext='Project by Andrés Baptista & Sebastian Fontes - Visualization by Imago Rendering Studio'>
-					</div>
-		
-					<div class="img" id="imagen4"><!--2x1 vertical-->
-						<img src="img/2x1Va.jpg" alt="image4" data-fullsize="img/img window/2x1Va.jpg" data-subtext='Project by Claudia Curbelo & Dahiana Garcia - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen5"><!--1x1 small-->
-						<img src="img/1x1Sd.jpg" alt="image5" data-fullsize="img/img window/1x1Sd.jpg" data-subtext='Project by Andrés Baptista - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen6"><!--1x1 big-->
-						<img src="img/1x1Ba.jpg" alt="image6" data-fullsize="img/img window/1x1Ba.jpg" data-subtext='Project by Nattaly Moitiño Ifrán & María Pía González - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen7"><!--1x1 small-->
-						<img src="img/1x1Sb.jpg" alt="image7" data-fullsize="img/img window/1x1Sb.jpg" data-subtext='Project by Andrés Baptista & Sebastian Fontes - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen8"><!--1x1 big-->
-						<img src="img/1x1Bc.jpg" alt="image8" data-fullsize="img/img window/1x1Bc.jpg" data-subtext='Project by Claudia Curbelo & Dahiana Garcia - Visualization by Imago Rendering Studio'>
-					</div>
-		
-					<div class="img" id="imagen9"><!--1x1 small-->
-						<img src="img/1x1Sc.jpg" alt="image9" data-fullsize="img/img window/1x1Sc.jpg" data-subtext='Project by Claudia Curbelo & Dahiana Garcia - Visualization by Imago Rendering Studio'>
-					</div>
- 
-
-					<div class="img" id="imagen10"><!--2x1 horizontal-->
-						<img src="img/2x1Hc.jpg" alt="image10" data-fullsize="img/img window/2x1Hc.jpg" data-subtext='Project by Claudia Curbelo & Dahiana Garcia - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen11"><!--1x1 small-->
-						<img src="img/1x1Se.jpg" alt="image11" data-fullsize="img/img window/1x1Se.jpg" data-subtext='Project by Andrés Baptista & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen12"><!--2x1 vertical-->
-						<img src="img/2x1Vc.jpg" alt="image12" data-fullsize="img/img window/2x1Vc.jpg" data-subtext='Project by Claudia Curbelo & Dahiana Garcia - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen13"><!--1x1 small-->
-						<img src="img/1x1Sg.jpg" alt="image13" data-fullsize="img/img window/1x1Sg.jpg" data-subtext='Project by Claudia Curbelo & Dahiana Garcia - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen14"><!--2x1 horizontal-->
-						<img src="img/2x1Hd.jpg" alt="image14" data-fullsize="img/img window/2x1Hd.jpg" data-subtext='Project by Andrés Baptista & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen15"><!--2x1 vertical-->
-						<img src="img/2x1Vd.jpg" alt="image15" data-fullsize="img/img window/2x1Vd.jpg" data-subtext='Project by Claudia Curbelo & Dahiana Garcia - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen16"><!--1x1 big-->
-						<img src="img/1x1Bb.jpg" alt="image16" data-fullsize="img/img window/1x1Bb.jpg" data-subtext='Project by Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen17"><!--1x1 big-->
-						<img src="img/1x1Bd.jpg" alt="image17" data-fullsize="img/img window/1x1Bd.jpg" data-subtext='Project by Rodrigo Figueredo & Nicolas White - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen18"><!--1x1 small-->
-						<img src="img/1x1Sh.jpg" alt="image18" data-fullsize="img/img window/1x1Sh.jpg" data-subtext='Project by Nattaly Moitiño Ifrán & María Pía González - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen19"><!--1x1 small-->
-						<img src="img/1x1Sa.jpg" alt="image19" data-fullsize="img/img window/1x1Sa.jpg" data-subtext='Project by Soledad Añón & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen20"><!--2x1 horizontal-->
-						<img src="img/2x1Ha.jpg" alt="image20" data-fullsize="img/img window/2x1Ha.jpg" data-subtext='Project by Andrés Baptista & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen21"><!--1x1 small-->
-						<img src="img/1x1Si.jpg" alt="image21" data-fullsize="img/img window/1x1Si.jpg" data-subtext='Project by Guillermo Fernandez - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen22"><!--2x1 vertical-->
-						<img src="img/2x1Vf.jpg" alt="image22" data-fullsize="img/img window/2x1Vf.jpg" data-subtext='Project by Soledad Añón & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen23"><!--2x1 horizontal-->
-						<img src="img/2x1He.jpg" alt="image23" data-fullsize="img/img window/2x1He.jpg" data-subtext='Project by Andrés Baptista & Sebastian Fontes - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen24"><!--2x1 vertical-->
-						<img src="img/2x1Vg.jpg" alt="image24" data-fullsize="img/img window/2x1Vg.jpg" data-subtext='Project by Andrés Baptista & Maria Sa Martin - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen25"><!--1x1 small-->
-						<img src="img/1x1Sj.jpg" alt="image25" data-fullsize="img/img window/1x1Sj.jpg" data-subtext='Project by Guillermo Fernandez - Visualization by Imago Rendering Studio'>
-					</div>
-					
-					<div class="img" id="imagen26"><!--1x1 big-->
-						<img src="img/1x1Be.jpg" alt="image26" data-fullsize="img/img window/1x1Be.jpg" data-subtext='Project by Soledad Añón - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen27"><!--1x1 big-->
-						<img src="img/1x1Bf.jpg" alt="image27" data-fullsize="img/img window/1x1Bf.jpg" data-subtext='Project by Rodrigo Figueredo & Nicolas White - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen28"><!--1x1 small-->
-						<img src="img/1x1Sk.jpg" alt="image28" data-fullsize="img/img window/1x1Sk.jpg" data-subtext='Project by Andrés Baptista & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen28b"><!--1x1 small-->
-						<img src="img/1x1Sl.jpg" alt="image28b" data-fullsize="img/img window/1x1Sl.jpg" data-subtext='Project by Rodrigo Figueredo & Nicolas White - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen29"><!--2x1 horizontal-->
-						<img src="img/2x1Hf.jpg" alt="image29" data-fullsize="img/img window/2x1Hf.jpg" data-subtext='Project by Rodrigo Figueredo & Nicolas White - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen30"><!--1x1 small-->
-						<img src="img/1x1Sm.jpg" alt="image30" data-fullsize="img/img window/1x1Sm.jpg" data-subtext='Project by Andrés Baptista & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen31"><!--2x1 vertical-->
-						<img src="img/2x1Vh.jpg" alt="image31" data-fullsize="img/img window/2x1Vh.jpg" data-subtext='Project by Rodrigo Figueredo & Nicolas White - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen32"><!--2x1 horizontal-->
-						<img src="img/2x1Hg.jpg" alt="image32" data-fullsize="img/img window/2x1Hg.jpg" data-subtext='Project by Rodrigo Figueredo & Nicolas White - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen33"><!--1x1 small-->
-						<img src="img/1x1Sn.jpg" alt="image33" data-fullsize="img/img window/1x1Sn.jpg" data-subtext='Project by Rodrigo Figueredo & Nicolas White - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen34"><!--2x1 horizontal-->
-						<img src="img/2x1Hh.jpg" alt="image34" data-fullsize="img/img window/2x1Hh.jpg" data-subtext='Project by Andrés Baptista & Rodrigo Figueredo - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen35"><!--2x1 horizontal-->
-						<img src="img/2x1Hi.jpg" alt="image35" data-fullsize="img/img window/2x1Hi.jpg" data-subtext='Project by Albana Legnani - Mariana Sauane - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen36"><!--2x1 horizontal-->
-						<img src="img/2x1Hj.jpg" alt="image36" data-fullsize="img/img window/2x1Hj.jpg" data-subtext='Project by Rodrigo Figueredo & Nicolas White - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen37"><!--1x1 small-->
-						<img src="img/1x1So.jpg" alt="image37" data-fullsize="img/img window/1x1So.jpg" data-subtext='Project by Albana Legnani - Mariana Sauane - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen38"><!--1x1 small-->
-						<img src="img/1x1Sp.jpg" alt="image38" data-fullsize="img/img window/1x1Sp.jpg" data-subtext='Project by Albana Legnani - Mariana Sauane - Visualization by Imago Rendering Studio'>
-					</div>
-
-					<div class="img" id="imagen39"><!--1x1 small-->
-						<img src="img/1x1Sq.jpg" alt="image39" data-fullsize="img/img window/1x1Sq.jpg" data-subtext='Project by Soledad Añón - Visualization by Imago Rendering Studio'>
-					</div>
-					
-				</div>
+	<header class="navbar" id="navbar">
+		<div class="wrapper1">
+			<h1 class="title"><a href="/">imago</h1></a>
 		</div>
+		<div class="wrapper2">
+			<ul class="menu">
+				<li class="items"><a href="/" id="link-font">portfolio</a></li>
+				<li class="items"><a href="about.html" id="link-font">about</a></li>
+				<li class="items"><a href="360.html" id="link-font">360</a></li>
+				<li class="items"><a href="contact.html" id="link-font">contact</a></li>
+			</ul>
+		</div>
+		<ul class="social-menu">
+			<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i
+						class="fa fa-instagram"></i></a></li>
+			<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i
+						class="fa fa-linkedin"></i></a></li>
+			<li class="social-icon" id="github"><a href="https://github.com/rgfigueredo91" target="_blank"><i
+						class="fa fa-github"></i></a></li>
+			<li class="social-icon" id="facebook"><a
+					href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i
+						class="fa fa-facebook"></i></a></li>
+		</ul>
 
-   <script src="dist/hes-gallery.js"></script>
-    <script>
+	</header>
 
-        HesGallery.setOptions({
-            disableScrolling: false,
-            hostedStyles: false,
-            animations: true,
 
-            showImageCount: true,
-            wrapAround: true
-        });
+	<!--barra fija arriba telefono navbar-->
+	<section class="phonenavbar">
 
-    </script>
+		<h1 class="titlephone"><a href="/">imago</h1></a>
+		<input type="checkbox" id="nav-toggle" class="nav-toggle">
+		<nav class="navphone">
+			<ul>
+				<li><a href="/">portfolio</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="360.html">360</a></li>
+				<li><a href="contact.html">contact</a></li>
+				<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i
+							class="fa fa-instagram"></i></a></li>
+				<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy"
+						target="_blank"><i class="fa fa-linkedin"></i></a></li>
+				<li class="social-icon" id="github"><a href="https://github.com/rgfigueredo91" target="_blank"><i
+							class="fa fa-github"></i></a></li>
+				<li class="social-icon" id="facebook"><a
+						href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i
+							class="fa fa-facebook"></i></a></li>
+			</ul>
+		</nav>
+		<label for="nav-toggle" class="nav-toggle-label">
+			<span></span>
+		</label>
+	</section>
 
-    <script type="text/javascript">
-    	var lastScrollTop = 100;
-    		navbar = document.getElementById("navbar");
-    		window.addEventListener("scroll", function() {
-    			var scrollTop = window.pageYOffset || document
-    				.documentElement.scrollTop;
-    				if (scrollTop > lastScrollTop) {
-    					navbar.style.top="-100px";
-    				} else {
-    					navbar.style.top="0";
-    				}
-    				lastScrollTop = scrollTop;
-    				
-    		} )
-    </script>
+	<!--seccion imagenes-->
+	<div class="main">
 
-	</body>
+
+
+
+
+		<div class="hes-gallery">
+
+			<!-- gifs!-->
+
+
+			<div class="preload" id="imagen1" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen2" onclick="false">
+				<img src="img/gifvertical.gif">
+				<!--2x1 verticalgiff-->
+			</div>
+
+			<div class="preload" id="imagen3" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen4" onclick="false">
+				<img src="img/gifvertical.gif">
+				<!--2x1 verticalgiff-->
+			</div>
+
+			<div class="preload" id="imagen5" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen6" onclick="false">
+				<img src="img/gifgrande.gif">
+				<!--1x1 cuadradograndegiff-->
+			</div>
+
+			<div class="preload" id="imagen7" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen8" onclick="false">
+				<img src="img/gifgrande.gif">
+				<!--1x1 cuadradograndegiff-->
+			</div>
+
+			<div class="preload" id="imagen9" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen10" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen11" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen12" onclick="false">
+				<img src="img/gifvertical.gif">
+				<!--2x1 verticalgiff-->
+			</div>
+
+			<div class="preload" id="imagen13" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen14" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen15" onclick="false">
+				<img src="img/gifvertical.gif">
+				<!--2x1 verticalgiff-->
+			</div>
+
+			<div class="preload" id="imagen16" onclick="false">
+				<img src="img/gifgrande.gif">
+				<!--1x1 cuadradograndegiff-->
+			</div>
+
+			<div class="preload" id="imagen17" onclick="false">
+				<img src="img/gifgrande.gif">
+				<!--1x1 cuadradograndegiff-->
+			</div>
+
+			<div class="preload" id="imagen18" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen19" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen20" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen21" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen22" onclick="false">
+				<img src="img/gifvertical.gif">
+				<!--2x1 verticalgiff-->
+			</div>
+
+			<div class="preload" id="imagen23" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen24" onclick="false">
+				<img src="img/gifvertical.gif">
+				<!--2x1 verticalgiff-->
+			</div>
+
+			<div class="preload" id="imagen25" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen26" onclick="false">
+				<img src="img/gifgrande.gif">
+				<!--1x1 cuadradograndegiff-->
+			</div>
+
+			<div class="preload" id="imagen27" onclick="false">
+				<img src="img/gifgrande.gif">
+				<!--1x1 cuadradograndegiff-->
+			</div>
+
+			<div class="preload" id="imagen28" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen28b" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen29" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen30" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen31" onclick="false">
+				<img src="img/gifvertical.gif">
+				<!--2x1 verticalgiff-->
+			</div>
+
+			<div class="preload" id="imagen32" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen33" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen34" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen35" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen36" onclick="false">
+				<img src="img/gifhorizontal.gif">
+				<!--2x1 horizontalgiff-->
+			</div>
+
+			<div class="preload" id="imagen37" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen38" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+			<div class="preload" id="imagen39" onclick="false">
+				<img src="img/gifsmall.gif">
+				<!--1x1 cuadradogiff-->
+			</div>
+
+
+			<!-- fin gifs!-->
+
+			<!-- imagenes posta -->
+			<div class="img" id="imagen1">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sf.jpg" alt="image1" data-fullsize="img/img window/1x1Sf.jpg"
+					data-subtext="Project by Soledad Añón & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen2">
+				<!--2x1 vertical-->
+				<img class="santipuede" src="img/2x1Vb.jpg" alt="image2" data-fullsize="img/img window/2x1Vb.jpg"
+					data-subtext="Project by Andrés Baptista & Rodrigo Figueredo">
+
+			</div>
+
+
+			<div class="img" id="imagen3">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Hb.jpg" alt="image3" data-fullsize="img/img window/2x1Hb.jpg"
+					data-subtext="Project by Andrés Baptista & Sebastian Fontes">
+			</div>
+
+			<div class="img" id="imagen4">
+				<!--2x1 vertical-->
+				<img class="santipuede" src="img/2x1Va.jpg" alt="image4" data-fullsize="img/img window/2x1Va.jpg"
+					data-subtext="Project by Claudia Curbelo & Dahiana Garcia" " >
+						</div>
+				
+
+					<div class=" img" id="imagen5">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sd.jpg" alt="image5" data-fullsize="img/img window/1x1Sd.jpg"
+					data-subtext="Project by Andrés Baptista">
+			</div>
+
+			<div class="img" id="imagen6">
+				<!--1x1 big-->
+				<img class="santipuede" src="img/1x1Ba.jpg" alt="image6" data-fullsize="img/img window/1x1Ba.jpg"
+					data-subtext="Project by Nattaly Moitiño Ifrán & María Pía González">
+			</div>
+
+			<div class="img" id="imagen7">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sb.jpg" alt="image7" data-fullsize="img/img window/1x1Sb.jpg"
+					data-subtext="Project by Andrés Baptista & Sebastian Fontes">
+			</div>
+
+			<div class="img" id="imagen8">
+				<!--1x1 big-->
+				<img class="santipuede" src="img/1x1Bc.jpg" alt="image8" data-fullsize="img/img window/1x1Bc.jpg"
+					data-subtext="Project by Claudia Curbelo & Dahiana Garcia">
+			</div>
+
+			<div class="img" id="imagen9">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sc.jpg" alt="image9" data-fullsize="img/img window/1x1Sc.jpg"
+					data-subtext="Project by Claudia Curbelo & Dahiana Garcia">
+			</div>
+
+
+			<div class="img" id="imagen10">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Hc.jpg" alt="image10" data-fullsize="img/img window/2x1Hc.jpg"
+					data-subtext="Project by Claudia Curbelo & Dahiana Garcia">
+			</div>
+
+			<div class="img" id="imagen11">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Se.jpg" alt="image11" data-fullsize="img/img window/1x1Se.jpg"
+					data-subtext="Project by Andrés Baptista & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen12">
+				<!--2x1 vertical-->
+				<img class="santipuede" src="img/2x1Vc.jpg" alt="image12" data-fullsize="img/img window/2x1Vc.jpg"
+					data-subtext="Project by Claudia Curbelo & Dahiana Garcia">
+			</div>
+
+			<div class="img" id="imagen13">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sg.jpg" alt="image13" data-fullsize="img/img window/1x1Sg.jpg"
+					data-subtext="Project by Claudia Curbelo & Dahiana Garcia">
+			</div>
+
+			<div class="img" id="imagen14">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Hd.jpg" alt="image14" data-fullsize="img/img window/2x1Hd.jpg"
+					data-subtext="Project by Andrés Baptista & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen15">
+				<!--2x1 vertical-->
+				<img  class="santipuede" src="img/2x1Vd.jpg" alt="image15" data-fullsize="img/img window/2x1Vd.jpg"
+					data-subtext="Project by Claudia Curbelo & Dahiana Garcia">
+			</div>
+
+			<div class="img" id="imagen16">
+				<!--1x1 big-->
+				<img class="santipuede" src="img/1x1Bb.jpg" alt="image16" data-fullsize="img/img window/1x1Bb.jpg"
+					data-subtext="Project by Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen17">
+				<!--1x1 big-->
+				<img class="santipuede" src="img/1x1Bd.jpg" alt="image17" data-fullsize="img/img window/1x1Bd.jpg"
+					data-subtext="Project by Rodrigo Figueredo & Nicolas White">
+			</div>
+
+			<div class="img" id="imagen18">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sh.jpg" alt="image18" data-fullsize="img/img window/1x1Sh.jpg"
+					data-subtext="Project by Nattaly Moitiño Ifrán & María Pía González">
+			</div>
+
+			<div class="img" id="imagen19">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sa.jpg" alt="image19" data-fullsize="img/img window/1x1Sa.jpg"
+					data-subtext="Project by Soledad Añón & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen20">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Ha.jpg" alt="image20" data-fullsize="img/img window/2x1Ha.jpg"
+					data-subtext="Project by Andrés Baptista & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen21">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Si.jpg" alt="image21" data-fullsize="img/img window/1x1Si.jpg "
+					data-subtext="Project by Guillermo Fernandez">
+			</div>
+
+			<div class="img" id="imagen22">
+				<!--2x1 vertical-->
+				<img class="santipuede" src="img/2x1Vf.jpg" alt="image22" data-fullsize="img/img window/2x1Vf.jpg"
+					data-subtext="Project by Soledad Añón & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen23">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1He.jpg" alt="image23" data-fullsize="img/img window/2x1He.jpg"
+					data-subtext="Project by Andrés Baptista & Sebastian Fontes">
+			</div>
+
+			<div class="img" id="imagen24">
+				<!--2x1 vertical-->
+				<img class="santipuede" src="img/2x1Vg.jpg" alt="image24" data-fullsize="img/img window/2x1Vg.jpg"
+					data-subtext="Project by Andrés Baptista & Maria Sa Martin">
+			</div>
+
+			<div class="img" id="imagen25">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sj.jpg" alt="image25" data-fullsize="img/img window/1x1Sj.jpg"
+					data-subtext="Project by Guillermo Fernandez">
+			</div>
+
+			<div class="img" id="imagen26">
+				<!--1x1 big-->
+				<img class="santipuede" src="img/1x1Be.jpg" alt="image26" data-fullsize="img/img window/1x1Be.jpg"
+					data-subtext="Project by Soledad Añón">
+			</div>
+
+			<div class="img" id="imagen27">
+				<!--1x1 big-->
+				<img class="santipuede" src="img/1x1Bf.jpg" alt="image27" data-fullsize="img/img window/1x1Bf.jpg"
+					data-subtext="Project by Rodrigo Figueredo & Nicolas White">
+			</div>
+
+			<div class="img" id="imagen28">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sk.jpg" alt="image28" data-fullsize="img/img window/1x1Sk.jpg"
+					data-subtext="Project by Andrés Baptista & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen28b">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sl.jpg" alt="image28b" data-fullsize="img/img window/1x1Sl.jpg"
+					data-subtext="Project by Rodrigo Figueredo & Nicolas White">
+			</div>
+
+			<div class="img" id="imagen29">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Hf.jpg" alt="image29" data-fullsize="img/img window/2x1Hf.jpg"
+					data-subtext="Project by Rodrigo Figueredo & Nicolas White">
+			</div>
+
+			<div class="img" id="imagen30">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sm.jpg" alt="image30" data-fullsize="img/img window/1x1Sm.jpg"
+					data-subtext="Project by Andrés Baptista & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen31">
+				<!--2x1 vertical-->
+				<img class="santipuede" src="img/2x1Vh.jpg" alt="image31" data-fullsize="img/img window/2x1Vh.jpg"
+					data-subtext="Project by Rodrigo Figueredo & Nicolas White">
+			</div>
+
+			<div class="img" id="imagen32">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Hg.jpg" alt="image32" data-fullsize="img/img window/2x1Hg.jpg"
+					data-subtext="Project by Rodrigo Figueredo & Nicolas White">
+			</div>
+
+			<div class="img" id="imagen33">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sn.jpg" alt="image33" data-fullsize="img/img window/1x1Sn.jpg"
+					data-subtext="Project by Rodrigo Figueredo & Nicolas White">
+			</div>
+
+			<div class="img" id="imagen34">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Hh.jpg" alt="image34" data-fullsize="img/img window/2x1Hh.jpg"
+					data-subtext="Project by Andrés Baptista & Rodrigo Figueredo">
+			</div>
+
+			<div class="img" id="imagen35">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Hi.jpg" alt="image35" data-fullsize="img/img window/2x1Hi.jpg"
+					data-subtext="Project by Albana Legnani - Mariana Sauane">
+			</div>
+
+			<div class="img" id="imagen36">
+				<!--2x1 horizontal-->
+				<img class="santipuede" src="img/2x1Hj.jpg" alt="image36" data-fullsize="img/img window/2x1Hj.jpg"
+					data-subtext="Project by Rodrigo Figueredo & Nicolas White">
+			</div>
+
+			<div class="img" id="imagen37">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1So.jpg" alt="image37" data-fullsize="img/img window/1x1So.jpg"
+					data-subtext="Project by Albana Legnani - Mariana Sauane">
+			</div>
+
+			<div class="img" id="imagen38">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sp.jpg" alt="image38" data-fullsize="img/img window/1x1Sp.jpg"
+					data-subtext="Project by Albana Legnani - Mariana Sauane">
+			</div>
+
+			<div class="img" id="imagen39">
+				<!--1x1 small-->
+				<img class="santipuede" src="img/1x1Sq.jpg" alt="image39" data-fullsize="img/img window/1x1Sq.jpg"
+					data-subtext="Project by Soledad Añón">
+			</div>
+			<!-- fin imagenes posta -->
+		</div>
+	</div>
+
+
+	<!--Lightbox-->
+	<div class="lightbox">
+		<div class="lightbox-content">
+			<div class="lightbox-close">&times;</div>
+			<img src="" class="lightbox-img" alt="img" onclick="next()">
+			<div class="lightbox-caption">
+				<span class="lightbox-text"></span>
+				<span class="lightbox-counter"></span>
+			</div>
+		</div>
+		<div class="lightbox-controls">
+			<div class="prev" onclick="prev()">
+				< </div>
+					<div class="next" onclick="next()"> > </div>
+			</div>
+
+		</div>
+		<!-- end lightbox-->
+
+
+
+		<script type="text/javascript">
+			var lastScrollTop = 100;
+			navbar = document.getElementById("navbar");
+			window.addEventListener("scroll", function () {
+				var scrollTop = window.pageYOffset || document
+					.documentElement.scrollTop;
+				if (scrollTop > lastScrollTop) {
+					navbar.style.top = "-100px";
+				} else {
+					navbar.style.top = "0";
+				}
+				lastScrollTop = scrollTop;
+
+			})
+		</script>
+
+		<script>
+
+			var images = document.querySelectorAll('.santipuede');
+
+
+								for(i=0; i<images.length; i++) {
+						images[i].addEventListener("load", myFunction,);
+						;
+
+					}
+
+					function myFunction() {
+						document.querySelectorAll(".santipuede").forEach(el=>el.style.opacity="1");
+					}
+
+
+
+		</script>
+
+		<script src="script.js"></script>
+
+
+</body>
 
 </html>
