@@ -712,7 +712,7 @@ body {
 .lightbox .lightbox-img{
 	width: auto;
 	height: auto;
-	max-width: 350px;
+	max-width: 52vh;
 	max-height: 850px;
 	padding: 40px 0;
 	cursor: pointer;
@@ -749,12 +749,15 @@ body {
 	color: #fff;
 	font-size: 12px;
 	position: absolute;
-	left: 0;
 	width: 100%;
 	bottom: -20px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	z-index: -1;}
+
+.lightbox .lightbox-caption .lightbox-counter{
+		left: 0;
+		width: 40px;}
 
 .lightbox .lightbox-controls div{
 	position: absolute;
