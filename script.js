@@ -5,7 +5,7 @@ const counter=document.querySelector(".lightbox-counter");
 const lightboxText=document.querySelector(".lightbox-text");
 const prevButton = document.querySelector(".prev")
 const nextButton = document.querySelector(".next")
-const portfolioItems =  document.querySelector(".hes-gallery").children;
+const portfolioItems =  document.querySelectorAll(".img");
 let index;
 let imgSrc;
 
