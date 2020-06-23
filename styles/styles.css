@@ -141,8 +141,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(15, 1fr);
-	grid-gap: 2vh;
-	}
+	grid-gap: 2vh;	}
 
 .img img{
 	height: 100%;
@@ -153,8 +152,7 @@ body {
 	transition: .7s ease;}
 
 .img {
-	opacity: 0;
-}
+	opacity: 0;}
 
 /*lightbox*/
 
@@ -245,8 +243,6 @@ body {
 .lightbox .lightbox-controls div.next{
 	right: 30px;}
 /* fin lightbox*/
-
-
 
 /*--preload--*/
 .preload img{
@@ -525,7 +521,6 @@ body {
 	width: 35%;
 	letter-spacing: 1px;}
 
-
 .hes-gallery {
 	left: 2vh;
 	margin-top: 170px;
@@ -535,8 +530,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(15, 1fr);
-	grid-gap: 2vh;
-}
+	grid-gap: 2vh;}
 
 }
 
@@ -603,8 +597,7 @@ body {
 	bottom: 7px;}
 
 .nav-toggle-label span::after {
-	top: 7px;
-	}
+	top: 7px;}
 
 .navphone {
 	top: 80px;
@@ -658,8 +651,7 @@ body {
 	margin-top: 90px;
 	display: block;
 	width: 100%;
-	margin-right: 20px;
-	}
+	margin-right: 20px;}
 
 .img:hover{
 	filter: brightness(1);}
@@ -668,11 +660,8 @@ body {
 	filter: grayscale(0);
 	margin-top: 5px;}
 
-
 .img {
-	opacity: 1;
-}
-
+	opacity: 1;}
 
 #instagram:hover i{	
 	transform: scale(1);
@@ -785,8 +774,7 @@ body {
 	right: 30px;}
 
 .preload {
-	display: none;
-}
+	display: none;}
 
 }
 
