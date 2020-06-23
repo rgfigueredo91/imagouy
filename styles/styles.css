@@ -652,7 +652,7 @@ body {
 	right: 30px;}
 
 .preload {
-	
+	display: none;
 }
 
 }
