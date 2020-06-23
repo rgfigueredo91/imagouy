@@ -179,7 +179,7 @@ body {
 	width: auto;
 	height: auto;
 	max-width: 100%;
-	max-height: 850px;
+	max-height: 80vh;
 	padding: 40px 0;
 	cursor: pointer;
 	animation: lightbImage .5s ease;}
@@ -211,7 +211,7 @@ body {
 
 .lightbox .lightbox-caption{
 	color: #fff;
-	font-size: 12px;
+	font-size: 16px;
 	position: absolute;
 	left: 0;
 	width: 100%;
@@ -244,9 +244,11 @@ body {
 
 .lightbox .lightbox-controls div.next{
 	right: 30px;}
+/* fin lightbox*/
 
-/*--preload
---*/
+
+
+/*--preload--*/
 .preload img{
 	height: 100%;
 	width: 100%;
