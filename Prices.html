@@ -120,9 +120,6 @@
 			</p2>
 
             <form id="prices-form" >
-				
-				
-				
 
                 <div class="experience-select">
                     <label>Select Experience</label>
@@ -134,22 +131,19 @@
                             Full Experience
                         </option>
                     </select>
-                </div>
+				</div>
+				
                 <div class="amount-interior" >
                     <label>Amount of interior</label>
                     <input type="number" value="0" id="interior" min="0" onkeypress="return false;"/>
-                   
-                
-                
-                </div>
+				</div>
+				
                 <div class="amount-exterior">
                     <label>Amount of exterior</label>
                     <input type="number" value="0" id="exterior" min="0" onkeypress="return false;"/>
 
 				</div>
 				
-				
-
                 <div class="button">
                     <button onclick="calc();" type="button">Calculate</button>
 				</div>
@@ -159,53 +153,21 @@
                     <input type="text" id="result" value="0" onkeypress="return false;"/>
                 </div>
 				
-
-            </form>
-			<p2>Si eres estudiante de cualquier universidad de la republica oriental del uruguay, tenemos promociones exclusivas, contactanos por cualquiera de los medios disponibles
+			</form>
+			
+			<p2>Si eres estudiante de cua
+				lquier universidad de la republica oriental 
+				del uruguay, tenemos promociones exclusivas, 
+				contactanos por cualquiera de los medios disponibles.
 			</p2>
+
 		</div>
 
-		<script>
-			function calc()
-            {
-				let experienceType = document.getElementById('experience').value;
-				let numberInterior = document.getElementById('interior').value;
-				let numberExterior = document.getElementById('exterior').value;
-				let maxPorcentaje =  0.25
-				var priceInterior = numberInterior * 140;
-				var priceExterior = numberExterior * 120;
-				let porcentaje = ((parseFloat(numberInterior) + parseFloat(numberExterior) - 1)*5)/100;
-				
 
-                
-                if(experienceType === 'light-experience' && porcentaje <= 0.25){
-                    document.getElementById('result').value = (priceInterior + priceExterior) - ((priceExterior + priceInterior)*porcentaje);
-				}
-				if(experienceType === 'light-experience' && porcentaje > 0.25) {
-					document.getElementById('result').value = (priceExterior + priceInterior) - ((priceExterior + priceInterior)*maxPorcentaje)
-				}
-
-				if(experienceType === 'full-experience' && porcentaje <= 0.25) {
-					var priceInterior = numberInterior * 220;
-					var priceExterior = numberExterior * 180;
-                    document.getElementById('result').value = (priceInterior +  priceExterior) - ((priceInterior +  priceExterior)*porcentaje);
-				}
-				if(experienceType === 'full-experience' && porcentaje > 0.25) {
-					var priceInterior = numberInterior * 220;
-					var priceExterior = numberExterior * 180;
-					document.getElementById('result').value = (priceExterior + priceInterior) - ((priceExterior + priceInterior)*maxPorcentaje);
-				}
-
-				if(numberInterior < 0 || numberExterior < 0){
-				document.getElementById('result').value = 0
-				}
-			}
-
-		
-				
-                
-            
-        </script>
+		<!--precio script-->
+		<script src="prices.js"> </script>
+	     
+       
 		    
 
 
