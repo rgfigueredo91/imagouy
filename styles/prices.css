@@ -269,7 +269,9 @@ color: black;
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
-
+.white {
+	height: 30px;
+}
 /*--tablet responsive--*/
 
 @media only screen and (max-width: 1000px) and (min-width: 850px)  {
