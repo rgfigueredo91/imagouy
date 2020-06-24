@@ -11,21 +11,21 @@ function calc()
 
                 
                 if(experienceType === 'light-experience' && porcentaje <= 0.25){
-                    document.getElementById('result').value = (priceInterior + priceExterior) - ((priceExterior + priceInterior)*porcentaje);
+                    document.getElementById('result').value = (priceInterior + priceExterior) - ((priceExterior + priceInterior)*porcentaje) + ' USD';
 				}
 				if(experienceType === 'light-experience' && porcentaje > 0.25) {
-					document.getElementById('result').value = (priceExterior + priceInterior) - ((priceExterior + priceInterior)*maxPorcentaje)
+					document.getElementById('result').value = (priceExterior + priceInterior) - ((priceExterior + priceInterior)*maxPorcentaje) + ' USD';
 				}
 
 				if(experienceType === 'full-experience' && porcentaje <= 0.25) {
 					var priceInterior = numberInterior * 220;
 					var priceExterior = numberExterior * 180;
-                    document.getElementById('result').value = (priceInterior +  priceExterior) - ((priceInterior +  priceExterior)*porcentaje);
+                    document.getElementById('result').value = (priceInterior +  priceExterior) - ((priceInterior +  priceExterior)*porcentaje) + ' USD';
 				}
 				if(experienceType === 'full-experience' && porcentaje > 0.25) {
 					var priceInterior = numberInterior * 220;
 					var priceExterior = numberExterior * 180;
-					document.getElementById('result').value = (priceExterior + priceInterior) - ((priceExterior + priceInterior)*maxPorcentaje);
+					document.getElementById('result').value = (priceExterior + priceInterior) - ((priceExterior + priceInterior)*maxPorcentaje) + ' USD';
 				}
 
 				if(numberInterior < 0 || numberExterior < 0){
