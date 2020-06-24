@@ -682,7 +682,6 @@ body {
 /*lightbox*/
 
 .lightbox {
-
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -698,7 +697,6 @@ body {
 	display: flex;	}
 
 .lightbox .lightbox-img{
-
 	width: auto;
 	height: auto;
 	padding: 40px 0;
@@ -746,8 +744,8 @@ body {
 
 .lightbox .lightbox-caption .lightbox-counter{
 	display: none;
-		left: 0;
-		width: 40px;}
+	left: 0;
+	width: 40px;}
 
 .lightbox .lightbox-caption .lightbox-text{
 			display: none;}
