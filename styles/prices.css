@@ -134,13 +134,11 @@ body {
 	flex-direction: column;
 	justify-content: center;
     align-items: center;
-    margin-top: 250px;
-    }
+    margin-top: 250px; }
     
 .text-information {
     margin-bottom: 20px;
-    text-align: center;
-}    
+    text-align: center;}    
 
 .main p2{
 	text-align: justify;
@@ -149,25 +147,20 @@ body {
 	width: 40%;
 	line-height: 20px;
 	margin-bottom: 40px;
-	margin-top: 20px;
-}
+	margin-top: 20px;}
 
 .titles {
-	text-align: center;
-}
+	text-align: center;}
 
 #optionvalue {
 	border-radius: 50px;
-	text-align: center;
+	text-align: center;}
 
-}
 select {
 	text-align-last: center;
 	text-align: center;
 	-ms-text-align-last: center;
-	-moz-text-align-last: center;
- }
-
+	-moz-text-align-last: center; }
 
 #experience {
 	border-radius: 50px;
@@ -175,29 +168,24 @@ select {
 	width: 180px;
 	text-align: center;
 	color: white;
-	background-color:black;
-}
+	background-color:black;}
 
 .experience-select {
 	display: flex;
 	justify-content: space-around;
-	text-align: center;
-}
+	text-align: center;}
+
 .experience-select label{
-	margin-top: 8px;
-}
+	margin-top: 8px;}
 
 #prices-form {
-	width: 40%;
-	
-}
+	width: 40%;	}
 
 .amount-interior {
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
-	text-align: center;
-}
+	text-align: center;}
 
 .amount-interior input{
 	text-align: center;
@@ -205,22 +193,21 @@ select {
 	color: white;
 	border-radius: 50px;
 	height: 20px;
-	width: 175px;
-}
+	width: 175px;}
+
 .amount-exterior input{
 	text-align: center;
 	background-color: black;
 	color: white;
 	border-radius: 50px;
 	height: 20px;
-	width: 175px;
-}
+	width: 175px;}
+
 .amount-exterior {
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-around;
-	text-align: center;
-}
+	text-align: center;}
 
 button {
 	margin-top: 30px;
@@ -229,50 +216,42 @@ button {
 	height: 40px;
 	width: 100px;
 	border-radius: 50px;
-	cursor: pointer;
-}
+	cursor: pointer;}
 
 button:hover {
 background-color: white;	
 color: black;
-	height: 40px;
-	width: 100px;
-	border-radius: 50px;
-	
-	transition: .3s;
-}
+height: 40px;
+width: 100px;
+border-radius: 50px;
+transition: .3s;}
+
 .price {
-	margin-top: 30px;
+	margin-top: 30px;}
 
-
-}
 .price input{
 	width: 100%;
 	text-align: center;
 	height: 50px;
 	border-radius: 50px;
-	font-size: 30px;
-}
+	font-size: 30px;}
 
 .p3 {
 	margin-top: 60px;
 	text-align: center;
-	font-size: 14px;
-}
+	font-size: 14px;}
 
 .p4 {
-
 	margin-top: 25px;
 	text-align: center;
-	font-size: 12px;
-}
+	font-size: 12px;}
+
 .bottom {
 	margin-top: 30px;
-	margin-bottom: 20px;
-}
+	margin-bottom: 20px;}
+
 .white {
-	height: 30px;
-}
+	height: 30px;}
 /*--tablet responsive--*/
 
 @media only screen and (max-width: 1000px) and (min-width: 850px)  {
@@ -369,11 +348,9 @@ color: black;
 .navphone li {
 	height: 1px;
 	margin-top: 1.9em;
-	margin-bottom: 1em;	
-}
+	margin-bottom: 1em;	}
 
 .navphone a {
-	
 	margin-bottom: 20px;
 	color: black;
 	text-decoration: none;
@@ -445,156 +422,134 @@ color: black;
 	transform: scale(1);
 	color: black;}
 
+/*cuerpo*/	
 
-		
-	.text-information {
-		margin-bottom: 20px;
-		text-align: center;
-	}    
+.text-information {
+	margin-bottom: 20px;
+	text-align: center;}    
 	
-	.main p2{
-		text-align: justify;
-		letter-spacing: 1px;
-		font-size: 13px;
-		width: 85%;
-		line-height: 20px;
-		margin-bottom: 40px;
-		margin-top: 20px;
-	}
+.main p2{
+	text-align: justify;
+	letter-spacing: 1px;
+	font-size: 13px;
+	width: 85%;
+	line-height: 20px;
+	margin-bottom: 40px;
+	margin-top: 20px;}
 	
-	.titles {
-		text-align: center;
-	}
+.titles {
+	text-align: center;}
 	
-	#optionvalue {
-		border-radius: 50px;
-		text-align: center;
-	
-	}
-	select {
-		text-align-last: center;
-		text-align: center;
-		-ms-text-align-last: center;
-		-moz-text-align-last: center;
-	 }
-	
-	
-	#experience {
-		border-radius: 50px;
-		height: 25px;
-		width: 180px;
-		text-align: center;
-		color: white;
-		background-color:black;
-		margin-top: 20px;
-	}
-	
-	.experience-select {
-		display: flex;
-		flex-direction: column;
-	align-items: center;		
+#optionvalue {
+	border-radius: 50px;
+	text-align: center;}
+
+select {
+	text-align-last: center;
 	text-align: center;
-	}
-	.experience-select label{
-		margin-top: 8px;
-	}
+	-ms-text-align-last: center;
+	-moz-text-align-last: center;}
 	
-	#prices-form {
-		width: 80%;
-		display: flex;
-		flex-direction: column;
-		
-	}
+#experience {
+	border-radius: 50px;
+	height: 25px;
+	width: 180px;
+	text-align: center;
+	color: white;
+	background-color:black;
+	margin-top: 20px;}
 	
-	.amount-interior {
-		
-		margin-top: 20px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
+.experience-select {
+	display: flex;
+	flex-direction: column;
+	align-items: center;		
+	text-align: center;}
+
+.experience-select label{
+	margin-top: 8px;}
 	
-	.amount-interior input{
-		margin-top: 20px;
-		text-align: center;
-		background-color: black;
-		color: white;
-		border-radius: 50px;
-		height: 20px;
-		width: 175px;
-	}
-	.amount-exterior input{
-		text-align: center;
-		background-color: black;
-		color: white;
-		border-radius: 50px;
-		height: 20px;
-		width: 175px;
-		margin-top: 20px;
-	}
-	.amount-exterior {
-		display: flex;
-		flex-direction: column;
-		margin-top: 20px;
-		display: flex;
-		justify-content: space-around;
-		text-align: center;
-		align-items: center;
-	}
+#prices-form {
+	width: 80%;
+	display: flex;
+	flex-direction: column;	}
 	
-	button {
-		margin-top: 30px;
-		background-color: black;
-		color: white;
-		height: 40px;
-		width: 100px;
-		border-radius: 50px;
-		cursor: pointer;
-	}
+.amount-interior {	
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;}
 	
-	button:hover {
+.amount-interior input{
+	margin-top: 20px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	border-radius: 50px;
+	height: 20px;
+	width: 175px;}
+
+.amount-exterior input{
+	text-align: center;
+	background-color: black;
+	color: white;
+	border-radius: 50px;
+	height: 20px;
+	width: 175px;
+	margin-top: 20px;}
+
+.amount-exterior {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;}
+	
+button {
+	margin-top: 30px;
+	background-color: black;
+	color: white;
+	height: 40px;
+	width: 100px;
+	border-radius: 50px;
+	cursor: pointer;	}
+	
+button:hover {
 	background-color: white;	
 	color: black;
-		height: 40px;
-		width: 100px;
-		border-radius: 50px;
-		
-		transition: .3s;
-	}
-	.price {
-		margin-top: 30px;
+	height: 40px;
+	width: 100px;
+	border-radius: 50px;
+	transition: .3s;}
+
+.price {
+	margin-top: 30px;}
+
+.price input{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	border-radius: 50px;
+	font-size: 30px;	}
 	
+.p3 {
+	margin-top: 60px;
+	text-align: center;
+	font-size: 14px;}
 	
-	}
-	.price input{
-		width: 100%;
-		text-align: center;
-		height: 50px;
-		border-radius: 50px;
-		font-size: 30px;
-	}
-	
-	.p3 {
-		margin-top: 60px;
-		text-align: center;
-		font-size: 14px;
-	}
-	
-	.p4 {
-		
-		margin-top: 25px;
-		text-align: center;
-		font-size: 12px;
-	}
-	.bottom {
-		margin-top: 30px;
-		margin-bottom: 20px;
-	
-	}
-	.white {
-		height: 30px;
-	}
+.p4 {	
+	margin-top: 25px;
+	text-align: center;
+	font-size: 12px;}
+
+.bottom {
+	margin-top: 30px;
+	margin-bottom: 20px;}
+
+.white {
+	height: 30px;	}
 
 
 }
