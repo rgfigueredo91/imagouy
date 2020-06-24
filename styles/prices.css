@@ -179,8 +179,6 @@ select {
 	color: white;
 	background-color:black;}
 
-
-
 .model-select {
 	display: flex;
 	justify-content: space-around;
@@ -470,6 +468,28 @@ select {
 	-ms-text-align-last: center;
 	-moz-text-align-last: center;}
 	
+
+#model {
+	margin-right: 0;
+	border-radius: 50px;
+	height: 25px;
+	width: 180px;
+	text-align: center;
+	color: white;
+	background-color:black;
+	margin-top: 20px;}
+
+.model-select {
+	display: flex;
+	flex-direction: column;
+	align-items: center;		
+	text-align: center;
+	margin-bottom: 20px;}
+	
+.model-select label{
+	margin-top: 8px;}
+
+
 #experience {
 	border-radius: 50px;
 	height: 25px;
