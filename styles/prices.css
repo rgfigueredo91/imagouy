@@ -161,6 +161,15 @@ select {
 	text-align: center;
 	-ms-text-align-last: center;
 	-moz-text-align-last: center; }
+	
+#model {
+	border-radius: 50px;
+	height: 25px;
+	width: 180px;
+	text-align: center;
+	color: white;
+	background-color:black;
+	margin-right: 17px;}
 
 #experience {
 	border-radius: 50px;
@@ -169,6 +178,17 @@ select {
 	text-align: center;
 	color: white;
 	background-color:black;}
+
+
+
+.model-select {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+margin-bottom: 20px;}
+
+.model-select label{
+	margin-top: 8px;}
 
 .experience-select {
 	display: flex;
