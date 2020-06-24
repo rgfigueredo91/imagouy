@@ -734,7 +734,7 @@ body {
 	animation: lightbImage .5s ease;}
 
 .lightbox .lightbox-content{
-	margin-top: 10%;
+	margin-top: 0%;
 	position: absolute;}
 
 @keyframes lightbImage {
