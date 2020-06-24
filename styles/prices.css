@@ -223,6 +223,7 @@ select {
 }
 
 button {
+	margin-top: 30px;
 	background-color: black;
 	color: white;
 	height: 40px;
