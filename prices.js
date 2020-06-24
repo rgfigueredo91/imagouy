@@ -47,7 +47,7 @@ function calc()
 				if(experienceType === 'full-experience' && porcentaje > 0.25 && model === "no") {
 					var priceInterior = numberInterior * 220;
 					var priceExterior = numberExterior * 180;
-					document.getElementById('result').value = (priceExterior + priceInterior) - ((priceExterior + priceInterior)*maxPorcentaje) + 120 + ' USD';
+					document.getElementById('result').value = (priceExterior + priceInterior) - ((priceExterior + priceInterior)*maxPorcentaje) + 90 + ' USD';
 				}
 
 				if(experienceType === 'full-experience' && porcentaje > 0.25 && model === "yes") {
