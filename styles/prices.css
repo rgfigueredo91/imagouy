@@ -368,10 +368,12 @@ color: black;
 
 .navphone li {
 	height: 1px;
-	margin-top: 2.5em;
-	margin-bottom: 1em;	}
+	margin-top: 1.9em;
+	margin-bottom: 1em;	
+}
 
 .navphone a {
+	
 	margin-bottom: 20px;
 	color: black;
 	text-decoration: none;
@@ -390,6 +392,7 @@ color: black;
 	transition: opacity 200ms ease-in-out 200ms;}
 
 .main {
+	margin-top: 150px;
 	position: relative;
 	height: 100%;
 	width: 100%;	
@@ -408,10 +411,12 @@ color: black;
 	justify-content: center;	}
 
 .main p{
+	display: flex;
+	flex-direction: column;
 	letter-spacing: 1px;
 	font-size: 13px;
 	width: 100%;
-	text-align: justify;	}
+	text-align: center;	}
 	
 .paragraph1 {
 	margin-top: 150px;
@@ -439,4 +444,157 @@ color: black;
 #github:hover i{
 	transform: scale(1);
 	color: black;}
+
+
+		
+	.text-information {
+		margin-bottom: 20px;
+		text-align: center;
+	}    
+	
+	.main p2{
+		text-align: justify;
+		letter-spacing: 1px;
+		font-size: 13px;
+		width: 85%;
+		line-height: 20px;
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+	
+	.titles {
+		text-align: center;
+	}
+	
+	#optionvalue {
+		border-radius: 50px;
+		text-align: center;
+	
+	}
+	select {
+		text-align-last: center;
+		text-align: center;
+		-ms-text-align-last: center;
+		-moz-text-align-last: center;
+	 }
+	
+	
+	#experience {
+		border-radius: 50px;
+		height: 25px;
+		width: 180px;
+		text-align: center;
+		color: white;
+		background-color:black;
+		margin-top: 20px;
+	}
+	
+	.experience-select {
+		display: flex;
+		flex-direction: column;
+	align-items: center;		
+	text-align: center;
+	}
+	.experience-select label{
+		margin-top: 8px;
+	}
+	
+	#prices-form {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	
+	.amount-interior {
+		
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.amount-interior input{
+		margin-top: 20px;
+		text-align: center;
+		background-color: black;
+		color: white;
+		border-radius: 50px;
+		height: 20px;
+		width: 175px;
+	}
+	.amount-exterior input{
+		text-align: center;
+		background-color: black;
+		color: white;
+		border-radius: 50px;
+		height: 20px;
+		width: 175px;
+		margin-top: 20px;
+	}
+	.amount-exterior {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		align-items: center;
+	}
+	
+	button {
+		margin-top: 30px;
+		background-color: black;
+		color: white;
+		height: 40px;
+		width: 100px;
+		border-radius: 50px;
+		cursor: pointer;
+	}
+	
+	button:hover {
+	background-color: white;	
+	color: black;
+		height: 40px;
+		width: 100px;
+		border-radius: 50px;
+		
+		transition: .3s;
+	}
+	.price {
+		margin-top: 30px;
+	
+	
+	}
+	.price input{
+		width: 100%;
+		text-align: center;
+		height: 50px;
+		border-radius: 50px;
+		font-size: 30px;
+	}
+	
+	.p3 {
+		margin-top: 60px;
+		text-align: center;
+		font-size: 14px;
+	}
+	
+	.p4 {
+		
+		margin-top: 25px;
+		text-align: center;
+		font-size: 12px;
+	}
+	.bottom {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	
+	}
+	.white {
+		height: 30px;
+	}
+
+
 }
