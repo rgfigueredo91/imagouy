@@ -6,6 +6,7 @@ const lightboxText=document.querySelector(".lightbox-text");
 const prevButton = document.querySelector(".prev")
 const nextButton = document.querySelector(".next")
 const portfolioItems =  document.querySelectorAll(".img");
+const loading = document.querySelector(".loadingif");
 let index;
 let imgSrc;
 
@@ -19,10 +20,14 @@ lightBoxContainer.addEventListener("click", function(event){
 for (let i = 0; i<portfolioItems.length; i++){
     portfolioItems[i].addEventListener("click", function() {
         index=i;
+        
         changeImage();
+       
         ligthBox();
     })
 }
+
+
 
 function next(){
     if(index==portfolioItems.length -1){
@@ -31,9 +36,9 @@ function next(){
     else {
         index++;
     }
+   
     changeImage();
-    
- 
+  
 }
 
 function prev(){
@@ -56,5 +61,6 @@ function changeImage(){
     lightboxImage.src=imgSrc;
     counter.innerHTML=(index + 1) + " of " + portfolioItems.length;
     lightboxText.innerHTML=portfolioItems[index].querySelector("img").getAttribute("data-subtext");
+    
 }
 
