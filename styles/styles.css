@@ -682,9 +682,8 @@ body {
 /*lightbox*/
 
 .lightbox {
+
 	position: fixed;
-	left: 0;
-	top: 0;
 	width: 100%;
 	height: 100%;
 	z-index: 100;
@@ -699,16 +698,16 @@ body {
 	display: flex;	}
 
 .lightbox .lightbox-img{
+
 	width: auto;
 	height: auto;
-	max-width: 52vh;
-	max-height: 850px;
 	padding: 40px 0;
 	cursor: pointer;
 	animation: lightbImage .5s ease;}
 
 .lightbox .lightbox-content{
-	position: relative;}
+	margin-top: 10%;
+	position: absolute;}
 
 @keyframes lightbImage {
 	0%{
@@ -735,6 +734,7 @@ body {
 	font-size: 20px;}
 
 .lightbox .lightbox-caption{
+	display: none;
 	color: #fff;
 	font-size: 12px;
 	position: absolute;
@@ -745,10 +745,15 @@ body {
 	z-index: -1;}
 
 .lightbox .lightbox-caption .lightbox-counter{
+	display: none;
 		left: 0;
 		width: 40px;}
 
+.lightbox .lightbox-caption .lightbox-text{
+			display: none;}
+
 .lightbox .lightbox-controls div{
+	display: none;
 	position: absolute;
 	top: 50%;
 	height: 40px;
