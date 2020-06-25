@@ -88,5 +88,5 @@ function computePriceFromForm() {
 	const indoorRenderingCount = Math.max(parseInt(document.getElementById('interior').value), 0);
 	const outdoorRenderingCount = Math.max(parseInt(document.getElementById('exterior').value), 0);
 
-	document.getElementById('result').value = Math.round(computePrice(userAlreadyHasAModel, modelAreaUnit, modelArea, experienceType, indoorRenderingCount, outdoorRenderingCount)) + ' USD';
+	document.getElementById('result').value = Math.ceil(computePrice(userAlreadyHasAModel, modelAreaUnit, modelArea, experienceType, indoorRenderingCount, outdoorRenderingCount)) + ' USD';
 }
