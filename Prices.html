@@ -121,9 +121,14 @@
 
             <form id="prices-form" >
 
+				
+
 				<div class="model-select">
-                    <label><b>Do you have 3D Model?</b></label>
+                    <label><b>Do you have a 3D Model?</b></label>
                     <select id="model">
+						<option value="none" selected disabled hidden> 
+							Select an Option 
+						</option> 
                         <option class="select-model" value="yes">
                             Yes
                         </option>
@@ -133,9 +138,33 @@
                     </select>
 				</div>
 
+				<div class="square-meters" >
+					<label><b>Project area</b></label>
+					<div>
+						
+						<input type="number" value="0" id="metros" min="0"/>
+						<select id="units">
+							<option value="none" selected disabled hidden> 
+								Units 
+							</option> 
+							<option class="select-model" value="m2">
+								M&sup2
+							</option>
+							<option class="select-model" value="sqft">
+								sq. ft.
+							</option>
+						</select>
+					</div>	
+				</div>
+				
+				
+
                 <div class="experience-select">
                     <label><b>Select Experience</b></label>
                     <select id="experience">
+						<option value="none" selected disabled hidden> 
+							Select an Option 
+						</option> 
                         <option class="select-experience" value="light-experience">
                             Light Experience
                         </option>
@@ -146,18 +175,18 @@
 				</div>
 				
                 <div class="amount-interior" >
-                    <label><b>Amount of interior</b></label>
+                    <label><b>Indoor renderings</b></label>
                     <input type="number" value="0" id="interior" min="0"/>
 				</div>
 				
                 <div class="amount-exterior">
-                    <label><b>Amount of exterior</b></label>
+                    <label><b>Outdoor renderings</b></label>
                     <input type="number" value="0" id="exterior" min="0"/>
 
 				</div>
 				
                 <div class="button">
-                    <button onclick="calc();" type="button">Calculate</button>
+                    <button onclick="calc();" type="button">Check Estimated Price</button>
 				</div>
 
 				<div class="price">
@@ -190,6 +219,8 @@
 <!--precio script-->
 		<script src="prices.js"> </script>
 <!--fin precio script-->
+
+
 
 	</body>
 
