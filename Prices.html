@@ -144,15 +144,13 @@
 						
 						<input type="number" value="0" id="metros" min="0"/>
 						<select id="units">
-							<option value="none" selected disabled hidden> 
-								Units 
-							</option> 
-							<option class="select-model" value="m2">
-								M&sup2
-							</option>
 							<option class="select-model" value="sqft">
 								sq. ft.
 							</option>
+							<option class="select-model" value="m2">
+								M&sup2
+							</option>
+							
 						</select>
 					</div>	
 				</div>
@@ -186,7 +184,7 @@
 				</div>
 				
                 <div class="button">
-                    <button onclick="calc();" type="button">Check Estimated Price</button>
+                    <button onclick="computePriceFromForm();" type="button">Check Estimated Price</button>
 				</div>
 
 				<div class="price">
@@ -218,6 +216,7 @@
 
 <!--precio script-->
 		<script src="prices.js"> </script>
+		<script src="tests.js"> </script>
 <!--fin precio script-->
 
 
