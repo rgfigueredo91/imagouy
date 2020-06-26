@@ -125,8 +125,8 @@
 
 				<div class="model-select">
                     <label><b>Do you have a 3D Model?</b></label>
-                    <select id="model">
-						<option value="none" selected disabled hidden> 
+                    <select name="modelhas" id="model" required>
+						<option value="" selected disabled hidden> 
 							Select an Option 
 						</option> 
                         <option class="select-model" value="yes">
@@ -159,8 +159,8 @@
 
                 <div class="experience-select">
                     <label><b>Select Experience</b></label>
-                    <select id="experience">
-						<option value="none" selected disabled hidden> 
+                    <select id="experience" required>
+						<option value="" selected disabled hidden> 
 							Select an Option 
 						</option> 
                         <option class="select-experience" value="light-experience">
@@ -172,7 +172,7 @@
                     </select>
 				</div>
 				
-                <div class="amount-interior" >
+                <div class="amount-interior">
                     <label><b>Indoor renderings</b></label>
                     <input type="number" value="0" id="interior" min="0"/>
 				</div>
