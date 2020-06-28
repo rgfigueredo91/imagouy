@@ -27,7 +27,18 @@ for (let i = 0; i<portfolioItems.length; i++){
     })
 }
 
-
+function fade(portfolioItems) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            portfolioItems.style.display = 'none';
+        }
+        portfolioItems.style.opacity = op;
+        portfolioItems.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 50);
+}
 
 function next(){
     if(index==portfolioItems.length -1){

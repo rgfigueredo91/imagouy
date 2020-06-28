@@ -1,10 +1,13 @@
-const images = document.querySelectorAll('.img');
+const portfolio =  document.querySelectorAll(".img");
                     
-for (let i = 0; i<images.length; i++){
-    images[i].addEventListener("load", myFunction())
+for (let i = 0; i<portfolio.length; i++){
+    portfolio[i].addEventListener("load", myFunction())
+    function myFunction() {
+        
+        portfolio.forEach(el=>el.style.opacity="1");
+    }
     }
 
-function myFunction() {
-   images.forEach(el=>el.style.opacity="1");
-}
+
+    
     

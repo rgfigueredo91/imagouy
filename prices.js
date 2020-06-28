@@ -11,8 +11,10 @@ function computeModelPriceByMeter(area) {
 	//
 	// returns: int o float
 
-	if (0 <= area && area <= 50) {
-		return area;
+	if (0 <= area && area <= 20) {
+		return area * 2.0;
+	} else if (20 < area && area <= 50) {
+		return 40 + (area-20) * 1;
 	} else if (50 < area && area <= 100) {
 		return 50 + area * 0.5;
 	} else if (100 < area && area <= 1000) {

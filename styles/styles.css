@@ -152,7 +152,8 @@ body {
 	transition: .7s ease;}
 
 .img {
-	opacity: 0;}
+	opacity: 0;
+	transition: .5 ease-in;}
 
 #noselectgrid {
 	-webkit-touch-callout: none; /* iOS Safari */
@@ -741,16 +742,6 @@ body {
 
 /*lightbox*/
 
-#noselect {
-	-webkit-touch-callout: none; /* iOS Safari */
-	  -webkit-user-select: none; /* Safari */
-	   -khtml-user-select: none; /* Konqueror HTML */
-		 -moz-user-select: none; /* Old versions of Firefox */
-		  -ms-user-select: none; /* Internet Explorer/Edge */
-			  user-select: none; /* Non-prefixed version, currently
-									supported by Chrome, Edge, Opera and Firefox */
-  }
-
 
 .lightbox .lightbox-content .loadingif {
 	position: absolute;
@@ -777,8 +768,7 @@ body {
 	
 
 .lightbox.open{
-	display: flex;	
-
+	display: flex;
 }
 
 .lightbox .lightbox-img{
@@ -786,11 +776,13 @@ body {
 	height: auto;
 	padding: 40px 0;
 	cursor: pointer;
-	animation: lightbImage .5s ease;}
+	animation: lightbImage .5s ease;
+	}
 
 .lightbox .lightbox-content{
 	margin-top: 0%;
-	position: absolute;}
+	position: absolute;
+}
 
 @keyframes lightbImage {
 	0%{
@@ -837,7 +829,6 @@ body {
 
 .lightbox .lightbox-controls div{
 	opacity: 0;
-	
 	position: absolute;
 	height:180px;
 	width: 180px;
