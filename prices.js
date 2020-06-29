@@ -16,11 +16,11 @@ function computeModelPriceByMeter(area) {
 	} else if (20 < area && area <= 50) {
 		return 40 + (area-20) * 1;
 	} else if (50 < area && area <= 100) {
-		return 50 + area * 0.5;
+		return 60 + (area-40) * 1;
 	} else if (100 < area && area <= 1000) {
-		return 100 + area * 0.05;
+		return 110 + area * 0.1;
 	} else {
-		return 160;
+		return 220;
 	}
 }
 
