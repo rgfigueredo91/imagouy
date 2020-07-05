@@ -20,8 +20,6 @@
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="styles/prices.css">
 		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
- 		<script src="src/fullclip.js"></script>
  		
 	</head>
 
@@ -46,11 +44,11 @@
 
       <!-- Your customer chat code -->
       <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="108697060701498"
-  theme_color="#000000"
-  logged_in_greeting="Hi! How can we help you?"
-  logged_out_greeting="Hi! How can we help you?">
+			attribution=setup_tool
+			page_id="108697060701498"
+			theme_color="#000000"
+			logged_in_greeting="Hi! How can we help you?"
+			logged_out_greeting="Hi! How can we help you?">
       </div>
       
 <!--barra fija arriba-->
@@ -65,7 +63,7 @@
 					<li class="items"><a href="about.html" id="link-font">about</a></li>
 					<li class="items"><a href="360.html" id="link-font">360</a></li>
 					<li class="items"><a href="contact.html" id="link-font">contact</a></li>
-					<li class="items"><a href="Prices.html" id="link-font">prices</a></li>
+					<li class="items"><a href="prices.html" id="link-font">prices</a></li>
 				</ul>
 			</div>
 				<ul class="social-menu">
@@ -89,7 +87,7 @@
 						<li><a href="about.html">about</a></li>
 						<li><a href="360.html">360</a></li>
 						<li><a href="contact.html">contact</a></li>
-						<li><a href="Prices.html">prices</a></li>
+						<li><a href="prices.html">prices</a></li>
 						<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i class="fa fa-instagram"></i></a></li>
 						<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 						<li class="social-icon" id="github"><a href="https://github.com/rgfigueredo91" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -107,16 +105,27 @@
 
        
 			<p class="titles"><b>Light Experience</b></p>
+			<!--
 			<p2>La idea de esta experiencia es dejar libertad a los artistas 3d para diseñar la imagen. 
 			Teniendo un contacto reducido a una instancia de reunión inicial y una instancia de corrección del punto de vista previo al renderizado. 
-			Luego de esta etapa se renderiza, se postproduce y se envia la imagen final. Esto no implica en absoluto una perdida de calidad en la imagen obtenida. 
-			Simplemente agiliza el proceso de trabajo. 
-			</p2>
+			Luego de esta etapa se renderiza, se postproduce y se envia la imagen final. Esto no implica en absoluto una perdida de calidad en la imagen obtenida, 
+			simplemente agiliza el proceso de trabajo. </p2>-->
+
+			<p2>This experience will give freedoom to the 3d artist to design the image.
+			Reducing contact to an initial meeting and a camera viewpoint correction prior to rendering.
+			After this, the final image is rendered, post-produced and sent. This does not affect the quality of the work, 
+			it just speeds up the work process. </p2>
+			
 
 			<p  class="titles"><b>Full Experience</b></p>
+			<!--
 			<p2>La idea de esta experiencia se basa en un mayor vínculo entre el equipo y ustedes, generando instancias de correcciones, 
 				en las que es posible hacer cambios (texturas materiales, luces y equipamiento) sobre renders ya finalizados, 
-				teniendo un mayor control de la imagen.
+				teniendo un mayor control de la imagen. Si buscas saber con mas determinación como es este proceso de trabajo, contáctanos por cualquiera de los medios disponibles.
+			</p2>-->
+			<p2>This experience is based on a greater bond between the team and you, generating correction instances, in which it is possible to make changes 
+				(material textures, lights and equipment) on images already rendered, having more control of the image. 
+				If you want to know find out more about this workflow please contact us.
 			</p2>
 
             <form id="prices-form" >
@@ -124,7 +133,7 @@
 				
 
 				<div class="model-select">
-                    <label><b>Do you have a 3D Model?</b></label>
+                    <label><b>I already have a 3D model</b></label>
                     <select name="modelhas" id="model" required>
 						<option value="" selected disabled hidden> 
 							Select an Option
@@ -139,7 +148,7 @@
 				</div>
 
 				<div class="square-meters" >
-					<label><b>Project area</b></label>
+					<label><b>My project area</b></label>
 					<div>
 						
 						<input type="number" value="0" id="metros" min="0"/>
@@ -189,14 +198,18 @@
 
 				<div class="price">
                     <label></label>
-                    <input type="text" id="result" value="USD" onkeypress="return false;"/>
+                    <input type="text" id="result" value="Price" onkeypress="return false;"/>
 				</div>
 				
 				<div class=bottom>	
 					<div class="p3">
-						<p3>El precio es estimativo y variando según cantidad de imágenes, aplicandose un descuento de hasta un 25%. Si quieres saber con mas exactitud el precio 
-							para tu proyecto o buscas una experiencia mixta y mas personalizada para las distintas imágenes, contáctanos por privado y con gusto te aclararemos todas
-							las dudas.</p3>
+						<!--<p3>El precio es estimativo y puede variar en función de las complejidades del proyecto. 
+							Si quieres saber con mas exactitud el precio, buscas una experiencia mixta y mas personalizada para las distintas imágenes o 
+							visualizaciones de 360º, contáctanos por privado y con gusto te aclararemos todas
+							las dudas.</p3>-->
+							<p3>This is an estimated price and may vary depending on the project complexities. 
+								If you want to know the exact price, or you are looking for a mixed and more personalized 
+								experience for the different images or maybe 360º visualizations, contact us privately and we will answer all your questions.</p3>
 					</div>
 					<div class="p4">
 						<p4>*Si eres estudiante de cualquier Universidad de la República Oriental 
@@ -205,18 +218,28 @@
 						</p>
 					</div>
 				</div>
+				<div>
+					<div class="ip"></div>
+					<div class="city"></div>
+					<div class="country"></div>
+					<div class="region"></div>
+				</div>
 
+				
 				<div class="white"></div>
 			</form>
 
-
 			
+					
 
 		</div>
 
 <!--precio script-->
 		<script src="prices.js"> </script>
 		<script src="tests.js"> </script>
+
+
+		
 <!--fin precio script-->
 
 

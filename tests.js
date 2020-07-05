@@ -22,3 +22,4 @@ test_functions = [testComputeModelPrice, testComputeModelPriceSqFt, testComputeR
 for (let test_function of test_functions) {
     console.log(test_function());
 }
+

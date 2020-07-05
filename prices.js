@@ -1,10 +1,28 @@
-const MAX_RENDERING_COUNT_DISCOUNT_RATE = 0.25;
+const MAX_RENDERING_COUNT_DISCOUNT_RATE = 0.20;
 
-const FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 220;
-const FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 180;
+let FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 200;
+let FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 180;
 
-const LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 140;
-const LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 120;
+let LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 150;
+let LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 120;
+
+const USER_COUNTRY = "UY";
+
+fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
+
+	if (json.country === "UY"){
+		
+		console.log("Estoy en Uruguay");
+		
+	}
+	else {
+		LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 1000;
+		LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 1000;
+		FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 1000;
+		FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 1000;
+		console.log("No estoy en Uruguay");
+	}
+});
 
 function computeModelPriceByMeter(area) {
 	// area: int (in square meters)
@@ -18,9 +36,11 @@ function computeModelPriceByMeter(area) {
 	} else if (50 < area && area <= 100) {
 		return 60 + (area-40) * 1;
 	} else if (100 < area && area <= 1000) {
-		return 110 + area * 0.1;
+		return 115 + area * 0.05;
+	} else if (1000 < area && area <= 1500) {
+		return 100 + area * 0.07;
 	} else {
-		return 220;
+		return 210;
 	}
 }
 
@@ -65,7 +85,9 @@ function computePrice(userAlreadyHasAModel, modelAreaUnit, modelArea, isFullExpe
 	// indoorRenderingCount: int
 	// outdoorRenderingCount: int
 	//
+
 	// returns: int o float
+
 
 	const modelPrice = userAlreadyHasAModel ? 0 : computeModelPrice(modelAreaUnit, modelArea);
 	const renderingDiscountedPrice = computeRenderingCountDiscountedPrice(isFullExperience, indoorRenderingCount, outdoorRenderingCount);
@@ -82,6 +104,10 @@ selectElement.addEventListener('change', event => {
 	document.getElementById('units').disabled = selectElement.value === "yes";
 });
 
+
+
+
+
 function computePriceFromForm() {
 	const userAlreadyHasAModel = document.getElementById('model').value === "yes";
 	const modelAreaUnit = document.getElementById('units').value;
@@ -90,5 +116,5 @@ function computePriceFromForm() {
 	const indoorRenderingCount = Math.max(parseInt(document.getElementById('interior').value), 0);
 	const outdoorRenderingCount = Math.max(parseInt(document.getElementById('exterior').value), 0);
 
-	document.getElementById('result').value = Math.ceil(computePrice(userAlreadyHasAModel, modelAreaUnit, modelArea, experienceType, indoorRenderingCount, outdoorRenderingCount)) + ' USD';
+	document.getElementById('result').value = Math.ceil(computePrice(userAlreadyHasAModel, modelAreaUnit, modelArea, experienceType, indoorRenderingCount, outdoorRenderingCount) * 0.85) + ' $ - ' + Math.ceil(computePrice(userAlreadyHasAModel, modelAreaUnit, modelArea, experienceType, indoorRenderingCount, outdoorRenderingCount) * 1.23) + ' $';
 }

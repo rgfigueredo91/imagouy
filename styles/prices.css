@@ -284,9 +284,12 @@ margin-bottom: 20px;}
 	font-size: 14px;}
 
 .p4 {
+	border-radius: 5px;
 	margin-top: 25px;
 	text-align: center;
-	font-size: 12px;}
+	background-color: rgb(164, 164, 164);
+	color: white;
+	font-size: 15px;}
 
 .bottom {
 	margin-top: 30px;
@@ -622,7 +625,7 @@ button:hover {
 .p4 {	
 	margin-top: 25px;
 	text-align: center;
-	font-size: 12px;}
+	font-size: 15px;}
 
 .bottom {
 	margin-top: 30px;
