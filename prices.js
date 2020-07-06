@@ -20,7 +20,7 @@ fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(respons
 		LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 1000;
 		FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 1000;
 		FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 1000;
-		console.log("No estoy en Uruguay");
+		console.log(json.country);
 	}
 });
 
