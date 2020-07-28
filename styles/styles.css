@@ -149,12 +149,22 @@ body {
 	object-fit: cover;
 	cursor: pointer;
 	filter: grayscale(1) brightness(1.05);
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;;
 }
 	
 
 .img {
 	opacity: 0;
-	transition: 1s ease-in;}
+	transition: 1s ease-in;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;}
 
 #noselectgrid {
 	-webkit-touch-callout: none; /* iOS Safari */
@@ -222,6 +232,8 @@ body {
 	}
 	.lightbox .lightbox-content .loadingif {
 		position: absolute;
+		width: 25px;
+		height: 25px;
 		left: 50%;
 		top: 50%;
 		z-index: -1;
@@ -703,10 +715,20 @@ body {
 
 .img img{
 	filter: grayscale(0);
-	margin-top: 5px;}
+	margin-top: 5px;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;}
 
 .img {
-	opacity: 1;}
+	opacity: 1;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;}
 
 #instagram:hover i{	
 	transform: scale(1);
@@ -739,8 +761,8 @@ body {
 
 .lightbox .lightbox-content .loadingif {
 	position: absolute;
-	height: 20px;
-	width: 20px;
+	height: 12px;
+	width: 12px;
 	left: 45%;
 	top: 45%;
 	z-index: -1;
@@ -771,6 +793,11 @@ body {
 	padding: 40px 0;
 	cursor: pointer;
 	animation: lightbImage .5s ease;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 	}
 
 .lightbox .lightbox-content{
