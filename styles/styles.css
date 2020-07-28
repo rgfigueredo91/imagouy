@@ -149,11 +149,12 @@ body {
 	object-fit: cover;
 	cursor: pointer;
 	filter: grayscale(1) brightness(1.05);
-	transition: .7s ease;}
+}
+	
 
 .img {
 	opacity: 0;
-	transition: .5 ease-in;}
+	transition: 1s ease-in;}
 
 #noselectgrid {
 	-webkit-touch-callout: none; /* iOS Safari */
