@@ -776,8 +776,8 @@ body {
 
 .lightbox .lightbox-content .loadingif {
 	position: absolute;
-	height: 12px;
-	width: 12px;
+	height: 16px;
+	width: 16px;
 	left: 45%;
 	top: 45%;
 	z-index: -1;
