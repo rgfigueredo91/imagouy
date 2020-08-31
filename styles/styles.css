@@ -83,13 +83,13 @@ body {
 .img .blurry-load{
 	filter: blur(7px);
 	transition: all 1s;
-	filter: grayscale(1);
+	filter: grayscale(0);
 }
 
 .img .noblur{
 	cursor: pointer;
 	transition: ease-in .3s;
-	filter: grayscale(1);
+	filter: grayscale(0);
 }
 
 .img .noblur:hover{
