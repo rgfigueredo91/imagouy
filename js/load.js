@@ -24,7 +24,7 @@ for (i=0; i < image.length; i++) {
 };
 setTimeout(function(){
     bigImage.src = imagenes;
-}, 5500);
+}, 0);
 }
 
 

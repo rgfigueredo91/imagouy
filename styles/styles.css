@@ -184,10 +184,6 @@ body {
 
 /*--parametros generales del cuerpo de imagenes--*/
 
-.main {
-	position: relative;
-	height: 100%;
-	width: 100%;	}
 
 .hes-gallery {
 	
@@ -527,7 +523,7 @@ body {
 .hes-gallery {
 	margin-top: 85px;
 	display: block;
-	width: 100%;
+	width: 96%;
 }
 .img img{
 	margin-top: 5px;
@@ -567,6 +563,7 @@ body {
 	margin-top: 30px;
 	margin-left: 25%;
 	width: 50%;
+	opacity: .5;
 }
 
 }
