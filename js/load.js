@@ -28,4 +28,10 @@ setTimeout(function(){
 }
 
 
+let prueba = getElementsByClassName("noblur");
+console.log(prueba);
+
+
+
+
 
