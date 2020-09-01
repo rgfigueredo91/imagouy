@@ -14,12 +14,15 @@
 	<meta property="og:description" content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay." />
 	<meta property="og:url" content="https://imagouy.com" />
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/swipebox.css">
 	<link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="favicon.png" />
 
-
+	
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script src="js/jquery.swipebox.min.js"></script>
 	<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
 </head>
 <body>
@@ -122,176 +125,262 @@
 	<!--seccion imagenes-->
 			<div class="hes-gallery" id="noselectgrid">
 				<!-- imagenes posta -->
-				<div class="img" id="imagen1" data-src="img/img window/1x1Sf.jpg"><!--1x1 small-->
-					<img class="lazy" src="img/lowquality/1x1Sflow.jpg" data-src="img/common/1x1Sf.jpg" alt="">
+				<div class="img" id="imagen1" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1Sf.jpg" class="swipebox">
+						<img class="lazy" src="img/lowquality/1x1Sflow.jpg" data-src="img/common/1x1Sf.jpg" alt="">
+					</a>
 				</div>
 
-				<div class="img" id="imagen2" data-src="img/img window/2x1Vf.jpg"><!--2x1 vertical-->	
-					<img  class="lazy" src="img/lowquality/2x1Vflow.jpg" data-src="img/common/2x1Vf.jpg" alt=""/>
+				<div class="img" id="imagen2" data-src=""><!--2x1 vertical-->	
+					<a href="img/img window/2x1Vf.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Vflow.jpg" data-src="img/common/2x1Vf.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen3" data-src="img/img window/2x1Hl.jpg"><!--2x1 horizontal-->	
-					<img  class="lazy" src="img/lowquality/2x1Hllow.jpg" data-src="img/common/2x1Hl.jpg" alt=""/>
+				<div class="img" id="imagen3" data-src=""><!--2x1 horizontal-->	
+					<a href="img/img window/2x1Hl.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hllow.jpg" data-src="img/common/2x1Hl.jpg" alt=""/>
+					</a>
 				</div>
 
 				<div class="img" id="imagen4" data-src="img/img window/2x1Vh.jpg"><!--2x1 vertical-->
-					<img  class="lazy" src="img/lowquality/2x1Vhlow.jpg" data-src="img/common/2x1Vh.jpg" alt=""/>
+					<a href="img/img window/2x1Vh.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Vhlow.jpg" data-src="img/common/2x1Vh.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen5" data-src="img/img window/1x1Sd.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/1x1Sdlow.jpg" data-src="img/common/1x1Sd.jpg" alt=""/>
+				<div class="img" id="imagen5" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1Sd.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Sdlow.jpg" data-src="img/common/1x1Sd.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen6" data-src="img/img window/1x1Bh.jpg"><!--1x1 big-->
-					<img  class="lazy" src="img/lowquality/1x1Bhlow.jpg" data-src="img/common/1x1Bh.jpg"  alt=""/>
+				<div class="img" id="imagen6" data-src=""><!--1x1 big-->
+					<a href="img/img window/1x1Bh.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Bhlow.jpg" data-src="img/common/1x1Bh.jpg"  alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen7" data-src="img/img window/2x1He.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/2x1Helow.jpg" data-src="img/common/2x1He.jpg" alt=""/>
+				<div class="img" id="imagen7" data-src=""><!--1x1 small-->
+					<a href="img/img window/2x1He.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Helow.jpg" data-src="img/common/2x1He.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen8" data-src="img/img window/1x1Bd.jpg"><!--1x1 big-->
-					<img  class="lazy" src="img/lowquality/1x1Bdlow.jpg" data-src="img/common/1x1Bd.jpg" alt=""/>
+				<div class="img" id="imagen8" data-src=""><!--1x1 big-->
+					<a href="img/img window/1x1Bd.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Bdlow.jpg" data-src="img/common/1x1Bd.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen11" data-src="img/img window/1x1Sh.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/1x1Shlow.jpg" data-src="img/common/1x1Sh.jpg" alt=""/>
+				<div class="img" id="imagen11" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1Sh.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Shlow.jpg" data-src="img/common/1x1Sh.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen10" data-src="img/img window/2x1Hb.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Hblow.jpg" data-src="img/common/2x1Hb.jpg" alt=""/>
+				<div class="img" id="imagen10" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Hb.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hblow.jpg" data-src="img/common/2x1Hb.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen9" data-src="img/img window/1x1Bc.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/1x1Bclow.jpg" data-src="img/common/1x1Bc.jpg" alt=""/>
+				<div class="img" id="imagen9" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1Bc.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Bclow.jpg" data-src="img/common/1x1Bc.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen15" data-src="img/img window/2x1Va.jpg"><!--2x1 vertical-->
-					<img  class="lazy" src="img/lowquality/2x1Valow.jpg" data-src="img/common/2x1Va.jpg" alt=""/>
+				<div class="img" id="imagen15" data-src=""><!--2x1 vertical-->
+					<a href="img/img window/2x1Va.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Valow.jpg" data-src="img/common/2x1Va.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen18" data-src="img/img window/1x1Sj.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/1x1Sjlow.jpg" data-src="img/common/1x1Sj.jpg" alt=""/>
+				<div class="img" id="imagen18" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1Sj.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Sjlow.jpg" data-src="img/common/1x1Sj.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen14" data-src="img/img window/2x1Hc.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Hclow.jpg" data-src="img/common/2x1Hc.jpg" alt=""/>
+				<div class="img" id="imagen14" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Hc.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hclow.jpg" data-src="img/common/2x1Hc.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen12" data-src="img/img window/2x1Vi.jpg"><!--2x1 vertical-->
-					<img  class="lazy" src="img/lowquality/2x1Vilow.jpg" data-src="img/common/2x1Vi.jpg" alt=""/>
+				<div class="img" id="imagen12" data-src=""><!--2x1 vertical-->
+					<a href="img/img window/2x1Vi.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Vilow.jpg" data-src="img/common/2x1Vi.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen16" data-src="img/img window/2x1Vg.jpg"><!--1x1 big-->
-					<img  class="lazy" src="img/lowquality/2x1Vglow.jpg" data-src="img/common/2x1Vg.jpg" alt=""/>
+				<div class="img" id="imagen16" data-src=""><!--1x1 big-->
+					<a href="img/img window/2x1Vg.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Vglow.jpg" data-src="img/common/2x1Vg.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen17" data-src="img/img window/1x1Bf.jpg"><!--1x1 big-->
-					<img  class="lazy" src="img/lowquality/1x1Bflow.jpg" data-src="img/common/1x1Bf.jpg" alt=""/>
+				<div class="img" id="imagen17" data-src=""><!--1x1 big-->
+					<a href="img/img window/1x1Bf.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Bflow.jpg" data-src="img/common/1x1Bf.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen19" data-src="img/img window/1x1Se.jpg"><!--1x1 small-->	
-					<img  class="lazy" src="img/lowquality/1x1Selow.jpg" data-src="img/common/1x1Se.jpg" alt=""/>
+				<div class="img" id="imagen19" data-src=""><!--1x1 small-->	
+					<a href="img/img window/1x1Se.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Selow.jpg" data-src="img/common/1x1Se.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen37" data-src="img/img window/1x1Bb.jpg"><!--1x1 small-->	
-					<img  class="lazy" src="img/lowquality/1x1Bblow.jpg" data-src="img/common/1x1Bb.jpg" alt=""/>
+				<div class="img" id="imagen37" data-src=""><!--1x1 small-->	
+					<a href="img/img window/1x1Bb.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Bblow.jpg" data-src="img/common/1x1Bb.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen20" data-src="img/img window/2x1Hz.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Hzlow.jpg" data-src="img/common/2x1Hz.jpg" alt=""/>
+				<div class="img" id="imagen20" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Hz.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hzlow.jpg" data-src="img/common/2x1Hz.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen21" data-src="img/img window/2x1Hk.jpg"><!--1x1 small-->	
-					<img  class="lazy" src="img/lowquality/2x1Hklow.jpg" data-src="img/common/2x1Hk.jpg" alt=""/>
+				<div class="img" id="imagen21" data-src=""><!--1x1 small-->	
+					<a href="img/img window/2x1Hk.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hklow.jpg" data-src="img/common/2x1Hk.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen22" data-src="img/img window/2x1Vb.jpg"><!--2x1 vertical-->
-					<img  class="lazy" src="img/lowquality/2x1Vblow.jpg" data-src="img/common/2x1Hk.jpg" alt=""/>
+				<div class="img" id="imagen22" data-src=""><!--2x1 vertical-->
+					<a href="img/img window/2x1Vb.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Vblow.jpg" data-src="img/common/2x1Vb.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen23" data-src="img/img window/2x1Hd.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Hdlow.jpg" data-src="img/common/2x1Hd.jpg" alt=""/>
+				<div class="img" id="imagen23" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Hd.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hdlow.jpg" data-src="img/common/2x1Hd.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen24" data-src="img/img window/2x1Vd.jpg"><!--2x1 vertical-->
-					<img  class="lazy" src="img/lowquality/2x1Vdlow.jpg" data-src="img/common/2x1Vd.jpg" alt=""/>
+				<div class="img" id="imagen24" data-src=""><!--2x1 vertical-->
+					<a href="img/img window/2x1Vd.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Vdlow.jpg" data-src="img/common/2x1Vd.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen39" data-src="img/img window/1x1Sm.jpg"><!--1x1 small-->	
-					<img  class="lazy" src="img/lowquality/1x1Smlow.jpg" data-src="img/common/1x1Sm.jpg" alt=""/>
+				<div class="img" id="imagen39" data-src=""><!--1x1 small-->	
+					<a href="img/img window/1x1Sm.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Smlow.jpg" data-src="img/common/1x1Sm.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen27" data-src="img/img window/1x1Ba.jpg"><!--1x1 big-->
-					<img  class="lazy" src="img/lowquality/1x1Balow.jpg" data-src="img/common/1x1Ba.jpg" alt=""/>
+				<div class="img" id="imagen27" data-src=""><!--1x1 big-->
+					<a href="img/img window/1x1Ba.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Balow.jpg" data-src="img/common/1x1Ba.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen26" data-src="img/img window/1x1Bg.jpg"><!--1x1 big-->
-					<img  class="lazy" src="img/lowquality/1x1Bglow.jpg" data-src="img/common/1x1Bg.jpg" alt=""/>
+				<div class="img" id="imagen26" data-src=""><!--1x1 big-->
+					<a href="img/img window/1x1Bg.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Bglow.jpg" data-src="img/common/1x1Bg.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen28" data-src="img/img window/1x1So.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/1x1Solow.jpg"  data-src="img/common/1x1So.jpg" alt=""/>
+				<div class="img" id="imagen28" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1So.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Solow.jpg"  data-src="img/common/1x1So.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen28b" data-src="img/img window/2x1Hj.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/2x1Hjlow.jpg" data-src="img/common/2x1Hj.jpg" alt=""/>
+				<div class="img" id="imagen28b" data-src=""><!--1x1 small-->
+					<a href="img/img window/2x1Hj.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hjlow.jpg" data-src="img/common/2x1Hj.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen29" data-src="img/img window/2x1Ha.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Halow.jpg" data-src="img/common/2x1Ha.jpg" alt=""/>
+				<div class="img" id="imagen29" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Ha.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Halow.jpg" data-src="img/common/2x1Ha.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen30" data-src="img/img window/1x1Sa.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/1x1Salow.jpg" data-src="img/common/1x1Sa.jpg" alt=""/>
+				<div class="img" id="imagen30" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1Sa.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Salow.jpg" data-src="img/common/1x1Sa.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen31" data-src="img/img window/2x1Vc.jpg"><!--2x1 vertical-->
+				<div class="img" id="imagen31" data-src=""><!--2x1 vertical-->
+					<a href="img/img window/2x1Vc.jpgg" class="swipebox">
 					<img  class="lazy" src="img/lowquality/2x1Vclow.jpg" data-src="img/common/2x1Vc.jpg" alt=""/>
+				</a>
 				</div>
 
-				<div class="img" id="imagen36" data-src="img/img window/2x1Hh.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Hhlow.jpg" data-src="img/common/2x1Hh.jpg" alt=""/>
+				<div class="img" id="imagen36" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Hh.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hhlow.jpg" data-src="img/common/2x1Hh.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen33" data-src="img/img window/2x1Hg.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/2x1Hglow.jpg" data-src="img/common/2x1Hg.jpg" alt=""/>
+				<div class="img" id="imagen33" data-src=""><!--1x1 small-->
+					<a href="img/img window/2x1Hg.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hglow.jpg" data-src="img/common/2x1Hg.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen32" data-src="img/img window/1x1Sg.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/1x1Sglow.jpg" data-src="img/common/1x1Sg.jpg" alt=""/>
+				<div class="img" id="imagen32" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/1x1Sg.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Sglow.jpg" data-src="img/common/1x1Sg.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen35" data-src="img/img window/2x1Hx.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Hxlow.jpg" data-src="img/common/2x1Hx.jpg" alt=""/>
+				<div class="img" id="imagen35" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Hx.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hxlow.jpg" data-src="img/common/2x1Hx.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen34" data-src="img/img window/2x1Hs.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Hslow.jpg" data-src="img/common/2x1Hs.jpg" alt=""/>
+				<div class="img" id="imagen34" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Hs.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hslow.jpg" data-src="img/common/2x1Hs.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen25" data-src="img/img window/2x1Hf.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/2x1Hflow.jpg" data-src="img/common/2x1Hf.jpg" alt=""/>
+				<div class="img" id="imagen25" data-src=""><!--1x1 small-->
+					<a href="img/img window/2x1Hf.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hflow.jpg" data-src="img/common/2x1Hf.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen38" data-src="img/img window/2x1Hn.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/2x1Hnlow.jpg" data-src="img/common/2x1Hn.jpg" alt=""/>
+				<div class="img" id="imagen38" data-src=""><!--1x1 small-->
+					<a href="img/img window/2x1Hn.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hnlow.jpg" data-src="img/common/2x1Hn.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen13" data-src="img/img window/1x1Sb.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/1x1Sblow.jpg" data-src="img/common/1x1Sb.jpg" alt=""/>
+				<div class="img" id="imagen13" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1Sb.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Sblow.jpg" data-src="img/common/1x1Sb.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen40" data-src="img/img window/1x1Sl.jpg"><!--1x1 small-->
-					<img  class="lazy" src="img/lowquality/1x1Sllow.jpg" data-src="img/common/1x1Sl.jpg" alt=""/>
+				<div class="img" id="imagen40" data-src=""><!--1x1 small-->
+					<a href="img/img window/1x1Sl.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Sllow.jpg" data-src="img/common/1x1Sl.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen41" data-src="img/img window/1x1Be.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/1x1Below.jpg" data-src="img/common/1x1Be.jpg" alt=""/>
+				<div class="img" id="imagen41" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/1x1Be.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/1x1Below.jpg" data-src="img/common/1x1Be.jpg" alt=""/>
+					</a>
 				</div>
 
-				<div class="img" id="imagen42" data-src="img/img window/2x1Hi.jpg"><!--2x1 horizontal-->
-					<img  class="lazy" src="img/lowquality/2x1Hilow.jpg" data-src="img/common/2x1Hi.jpg" data-src="img/common/2x1Hi.jpg" alt=""/>
+				<div class="img" id="imagen42" data-src=""><!--2x1 horizontal-->
+					<a href="img/img window/2x1Hi.jpg" class="swipebox">
+						<img  class="lazy" src="img/lowquality/2x1Hilow.jpg" data-src="img/common/2x1Hi.jpg" data-src="img/common/2x1Hi.jpg" alt=""/>
+					</a>
 				</div>	
 	</div>
 <!--fin seccion imagenes-->
@@ -303,9 +392,17 @@
 
 	<script src="js/alert.js"></script>
 	<script src="js/navbarmove.js"></script><!--navbar move-->
-	<script src="js/lightgallery.min.js"></script>
-	<script src="js/lg-hash.min.js"></script>
-	<script src="js/lg-share.min.js"></script>
+	
+	<script type="text/javascript">
+		;( function( $ ) {
+		
+			$( '.swipebox' ).swipebox();
+		
+		} )( jQuery );
+		</script>
+	<!--<script src="js/lightgallery.min.js"></script>-->
+	<!--<script src="js/lg-hash.min.js"></script>
+	<script src="js/lg-share.min.js"></script>-->
 	<script src="js/lg-thumbnail.min.js"></script>
 	<script>lightGallery(document.getElementById('noselectgrid'));</script>
 	</body>
