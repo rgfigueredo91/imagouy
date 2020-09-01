@@ -1,3 +1,5 @@
+
+/*
 var image = document.getElementsByClassName("blurry-load");
 const array = ["img/common/1x1Sf.jpg", "img/common/2x1Vf.jpg", "img/common/2x1Hl.jpg", 
 "img/common/2x1Vh.jpg", "img/common/1x1Sd.jpg", "img/common/1x1Bh.jpg", 
@@ -26,10 +28,7 @@ setTimeout(function(){
     bigImage.src = imagenes;
 }, 0);
 }
-
-
-let prueba = getElementsByClassName("noblur");
-console.log(prueba);
+*/
 
 
 
