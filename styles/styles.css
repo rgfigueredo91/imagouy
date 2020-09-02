@@ -399,6 +399,26 @@ body {
 	
 /*--fin ubicacion de las imagenes--*/
 
+
+footer {
+	height: 100px;
+}
+
+footer hr {
+	margin-top: 50px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+footer p {
+	font-size: 12px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+
+
+
 /*--tablet responsive--*/
 @media only screen and (max-width: 1200px) and (min-width: 700px)  {
 
