@@ -1,42 +1,112 @@
 
 /*--parametros generales about--*/
 
-.main {
+
+
+
+.autores {
 	position: relative;
-	height: 100%;
-	width: 100%;	
+	margin-top: 150px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.paragraph1 {
-	margin-top: 250px;
-	width: 500px;
-}
-.imagenesautores {
-	display: flex;
-	justify-content: center;
-}
-.autores {
-	margin-top: 100px;
-	display: flex;
-	flex-direction: row;
-	width: 500px;
+	width: 100%;
 	justify-content: space-between;
 }
 .rodrigo {
-	margin-right: 20px;
-	cursor: pointer;
+	margin-top: 1vh;
+	position: relative;
+	display: flex;
+	height: auto;
+	background-color: #D8D8D8
+
 }
-.andres {
-	cursor: pointer;
+
+.insidebox {
+	position: relative;
+	display: flex;
+	flex-direction: column;
 }
-.main p{
-	letter-spacing: 1px;
-	font-size: 13px;
-	width: 100%;
+
+.icons{
+	margin-top: 40px;
+	margin-left: 10.5%;
+}
+
+
+.icons i{
+	margin-left: 25px;
+	color: black
+}
+
+.icons i:hover {
+	transform: scale(1.2);
+}
+
+.rodrigo p{
+	width:40%;
+	position: relative;
+	margin-top: 30px;
+	margin-left: 12%;
+	color: black;
+	font-size: 15px;
+	font-weight: .2px;
 	text-align: justify;
+}
+
+.rodrigo h2{
+	letter-spacing: 4px;
+	margin-left: 12%;
+	margin-top: 80px;
+
+	width:80vh;
+	color:black;
+	font-weight: 1px;
+	text-align: justify;
+}
+
+.rodrigo img{
+
+	margin: 10px;
+	width: 25%;
+	height: 25%;
+}
+
+
+.andres {
+	margin-top: 1vh;
+	position: relative;
+	display: flex;
+	height: auto;
+	background-color: #D8D8D8
+
+}
+
+.andres p{
+	font-size: 15px;
+	width:40%;
+	position: relative;
+	margin-top: 30px;
+	margin-left: 12%;
+	color: black;
+	font-weight: 1px;
+	text-align: justify;
+}
+
+.andres h2{
+	
+	letter-spacing: 4px;
+	margin-top: 50px;
+	margin-left: 12%;
+	width:80vh;
+	color: black;
+	font-weight: 1px;
+	text-align: justify;
+}
+
+.andres img{
+	margin: 10px;
+	width: 25%;
+	height: 25%;
 }
 
 /*--tablet responsive--*/
@@ -49,39 +119,3 @@
 
 @media only screen and (max-width: 850px) {
 
-.main {
-	position: relative;
-	height: 100%;
-	width: 100%;	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.autores {
-	margin-left: 20px;
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	width: auto;
-	height: auto;
-	justify-content: center;
-}
-.main p{
-	letter-spacing: 1px;
-	font-size: 13px;
-	width: 100%;
-	text-align: justify;
-}
-.paragraph1 {
-	margin-top: 150px;
-	width: 90%;
-}
-.rodrigo{
-	margin-bottom: 50px;
-	width: 200px;
-}
-.andres{
-	width: 200px;
-}
-}
