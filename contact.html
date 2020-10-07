@@ -142,8 +142,15 @@
 	</label>
 </section>
 
+
+
+
 				<div class="main">
-					<form action="https://formspree.io/imago.rendering.studio@gmail.com" method="POST" enctype="multipart/form-data">
+					<form
+							action="https://formspree.io/f/imago.rendering.studio@gmail.com"
+							method="POST"
+							enctype="multipart/form-data"
+>
 						<div>	
 							<label class="label1">
 							<input type="name" class="name" name="name" placeholder="name" required>
@@ -159,6 +166,8 @@
 							<input type="email" class="email" name="_replyto" placeholder="e-mail" required>
 							</label>
 						</div>
+
+						
 						<div>
 							<label class="label1">
 							<input type="text" class="subject" name="subject" placeholder="subject" required>
@@ -171,6 +180,14 @@
 						</div>
 						<div class="status">
 						</div>
+						
+						<div class="file">
+							<label class="label2">
+							Your file:
+							<div class="inputFile"><input type="file" name="upload"></div>
+						  	</label>
+						</div>
+
 						<button type="submit" class="submit">
 						contact us
 						</button>
@@ -178,6 +195,11 @@
 
 
 		<script src="js/alert.js"></script>
+		<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+		<script>
+			window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+			formbutton("create", {action: "https://formspree.io/f/imago.rendering.studio@gmail.com"})
+		</script>
 		<script src="js/navbarmove.js"></script><!--navbar move-->
 	</body>
 </html>
