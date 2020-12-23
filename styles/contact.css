@@ -46,53 +46,9 @@
 }
 /*--tablet responsive--*/
 
-@media only screen and (max-width: 1200px) and (min-width: 700px)  {
 
-.submit {
-	width: 500px;
-	cursor: pointer;
-	margin-top: 20px;
-	height: 40px;
-	border: none;
-	background-color: black;
-	color: white;
-	transition: .6 ease-in-out
-}
-.submit:hover {
-	background: white
-	color: black;
-	transition: .6 ease-in-out
-}
-.main {
-	margin-top: 250px;
-	height: 100%;
-	width: 100%;	
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
-.label1, input, textarea {
-	min-width: 500px;
-	
-	text-align: center;
-	font-size: 15px;
-	width: 500px;
-	line-height: 40px;
-	margin-top: 20px;
-}
-.status {
-	color: red;
-	text-align: center;
-	font-size: 15px;
-}
-
-.inputFile {
-	margin-left: 0%;
-}
-}
 /*--mobile responsive--*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
 
 .main {
 	margin-top: 150px;
