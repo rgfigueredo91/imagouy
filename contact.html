@@ -229,6 +229,17 @@ firebase.initializeApp(firebaseConfig);
 
 
 <script>
+	let jwtClaimSet =
+   {
+ "iss": "firebase-adminsdk-kxx5h@fir-30c9e.iam.gserviceaccount.com",
+ "scope": "https://www.googleapis.com/auth/userinfo.email",  
+ "aud": "https://www.googleapis.com/oauth2/v4/token",
+ "exp": expDate,
+ "iat": iatDate 
+   };
+
+	
+	
 	var files = [];
 	document.getElementById("files").addEventListener("change", function(e) {
 	  files = e.target.files;
@@ -287,6 +298,8 @@ firebase.initializeApp(firebaseConfig);
 		  console.log("error encountered");
 		});
 	}
+	
+	
 	</script>
 	</body>
 </html>
