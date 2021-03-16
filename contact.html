@@ -24,6 +24,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 		<script src="js/contact.js"></script>
 		
+		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178424914-1"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -178,7 +179,18 @@
 						contact us
 						</button>
 					</form>
-				<iframe src="https://script.google.com/macros/s/AKfycbz1THJjlVi1IH1m15ksuCAalXnx7FT25v8_RzfZyg7BA_mLnSg/exec" width="600" height="600"></iframe>
+
+
+					<div>
+						Upload Files<br />
+						<input type="file" id="files" multiple /><br /><br />
+						<button id="send">Upload</button>
+						<p id="uploading"></p>
+						<progress value="0" max="100" id="progress"></progress>
+						</div>
+						
+			
+				
 				</div>
 			
 					
@@ -192,5 +204,100 @@
 
 		<script src="js/alert.js"></script>
 		<script src="js/navbarmove.js"></script><!--navbar move-->
+		
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB-_3cJwipSHk92LPruNvEPd5ZXrNgAdHE",
+    authDomain: "imago-rendering-studio.firebaseapp.com",
+    projectId: "imago-rendering-studio",
+    storageBucket: "imago-rendering-studio.appspot.com",
+    messagingSenderId: "1014080498693",
+    appId: "1:1014080498693:web:167d2e1bde1d8998ea006c",
+    measurementId: "G-EGER1EWKPX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  // Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+  apiKey: 'AIzaSyB-_3cJwipSHk92LPruNvEPd5ZXrNgAdHE',
+  authDomain: 'imago-rendering-studio.firebaseapp.com',
+  projectId: 'imago-rendering-studio'
+});
+
+var db = firebase.firestore();
+</script>
+
+<script>
+	var files = [];
+	document.getElementById("files").addEventListener("change", function(e) {
+	  files = e.target.files;
+	  for (let i = 0; i < files.length; i++) {
+		console.log(files[i]);
+	  }
+	});
+	
+	document.getElementById("send").addEventListener("click", function() {
+	  //checks if files are selected
+	  if (files.length != 0) {
+		//Loops through all the selected files
+		for (let i = 0; i < files.length; i++) {
+		  //create a storage reference
+		  var storage = firebase.storage().ref(files[i].name);
+	
+		  //upload file
+		  var upload = storage.put(files[i]);
+	
+		  //update progress bar
+		  upload.on(
+			"state_changed",
+			function progress(snapshot) {
+			  var percentage =
+				(snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+			  document.getElementById("progress").value = percentage;
+			},
+	
+			function error() {
+			  alert("error uploading file");
+			},
+	
+			function complete() {
+			  document.getElementById(
+				"uploading"
+			  ).innerHTML += `${files[i].name} upoaded <br />`;
+			}
+		  );
+		}
+	  } else {
+		alert("No file chosen");
+	  }
+	});
+	
+	function getFileUrl(filename) {
+	  //create a storage reference
+	  var storage = firebase.storage().ref(filename);
+	
+	  //get file url
+	  storage
+		.getDownloadURL()
+		.then(function(url) {
+		  console.log(url);
+		})
+		.catch(function(error) {
+		  console.log("error encountered");
+		});
+	}
+	</script>
 	</body>
 </html>
