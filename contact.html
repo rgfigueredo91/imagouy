@@ -22,7 +22,10 @@
 		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-		<script src="js/contact.js"></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+	
+		
+		
 		
 		
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178424914-1"></script>
@@ -165,11 +168,23 @@
 							<input type="text" class="subject" name="subject" placeholder="subject" required>
 							</label>
 						</div>
+						<div class="uploads">
+							<br />
+							<input type="file" id="files" multiple class="input-file">
+							<br /><br />
+							<button class="send-button" id="send">Click here to Upload the file</button>
+							<p id="uploading"></p>
+	
+							
+							<progress value="0" max="100" id="progress"></progress>
+						</div>
+
 						<div>
 							<label class="label1">
 							<textarea class="message" name="textarea" placeholder="write your message" required></textarea>
 							</label>
 						</div>
+
 					
 						
 						
@@ -181,17 +196,7 @@
 					</form>
 
 
-					<div>
-						Upload Files<br />
-						<input type="file" id="files" multiple /><br /><br />
-						<button id="send">Upload</button>
-						<p id="uploading"></p>
-						<progress value="0" max="100" id="progress"></progress>
-						</div>
-						
 			
-				
-				</div>
 			
 					
 
@@ -204,27 +209,16 @@
 
 		<script src="js/alert.js"></script>
 		<script src="js/navbarmove.js"></script><!--navbar move-->
-		
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script>
+		<!-- TODO: Add SDKs for Firebase products that you want to use -->
+		<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-storage.js"></script>
+		<script src="js/contact.js"></script>
+
 
 <script>
 // Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: "AIzaSyB-_3cJwipSHk92LPruNvEPd5ZXrNgAdHE",
-  authDomain: "imago-rendering-studio.firebaseapp.com",
-  databaseURL: "https://imago-rendering-studio-default-rtdb.firebaseio.com/",
-  projectId: "imago-rendering-studio",
-  storageBucket: "imago-rendering-studio.appspot.com",
-  messagingSenderId: "1014080498693",
-  appId: "1:1014080498693:web:167d2e1bde1d8998ea006c",
-  measurementId: "G-EGER1EWKPX"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+
 </script>
 
 
@@ -238,64 +232,7 @@ firebase.initializeApp(firebaseConfig);
 
 	
 	
-	var files = [];
-	document.getElementById("files").addEventListener("change", function(e) {
-	  files = e.target.files;
-	  for (let i = 0; i < files.length; i++) {
-		console.log(files[i]);
-	  }
-	});
 	
-	document.getElementById("send").addEventListener("click", function() {
-	  //checks if files are selected
-	  if (files.length != 0) {
-		//Loops through all the selected files
-		for (let i = 0; i < files.length; i++) {
-		  //create a storage reference
-		  var storage = firebase.storage().ref(files[i].name);
-	
-		  //upload file
-		  var upload = storage.put(files[i]);
-	
-		  //update progress bar
-		  upload.on(
-			"state_changed",
-			function progress(snapshot) {
-			  var percentage =
-				(snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-			  document.getElementById("progress").value = percentage;
-			},
-	
-			function error() {
-			  alert("error uploading file");
-			},
-	
-			function complete() {
-			  document.getElementById(
-				"uploading"
-			  ).innerHTML += `${files[i].name} upoaded <br />`;
-			}
-		  );
-		}
-	  } else {
-		alert("No file chosen");
-	  }
-	});
-	
-	function getFileUrl(filename) {
-	  //create a storage reference
-	  var storage = firebase.storage().ref(filename);
-	
-	  //get file url
-	  storage
-		.getDownloadURL()
-		.then(function(url) {
-		  console.log(url);
-		})
-		.catch(function(error) {
-		  console.log("error encountered");
-		});
-	}
 	
 	
 	</script>
