@@ -15,7 +15,9 @@
 		<meta name="google-site-verification" content="E0SpeRDXnyyyYe_az7hMb6PirOHIawPyVZi6EA_HKSc" />
 		<meta property="og:description" content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay."/>
 		<meta property="og:url" content="https://imago.uy"/>
+		
 		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/prices.css">
@@ -52,24 +54,42 @@
       
 <!--barra fija arriba-->
 
-		<header class="navbar">
-			<div class="wrapper1">
-				<h1 class="title"><a href="/">imago</h1></a>
-			</div>
-			<div class="wrapper2">
-				<ul class="menu">
-					<li class="items"><a href="/" id="link-font">portfolio</a></li>
-					<li class="items"><a href="about.html" id="link-font">about</a></li>
-					<li class="items"><a href="360.html" id="link-font">360</a></li>
-					<li class="items"><a href="contact.html" id="link-font">contact</a></li>
-					<li class="items"><a href="prices.html" id="link-font">prices</a></li>
-				</ul>
-			</div>
-				<ul class="social-menu">
-					<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i class="fa fa-instagram"></i></a></li>
-					<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-					<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i class="fa fa-facebook"></i></a></li>
-				</ul>
+<header class="navbar" id="navbar">
+	<div class="wrapper1">
+		<h1 class="title"><a href="/">imago</h1></a>
+	</div>
+	<div class="wrapper2">
+		<ul class="menu">
+			<li class="items"><a href="#" id="link-font">works</a>
+				<div class="sub-menu1">
+					<ul>
+						<li class="items dropdown-content"><a href="https://imagouy.com/index.html" >portfolio</a></li>
+						<li class="items dropdown-content"><a href="https://imagouy.com/360.html">360 viz</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="items"><a href="#" id="link-font">about us</a>
+				<div class="sub-menu1">
+					<ul>
+						<li class="items dropdown-content"><a href="https://imagouy.com/artists.html" >artists</a></li>
+						<li class="items dropdown-content"><a href="https://imagouy.com/process">process</a></li>
+						<li class="items dropdown-content"><a href="https://imagouy.com/prices.html">prices</a></li>
+						<li class="items dropdown-content"><a href="https://imagouy.com/reviews.html">references</a></li>
+					</ul>
+				</div>
+			</li>	
+			<li class="items"><a href="contact.html">contact</a></li>
+			
+			<li class="items"><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#es" onclick="timedRefresh()">esp</a></li>	
+		</ul>
+		<ul class="social-menu">
+			<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i
+						class="fa fa-instagram"></i></a></li>
+			<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i
+						class="fa fa-linkedin"></i></a></li>
+			<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i
+						class="fa fa-facebook"></i></a></li>
+		</ul>
 			
 		</header>
 
@@ -79,19 +99,29 @@
 
 			<h1 class="titlephone"><a href="/">imago</h1></a>
 			<input type="checkbox" id="nav-toggle" class="nav-toggle">
-				<nav class="navphone">
-					<ul>
-						<li><a href="/">portfolio</a></li>
-						<li><a href="about.html">about</a></li>
-						<li><a href="360.html">360</a></li>
-						<li><a href="contact.html">artists</a></li>
-						<li><a href="prices.html">prices</a></li>
-						<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i class="fa fa-instagram"></i></a></li>
-						<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li class="social-icon" id="github"><a href="https://github.com/rgfigueredo91" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i class="fa fa-facebook"></i></a></li>
-					</ul>
-				</nav>
+			<nav class="navphone">
+				<ul>
+					<li><a href="/">portfolio</a></li>
+					<li><a href="https://imagouy.com/360.html">360 viz</a></li>
+					<hr></hr>
+					<li><a href="https://imagouy.com/about.html">artists</a></li>
+			
+					<li><a href="https://imagouy.com/contact.html">contact</a></li>
+					<hr></hr>
+					<li><a href="https://imagouy.com/artists.html">artists</a></li>
+					<li><a href="https://imagouy.com/process.html">process</a></li>
+					<li><a href="https://imagouy.com/prices.html">prices</a></li>
+					<li><a href="https://imagouy.com/references.html">references</a></li>
+					<hr></hr>
+					<li><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#es" onclick="timedRefresh()">esp</a></li>	
+					<hr></hr>
+				</ul>
+				<ul class="flex-icon">
+					<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				</ul>
+			</nav>
 				<label for="nav-toggle" class="nav-toggle-label">
 					<span></span>
 				</label>
@@ -100,76 +130,73 @@
 <!--seccion imagenes-->
 
 		<div class="main">
+			<div class="icons-totals">
+				<h1>Who is our service for?</h>
+					<div class="icons-prices">
+						<img  src="images/icon.jpg" data-src="">
+						<p>High Profits</p>
+					</div>
+					<div class="icons-prices">
+						<img  src="images/icon.jpg" data-src="">
+						<p>High Aspirations</p>
+					</div>
+					<div class="icons-prices">
+						<img  src="images/icon.jpg" data-src="">
+						<p>High Professional</p>
+					</div>
+			</div>
 
-       
-			<p class="titles"><b>Light Experience</b></p>
-			<!--
-			<p2>La idea de esta experiencia es dejar libertad a los artistas 3d para diseñar la imagen. 
-			Teniendo un contacto reducido a una instancia de reunión inicial y una instancia de corrección del punto de vista previo al renderizado. 
-			Luego de esta etapa se renderiza, se postproduce y se envia la imagen final. Esto no implica en absoluto una perdida de calidad en la imagen obtenida, 
-			simplemente agiliza el proceso de trabajo. </p2>-->
+			<div class="icons-totals-not">
+				<h1>Who is our service not for?</h>
+				
+					<div class="icons-prices">
+						<img  src="images/icon.jpg" data-src="">
+						<p>Cheap service</p>
+					</div>
+					<div class="icons-prices">
+						<img  src="images/icon.jpg" data-src="">
+						<p>3d graphic as a cost</p>
+					</div>
+					<div class="icons-prices">
+						<img  src="images/icon.jpg" data-src="">
+						<p>Just an image</p>
+					</div>
+			</div>
+				
+				
 
-			<p2>This experience will give freedoom to the 3d artist to design the image.
-			Reducing contact to an initial meeting and a camera viewpoint correction prior to rendering.
-			After this, the final image is rendered, post-produced and sent. This does not affect the quality of the work, 
-			it just speeds up the work process. </p2>
+			
 			
 
-			<p  class="titles"><b>Full Experience</b></p>
-			<!--
-			<p2>La idea de esta experiencia se basa en un mayor vínculo entre el equipo y ustedes, generando instancias de correcciones, 
-				en las que es posible hacer cambios (texturas materiales, luces y equipamiento) sobre renders ya finalizados, 
-				teniendo un mayor control de la imagen. Si buscas saber con mas determinación como es este proceso de trabajo, contáctanos por cualquiera de los medios disponibles.
-			</p2>-->
-			<p2>This experience is based on a greater bond between the team and you, generating correction instances, in which it is possible to make changes 
-				(material textures, lights and equipment) on images already rendered, having more control of the image. 
-				If you want to find out more about this workflow please contact us.
-			</p2>
+			<div class="textb"><p>We budget every work separately. The estimate for every project is defined by the complexity of it, the scope of works, deadline, etc. This way we can assure the best value for your money.
+				To set an accurate budget, we need to check the project. Basic documentation should be enough, maybe some plans or sketches. There is no need to wait for a fully developed version.
+				We also need an estimation of the number of images, video length or virtual tour hot spots, depending on what kind of service fits best your needs.
+				In summary, we craft the visualisations one by one using the most suitable tools for each case. If you are interested in our services, send us a request and we will make an offer with no obligation.</p>
+	
+			</div>
+			
 
             <form id="prices-form" >
 
 				
-
 				<div class="model-select">
-                    <label><b>I already have a 3D model</b></label>
-                    <select name="modelhas" id="model" required>
-						<option value="" selected disabled hidden> 
-							Select an Option
-						</option> 
-                        <option class="select-model" value="yes">
-                            Yes
-                        </option>
-                        <option class="select-model" value="no">
-                            No
-                        </option>
-                    </select>
-				</div>
-
-				<div class="square-meters" >
-					<label><b>My project area</b></label>
+                    <label><b>I'm a student</b></label>
 					<div>
-						
-						<input type="number" value="0" id="metros" min="0"/>
-						<select id="units">
-							<option class="select-model" value="sqft">
-								sq. ft.
-							</option>
-							<option class="select-model" value="m2">
-								M&sup2
-							</option>
-							
-						</select>
-					</div>	
+						<label class="switch">
+							<input type="checkbox" id="switchValue" onclick="changeToggleDisabledEnabled()">
+							<span class="slider round"></span>
+							<input type="checkbox" id="otro">
+						  </label>
+						</div>
 				</div>
-				
-				
 
-                <div class="experience-select">
+
+				<div class="experience-select">
                     <label><b>Select Experience</b></label>
-                    <select id="experience" required>
-						<option value="" selected disabled hidden> 
-							Select an Option 
-						</option> 
+                    <select id="experience" onchange="addingParagraphOnExperience() " disabled>
+						<option class="select-experience" value="" selected>
+							Select an option
+						</option>
                         <option class="select-experience" value="light-experience">
                             Light Experience
                         </option>
@@ -178,26 +205,92 @@
                         </option>
                     </select>
 				</div>
+
+				<div class="jsExperience" id="jsExperienceid">
+					
+				</div>
+
+
+				
+
+               
 				
                 <div class="amount-interior">
-                    <label><b>Indoor renderings</b></label>
-                    <input type="number" value="0" id="interior" min="0"/>
+					<div>
+                    	<label><b>Indoor renderings</b></label>
+					</div>
+					<div class="slidecontainer">
+						<div>
+						<p>Scope: </p>
+						</div>
+							<div>
+							<input type="range" min="1" max="3" value="1" step="1"  id="interior-slider" onchange="addingImageInteriorScope()">
+						</div>
+					</div>
+					<div>
+						<input type="number" value="0" id="interior" min="0"/>
+					</div>
 				</div>
-				
-                <div class="amount-exterior">
-                    <label><b>Outdoor renderings</b></label>
-                    <input type="number" value="0" id="exterior" min="0"/>
 
+				<div class="images" id="images-scopes">
+						<img  src="img/imgscope/2x1Vh.jpg" data-src="" >
+					</div>
+					
+				
+				<div class="amount-exterior">
+					<div>
+                    	<label><b>Outdoor renderings</b></label>
+					</div>
+					<div class="slidecontainer">
+						<div>
+						<p>Scope: </p>
+						</div>
+							<div>
+							<input type="range" min="1" max="3" value="1" step="1" id="exterior-slider" onchange="addingImageExteriorScope()">
+						</div>
+					</div>
+					<div>
+						<input type="number" value="0" id="exterior" min="0"/>
+					</div>
+					
+
+					
 				</div>
+
+				
+				<div class="images" id="images-scopes-exterior">
+					<img  src="img/imgscope/2x1Hh.jpg" data-src="" >
+				</div>
+
+				
+
+				<div class="experience-select ">
+                    <label><b>Timeline</b></label>
+                    <select id="timeline">
+						<option value="" selected hidden> 
+							Select an Option 
+						</option> 
+                        <option class="select-experience" value="light-experience">
+                            Rush (7-14 days)
+                        </option>
+                        <option class="select-experience" value="full-experience">
+                            Standard(14-30 days)
+                        </option>
+						<option class="select-experience" value="full-experience">
+                            Not urgent(30-60 days)
+                        </option>
+                    </select>
+				</div>
+
 				
                 <div class="button">
                     <button onclick="computePriceFromForm();" type="button">Check Estimated Price</button>
 				</div>
 
-				<div class="price">
-                    <label></label>
-                    <input type="text" id="result" value="Price" onkeypress="return false;"/>
-				</div>
+			
+
+				
+
 				
 				<div class=bottom>	
 					<div class="p3">
@@ -209,12 +302,7 @@
 								If you want to know the exact price, or you are looking for a mixed and more personalized 
 								experience for the different images or maybe 360º visualizations, contact us privately and we will answer all your questions.</p3>
 					</div>
-					<div class="p4">
-						<p4>*Si eres estudiante de cualquier Universidad de la República Oriental 
-								del Uruguay, tenemos promociones exclusivas. 
-								Contáctanos por cualquiera de los medios disponibles.
-						</p>
-					</div>
+					
 				</div>
 				<div>
 					<div class="ip"></div>
@@ -226,14 +314,16 @@
 				
 				<div class="white"></div>
 			</form>
-
+		
 			
 					
 
 		</div>
 
 <!--precio script-->
+<script src="js/navbarmove.js"></script><!--navbar move-->
 		<script src="js/prices.js"> </script>
+	
 	
 
 

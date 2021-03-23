@@ -491,11 +491,11 @@ footer p {
 
 /*--mobile responsive--*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 850px) {
 
 
 * {
-	width: 100%;
+	
 	font-family: century-gothic, sans-serif;}
 
 .titlephone {
@@ -555,6 +555,10 @@ footer p {
 .nav-toggle-label span::after {
 	top: 7px;
 }
+
+.navphone ul{
+	margin-top: 50px;
+}
 .navphone {
 	top: 80px;
 	position: absolute;
@@ -568,7 +572,7 @@ footer p {
 	transition: 400ms ease-in-out;	
 }
 .navphone li {
-	height: 3vh;
+	height: 2vh;
 	margin-top: 3vh;
 	margin-bottom: 3.5vh;
 	}
@@ -626,7 +630,7 @@ footer p {
 }
 
 .flex-icon {
-	margin-top: 8vh;
+	margin-top: 3vh;
 	display: flex;
 	justify-content: space-around;
 	

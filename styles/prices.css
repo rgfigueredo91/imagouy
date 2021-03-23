@@ -11,6 +11,102 @@
     align-items: center;
 	margin-top: 250px; 
 } 
+.image-icon{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.image-icon img{
+	width: 6%;
+}
+.correct-text{
+	margin-left: 40px;
+}
+.slidecontainer{
+	display: flex;
+	justify-content: space-between;
+}
+.icons-totals-not{
+	margin-top: 70px;
+	width: 55%;
+}
+.icons-totals {
+	width: 55%;
+}
+.icons-prices{
+	margin-top: 30px;
+
+}
+.icons-prices img{
+	margin-top: 30px;	
+}
+.icons-prices p{
+	font-size: 1rem;
+}
+.textb{
+	margin-top: 70px;
+	width: 55%;
+}
+.textb p{ 
+	text-align: justify;
+}
+.slidecontainer p{
+	margin-right: 15px;
+}
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  input:checked + .slider {
+	background-color: #263541;
+  }
+  input:focus + .slider {
+	box-shadow: 0 0 1px #213b50;
+  }
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+  /* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+.slider.round:before {
+	border-radius: 55%;
+  }
 .text-information {
     margin-bottom: 20px;
 	text-align: center;
@@ -19,7 +115,7 @@
 	text-align: justify;
 	letter-spacing: 1px;
 	font-size: 13px;
-	width: 40%;
+	width: 55%;
 	line-height: 20px;
 	margin-bottom: 40px;
 	margin-top: 20px;
@@ -69,19 +165,29 @@ select {
 	color: white;
 	background-color:black;
 }
+#timeline {
+	border-radius: 50px;
+	height: 25px;
+	width: 180px;
+	text-align: center;
+	color: white;
+	background-color:black;
+}	
 .model-select {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	margin-top: 25px;
 	margin-bottom: 20px;
 }
 .experience-select {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	margin-top: 20px;
 }
 #prices-form {
-	width: 40%;	
+	width: 55%;	
 }
 .amount-interior {
 	margin-top: 20px;
@@ -96,6 +202,21 @@ select {
 	border-radius: 50px;
 	height: 20px;
 	width: 175px;
+}
+.jsExperience{
+	margin-top: 20px;
+}
+.jsExperience p{
+	text-align: justify;	
+}
+.images {
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+.images img{
+	height: auto;
+	width: 100%;
 }
 .amount-exterior input{
 	text-align: center;
@@ -133,6 +254,7 @@ transition: .3s;
 display: flex;
 justify-content: space-between;
 margin-bottom: 20px;
+margin-top: 20px;
 }
 .price {
 	margin-top: 30px;
@@ -167,9 +289,13 @@ margin-bottom: 20px;
 /*--tablet responsive--*/
 @media only screen and (max-width: 1000px) and (min-width: 850px)  {
 }
+
 /*--mobile responsive--*/
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 849px) {
 /*cuerpo*/	
+.main {
+	margin-top: 150px;
+}
 .text-information {
 	margin-bottom: 20px;
 	text-align: center;
@@ -178,11 +304,16 @@ margin-bottom: 20px;
 	text-align: justify;
 	letter-spacing: 1px;
 	font-size: 13px;
-	width: 85%;
+	width: 9
+	0%;
 	line-height: 20px;
 	margin-bottom: 40px;
 	margin-top: 20px;
 }
+
+.textb {
+	width: 80%;}
+
 .titles {
 	text-align: center;
 }
@@ -235,6 +366,7 @@ select {
 	background-color:black;
 	margin-top: 20px;
 }	
+
 .experience-select {
 	display: flex;
 	flex-direction: column;
@@ -255,6 +387,10 @@ select {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+}
+.slidecontainer{
+	display: flex;
+	flex-direction: column;
 }
 .amount-interior input{
 	margin-top: 20px;
