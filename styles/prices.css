@@ -9,8 +9,11 @@
 	flex-direction: column;
 	justify-content: center;
     align-items: center;
-	margin-top: 250px; 
+	margin-top: 180px; 
 } 
+.icons-prices p{
+	margin-top: 20px;
+}
 .image-icon{
 	margin-top: 30px;
 	display: flex;
@@ -27,11 +30,24 @@
 	justify-content: space-between;
 }
 .icons-totals-not{
-	margin-top: 70px;
-	width: 55%;
+
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	margin-right: 0%;
+}
+
+.header-prices{
+	margin-top: 90px;
+
+	width: 100%;
 }
 .icons-totals {
-	width: 55%;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	width: 50%;
 }
 .icons-prices{
 	margin-top: 30px;
@@ -289,7 +305,6 @@ margin-top: 20px;
 /*--tablet responsive--*/
 @media only screen and (max-width: 1000px) and (min-width: 850px)  {
 }
-
 /*--mobile responsive--*/
 @media only screen and (max-width: 849px) {
 /*cuerpo*/	
@@ -299,21 +314,33 @@ margin-top: 20px;
 .text-information {
 	margin-bottom: 20px;
 	text-align: center;
-}    	
+}   
+.icons-totals {
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+}
+.icons-totals-not{
+
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin-right: 0%;
+}
 .main p2{
 	text-align: justify;
 	letter-spacing: 1px;
 	font-size: 13px;
-	width: 9
-	0%;
+	width: 90%;
 	line-height: 20px;
 	margin-bottom: 40px;
 	margin-top: 20px;
 }
-
 .textb {
-	width: 80%;}
-
+	width: 80%;
+}
 .titles {
 	text-align: center;
 }
@@ -366,7 +393,6 @@ select {
 	background-color:black;
 	margin-top: 20px;
 }	
-
 .experience-select {
 	display: flex;
 	flex-direction: column;
