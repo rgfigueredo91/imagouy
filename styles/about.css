@@ -34,10 +34,10 @@
 }
 .rodrigo {
 	
-	margin-top: 1vh;
+	margin-top: 0vh;
 	position: relative;
 	display: flex;
-	height: auto;
+	height: 100%;
 	background: rgb(65,63,88);
 	background: radial-gradient(circle at 25% 70%, rgb(55, 53, 75) 2%, rgba(15,21,22,1) 35%);
 
@@ -73,57 +73,12 @@
 .rodrigo h2{
 	letter-spacing: 4px;
 	margin-left: 12%;
-	margin-top: 80px;
+	margin-top: 20px;
 
 	width:80vh;
 	color:white;
 	font-weight: 1px;
 	text-align: justify;
-}
-
-.rodrigo img{
-
-	margin: 10px;
-	width: 25%;
-	height: 25%;
-}
-
-
-.andres {
-	margin-top: 1vh;
-	position: relative;
-	display: flex;
-	height: auto;
-	background-color: black
-
-}
-
-.andres p{
-	font-size: 15px;
-	width:40%;
-	position: relative;
-	margin-top: 30px;
-	margin-left: 12%;
-	color: white;
-	font-weight: 1px;
-	text-align: justify;
-}
-
-.andres h2{
-	
-	letter-spacing: 4px;
-	margin-top: 50px;
-	margin-left: 12%;
-	width:80vh;
-	color: white;
-	font-weight: 1px;
-	text-align: justify;
-}
-
-.andres img{
-	margin: 10px;
-	width: 25%;
-	height: 25%;
 }
 
 /*--tablet responsive--*/
