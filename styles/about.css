@@ -12,19 +12,35 @@
 	width: 100%;
 	justify-content: space-between;
 }
+
+.top-about{
+	margin-top: 250px;
+	width: 100%;
+	text-align: center;
+}
+
+.top-about h1{
+	margin-top: 50px;
+}
+.top-about p{
+	margin-top: 40px;
+	margin-left: 25%;
+	width: 50%;
+	text-align: center;
+}
+
+.insidebox{
+	margin-left: 50%;
+}
 .rodrigo {
+	
 	margin-top: 1vh;
 	position: relative;
 	display: flex;
 	height: auto;
-	background-color: black
+	background: rgb(65,63,88);
+	background: radial-gradient(circle at 25% 70%, rgb(55, 53, 75) 2%, rgba(15,21,22,1) 35%);
 
-}
-
-.insidebox {
-	position: relative;
-	display: flex;
-	flex-direction: column;
 }
 
 .icons{
