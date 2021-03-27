@@ -9,11 +9,18 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+.formulario {
+	width: 40%;
+}
+
+
+
 .label1, input, textarea {
-	min-width: 500px;
+	margin-left: 5%;
 	text-align: center;
 	font-size: 15px;
-	width: 500px;
+	width: 80%;
 	line-height: 40px;
 	margin-top: 20px;
 }
@@ -23,7 +30,8 @@
 	font-size: 15px;
 }
 .submit {
-	width: 500px;
+	width: 80%;
+	margin-left: 10%;
 	cursor: pointer;
 	margin-top: 20px;
 	height: 40px;
@@ -38,97 +46,30 @@
 	transition: .6 ease-in-out
 }
 .file {
+	margin-left: 10%;
+	width: 80%;
 	text-align: center;
 }
 .upload-files{
+	width: 80%;
+	margin-left: 10%;
 	text-align: center;
 }
 
 .input-file {
-	margin-left: 40%;
+	width: 80%;
+	margin-left: 10%;
+
 	text-align: center;
 
 }
 
 .send-button{
-	margin-left: 20%;
+	margin-left: 10%;
+	
 	align-items: center;
 	align-self: center;
-	width: 60%;
-	text-align: center;
-}
-/*--tablet responsive--*/
-progress {
-	margin-top: 20px;
-	background-color: #f3f3f3;
-	border: 0;
-	height: 18px;
-	width: 100%;
-	border-radius: 9px;
-  }
-progress[value]::-webkit-progress-bar {
-	background-color: #eee;
-	border-radius: 2px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-  }
 
-/*--mobile responsive--*/
-@media only screen and (max-width: 900px) {
-
-.main {
-	margin-top: 150px;
-	position: relative;
-	height: 100%;
-	width: 100%;	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.label1, input, textarea {
-	margin-left: 20px;
-	min-width: 0px;
-	text-align: center;
-	font-size: 15px;
-	width: 80%;
-	line-height: 40px;
-	margin-top: 20px;
-}
-.status {
-	color: red;
-	text-align: center;
-	font-size: 15px;
-}
-.submit {
-	margin-left: 40px;
-	width: 80%;
-	cursor: pointer;
-	margin-top: 20px;
-	height: 40px;
-	border: none;
-	background-color: black;
-	color: white;
-	transition: .6 ease-in-out
-}
-
-.file {
-	text-align: center;
-}
-.upload-files{
-	text-align: center;
-}
-
-.input-file {
-	margin-left: 40%;
-	text-align: center;
-
-}
-
-.send-button{
-	margin-left: 20%;
-	align-items: center;
-	align-self: center;
-	width: 60%;
 	text-align: center;
 }
 /*--tablet responsive--*/
@@ -146,6 +87,24 @@ progress[value]::-webkit-progress-bar {
 	border-radius: 2px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   }
+
+/*--mobile responsive--*/
+@media only screen and (max-width: 900px) {
+
+
+	.main {
+		margin-top: 150px;
+		height: 100%;
+		width: 100%;	
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.formulario {
+		width: 90%;
+	}
 
 
 }
