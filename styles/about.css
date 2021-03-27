@@ -48,7 +48,7 @@
 
 .rodrigo {
 	display: flex;
-	height: 100%;
+	height: auto;
 	width: 100%;
 	background: rgb(65,63,88);
 	background: radial-gradient(circle at 25% 70%, rgb(55, 53, 75) 2%, rgba(15,21,22,1) 35%);
@@ -113,8 +113,21 @@
 }
 
 .textoyo {
-	width: 100%;
+	width: 75%;
 	margin-top: 5%;
 	margin-left: 25%;
+	align-items: center;
+
+}
+
+.textoyo p{
+	
+
+}
+
+.top-about{
+	margin-top: 250px;
+	width: 100%;
+	text-align: center;
 }
 }
