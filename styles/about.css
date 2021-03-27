@@ -3,7 +3,9 @@
 
 
 
-
+.main-artist {
+	width: 100%;
+}
 .autores {
 	position: relative;
 	margin-top: 150px;
@@ -12,7 +14,21 @@
 	width: 100%;
 	justify-content: space-between;
 }
+.insidebox{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	
+}
+.fotoyo{
+	margin-left: 10%;
+}
 
+.textoyo {
+	width: 100%;
+	margin-top: 5%;
+	margin-left: 20%;
+}
 .top-about{
 	margin-top: 250px;
 	width: 100%;
@@ -26,26 +42,20 @@
 	margin-top: 40px;
 	margin-left: 25%;
 	width: 50%;
-	text-align: center;
+	text-align: justify;
 }
 
-.insidebox{
-	margin-left: 50%;
-}
+
 .rodrigo {
-	
-	margin-top: 0vh;
-	position: relative;
 	display: flex;
 	height: 100%;
+	width: 100%;
 	background: rgb(65,63,88);
 	background: radial-gradient(circle at 25% 70%, rgb(55, 53, 75) 2%, rgba(15,21,22,1) 35%);
-
 }
 
 .icons{
 	margin-top: 40px;
-	margin-left: 10.5%;
 	margin-bottom: 20px;
 }
 
@@ -60,10 +70,10 @@
 }
 
 .rodrigo p{
-	width:40%;
+	min-width: 200px;
+	width:50%;
 	position: relative;
 	margin-top: 30px;
-	margin-left: 12%;
 	color: white;
 	font-size: 15px;
 	font-weight: .2px;
@@ -72,10 +82,9 @@
 
 .rodrigo h2{
 	letter-spacing: 4px;
-	margin-left: 12%;
+	
 	margin-top: 20px;
 
-	width:80vh;
 	color:white;
 	font-weight: 1px;
 	text-align: justify;
@@ -86,74 +95,26 @@
 
 /*--mobile responsive--*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 
-	.autores {
-		position: relative;
-		margin-top:90px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		justify-content: space-between;
-	}
-	.rodrigo img{
-		display: none;
-		margin: 10px;
-		width: 15%;
-		height: 15%;
-	}
-	.rodrigo h2{
-		letter-spacing: 4px;
-		margin-left:0;
-		margin-top: 80px;
-		width:100%;
-		color:white;
-		font-weight: 1px;
-		text-align: center;
-	}
-	.icons i{
-		margin-left: 0;
-		color: white
-	}
-	.rodrigo {
-		display: flex;
-		flex-direction: column;
-	}
-	.rodrigo p{
-		width:80%;
-	}
-	.icons{
+	.insidebox{
 		width: 100%;
 		display: flex;
-	
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 30px;
-		margin-left: 0%;	
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		
 	}
+	.fotoyo{
+	margin-left: 0%;
+}
 
-	.andres p{
-		width:80%;
-	}
-	.andres img{
-		display: none;
-		margin: 10px;
-		width: 15%;
-		height: 15%;
-	}
+.fotoyo img{
+	width: 100%;
+}
 
-	.andres h2{
-		letter-spacing: 4px;
-		margin-left:0;
-		margin-top: 80px;
-		width:100%;
-		color:white;
-		font-weight: 1px;
-		text-align: center;
-	}
-
-	.andres {
-		display: flex;
-		flex-direction: column;
-	}
+.textoyo {
+	width: 100%;
+	margin-top: 5%;
+	margin-left: 25%;
+}
 }
