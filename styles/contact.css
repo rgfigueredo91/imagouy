@@ -41,9 +41,10 @@
 	transition: .6 ease-in-out
 }
 .submit:hover {
-	background: white
+	background: rgb(255, 255, 255);
 	color: black;
-	transition: .6 ease-in-out
+	transition: .3s ease-in-out;
+	border: solid 1px black;
 }
 .file {
 	margin-left: 10%;
