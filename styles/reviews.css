@@ -15,13 +15,7 @@
 		transform: translateY(-50%);
 		right: -60%;
 		width: 60%;
-		font-family: 'Crimson Text', serif;
-		font-weight: 700;
-		font-size: 48px;
-		color: #fff;
-		text-shadow: 2px 2px 0px #0083cd;
-		font-style: italic;
-		text-align: center;
+	
 		z-index: 0;
 	}
 	
@@ -47,37 +41,3 @@ footer{
 
 
 /*--mobile responsive--*/
-@media only screen and (max-width: 900px) {
-
-.toptext{
-		margin-top: 120px;
-		width: 100%;
-		text-align: center;
-	}
-.main {
-		width: 100%;
-		height: 200px;
-		display: block;
-		position: relative;
-		}
-.fb-post {
-    margin-left: 0;
-	
-}
-
-.main li{
-	margin-top: 150px;
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-80%);
-	right: -70%;
-	width: 75%;
-	z-index: 0;
-	}
-		
-	
-
-
-
-}
