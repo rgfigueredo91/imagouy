@@ -8,10 +8,15 @@
 }
 
 .map-container {
+	height: 400px;
 	margin-top: 40px;
 	width: 50%;
 	margin-left: 25%;
 
+}
+
+.map-container iframe{
+	
 }
 
 .autores {
@@ -132,23 +137,27 @@ svg {
 }
 
 .textoyo {
-	width: 75%;
+	width: 100%;
 	margin-top: 5%;
 	margin-left: 25%;
 	align-items: center;
 
 }
-
-.map-container iframe{
-	height: 200px;
-	margin-top: 40px;
-	width: 100%;
-	margin-left: 0%;
+.map-container {
+	height: auto;
+	
 
 }
 
+.map-container iframe{
+	height:auto;
+	margin-top: 20px;
+	width: 150%;
+	margin-left: -25%;
+}
 .top-about{
-	margin-top: 250px;
+
+	margin-top: 150px;
 	width: 100%;
 	text-align: center;
 }
