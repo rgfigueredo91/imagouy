@@ -112,8 +112,29 @@ svg {
 .textoyo {
 	width: 100%;
 	margin-top: 5%;
-	margin-left: 25%;
+	margin-left: 0%;
+	text-align: center;
 	align-items: center;
+}
+
+.textoyo h2{
+	text-align: center;
+	width: 100%;
+}
+.textoyo p{
+	width:80%;
+	text-align: justify;
+	margin-left: 10%;
+}
+
+.top-about h2{
+	text-align: center;
+	width: 100%;
+}
+.top-about p{
+	width:80%;
+	text-align: justify;
+	margin-left: 10%;
 }
 .map-container {
 	height: auto;
