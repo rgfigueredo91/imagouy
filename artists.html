@@ -21,7 +21,9 @@
 		<link rel="stylesheet" type="text/css" href="styles/about.css">
 		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		
 		 <script src="https://unpkg.com/scrollreveal"></script>
+		
 
 		 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178424914-1"></script>
 		 <script>
@@ -135,12 +137,20 @@
 		</section>
 <!--seccion imagenes-->
 		<div class="main-artists"> 
+
 			<div class="top-about">
-				<h1>Let's get to know each other...</h1>
+				<h1>Let's get to know each other</h1>
 				<p>Numerous journeys and extensive experience gained all over the world, have shaped our view of the architecture, gave a huge a dose of inspiration and driven us to action.
 					We founded Imago Rendering Studio with passion for creating, evoking emotions and creating value.</p>
-					<h1>Our journey...</h1>
+					<h1>Our journey</h1>
 			</div>
+		
+			</style>
+			<div class="map-container">
+				<iframe width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" src="maps.html" scrolling="no"></iframe>
+			</div>
+
+
 
 			<div class="autores">
 				<div class="rodrigo">
@@ -162,20 +172,32 @@
 							</div>
 						</div>	
 				</div>
+					
+				
+			
 				
 					
-				</div>
-			</div>
+			
+
+			
+
+	
+
 		</div>
 			<footer>
 				<hr>
 				<p>&copy; 2020 Imago Rendering Studio. All rights reserved</p>
 			</footer>
 
-
 		<script>
-			ScrollReveal().reveal('.rodrigo');
-			ScrollReveal().reveal('.andres');
+		$('.map-container')
+	.click(function(){
+			$(this).find('iframe').addClass('clicked')})
+	.mouseleave(function(){
+			$(this).find('iframe').removeClass('clicked')});
+
+			//ScrollReveal().reveal('.rodrigo');
+			//ScrollReveal().reveal('.andres');
 		</script>
 		<script src="js/alert.js"></script>
 		<script src="js/navbarmove.js"></script><!--navbar move-->
