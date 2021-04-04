@@ -5,7 +5,6 @@
 	width: 100%;
 	height: 200px;
 	display: block;
-	position: relative;
 	}
 
 	
@@ -15,18 +14,39 @@
 	text-align: center;
 }
 
-.fb-post {
+.comments {
 	width: 100%;
+	height: 300px;
 	text-align: center;
 	margin-top: 70px;
 }
 
- /* Slideshow container */
-.slideshow-container {
-	position: relative;
+.comments-1{
+	margin-left: 25%;
+	width: 50%;
+	margin-top: 200px;
+
+}
+.comments-1 p{
+	font-size: 1.2rem;
+	margin-top: 20px;
 	
-  }
-  
+	color: white;
+
+}
+
+.comments-1 a{
+	color: #ff0066;
+	text-decoration: underline;
+
+}
+
+ /* Slideshow container */
+ .slideshow-container{
+	 margin-top: 50px;
+	 background: rgb(65,63,88);
+	 background: radial-gradient(circle at 50% 70%, rgb(55, 53, 75) 2%, rgba(15,21,22,1) 100%);
+ }
   /* Slides */
   .mySlides {
 	display: none;
@@ -38,13 +58,13 @@
   .prev, .next {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	width: auto;
 	margin-top: -30px;
 	padding: 16px;
-
+	color: white;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 30px;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
   }
@@ -58,8 +78,8 @@
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
-	color: white;
+	background-color:white;
+	color: black;
   }
   
   /* The dot/bullet/indicator container */
@@ -87,17 +107,77 @@
 	background-color: #717171;
   }
   
- 
-
-
-
 footer{
 	margin-top: 15vh;
 }
 
-
-
 /*--tablet responsive--*/
+@media only screen and (max-width: 1200px) and (min-width: 700px)  {
+	.toptext{
+		margin-top: 120px;
+		width: 100%;
 
+		text-align: center;
+	}
+	.comments-1{
+		margin-left: 25%;
+		width: 50%;
+		margin-top: 100px;
+	
+	}
+	.comments {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 370px;
+		width: auto;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 30px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	  }
+
+}
 
 /*--mobile responsive--*/
+@media only screen and (max-width: 850px) {
+
+	.toptext{
+		margin-top: 120px;
+		width: 100%;
+
+		text-align: center;
+	}
+	.comments-1{
+		margin-left: 25%;
+		width: 50%;
+		margin-top: 100px;
+	
+	}
+	.comments {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 425px;
+		width: auto;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 30px;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	  }
+
+}
