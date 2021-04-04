@@ -44,7 +44,8 @@ body {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	background-color: black;
+	background: rgb(65,63,88);
+	background: radial-gradient(circle at 50% 50%, rgb(40, 38, 53) 15%, rgb(20, 26, 26) 60%);
 	justify-content: center;
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #000;
@@ -120,12 +121,13 @@ body {
 }
 .title a{
 	text-decoration: none;
-	color: white;
+	color: #ff0066;
 }
 
 
 .title a:hover{
-	color: #ff0066;
+	color: white;
+	
 }
 
 
@@ -190,7 +192,9 @@ body {
 	color: white;}
 
 .items a:hover{
-	color: #ff0066;}
+	color: #ff0066;
+	transform: scale(1.2)
+}
 
 
 
@@ -559,7 +563,7 @@ footer p {
 	z-index: 9999;}
 
 .titlephone a {
-	color: white;
+	color: #ff0066;
 	text-decoration: none;}
 
 .phonenavbar {

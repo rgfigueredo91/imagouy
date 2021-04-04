@@ -41,6 +41,10 @@ svg {
 	margin-top: 5%;
 	margin-left: 20%;
 }
+
+.textoyo h2{
+	color: #ff0066;
+}
 .top-about{
 	margin-top: 250px;
 	width: 100%;
@@ -63,11 +67,16 @@ svg {
 	background: radial-gradient(circle at 25% 70%, rgb(55, 53, 75) 2%, rgba(15,21,22,1) 35%);
 }
 .icons{
+	
+
+	
 	margin-top: 40px;
 	margin-bottom: 20px;
 }
 .icons i{
+
 	margin-left: 25px;
+	margin-right: 25px;
 	color: white
 }
 .icons i:hover {
@@ -86,7 +95,7 @@ svg {
 .rodrigo h2{
 	letter-spacing: 4px;
 	margin-top: 20px;
-	color:white;
+	
 	font-weight: 1px;
 	text-align: justify;
 }
@@ -123,7 +132,7 @@ svg {
 }
 .textoyo p{
 	width:80%;
-	text-align: justify;
+	
 	margin-left: 10%;
 }
 
@@ -135,6 +144,10 @@ svg {
 	width:80%;
 	text-align: justify;
 	margin-left: 10%;
+}
+
+.firstchild p{
+	text-align: center;
 }
 .map-container {
 	height: auto;
@@ -150,4 +163,18 @@ svg {
 	width: 100%;
 	text-align: center;
 }
+
+.icons{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.icons i{
+	margin-left: 25px;
+	margin-right: 25px;
+	color: white
+}
+.icons i:hover {
+	transform: scale(1.2);
+}
+
 }

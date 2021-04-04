@@ -249,8 +249,10 @@ select {
 	text-align: center;
 }
 button {
+	border: 1px;
+	border-color: #f60e6b;;
 	margin-top: 30px;
-	background-color: black;
+	background-color:#f60e6b;
 	color: white;
 	height: 40px;
 	width: 180px;
@@ -259,8 +261,10 @@ button {
 	margin-bottom: 20px;
 }
 button:hover {
-background-color: white;	
-color: black;
+	border: 1px;
+	border-color: black;
+background-color: black;	
+color: white;
 height: 40px;
 width: 180px;
 border-radius: 50px;
@@ -449,23 +453,17 @@ select {
 	margin-bottom: 20px;
 }
 button {
+	border: 1px;
+	border-color: #f60e6b;;
 	margin-top: 30px;
-	background-color: black;
+	background-color:#f60e6b;
 	color: white;
 	height: 40px;
 	width: 180px;
 	border-radius: 50px;
 	cursor: pointer;	
 }	
-button:hover {
-	margin-top: 30px;
-	background-color: black;
-	color: white;
-	height: 40px;
-	width: 180px;
-	border-radius: 50px;
-	cursor: pointer;	
-}
+
 .price {
 	margin-top: 30px;
 }
