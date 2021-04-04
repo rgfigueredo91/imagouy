@@ -13,7 +13,7 @@ body {
 .phonenavbar {
 	display: none;}
 
-.navbar {
+.navbar-noboots {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -28,31 +28,55 @@ body {
 	border-top: 1px solid #000;
 	transition: .5s
 }	
+
 .sub-menu1 {
-	display: block;
 	background-color: black;
-	opacity: .95;
 	position: absolute;
-	width: 133px;
+	width: 10%;
 	display: none;
-
-	
+	opacity: 0;;
 }
 
 
-
-
-.sub-menu1 ul{
-	width: 100%;
-	
-}
-.wrapper2 ul li:hover .sub-menu1{
+.wrapper-2 ul li:hover .sub-menu1{
+	transition:all .5s ease-out;
 	position: absolute;
 	display: block;
 	border: .3px solid white;
 	border-radius: 20px;
+	opacity: 1; /* This keeps the opacity at 1 after the animation has run (e.g. could be considered as the final or default stage of the element) */
+   animation: opacity 700ms ease-in-out normal;
+   -moz-animation: opacity 700ms ease-in-out normal;
+   -ms-animation: opacity 700ms ease-in-out normal;
+   -o-animation: opacity 700ms ease-in-out normal;
+   -webkit-animation: opacity 700ms ease-in-out normal;    
 
-		
+}
+
+@keyframes opacity { 
+    from { opacity:0; } 
+    to { opacity: 1; } 
+}
+@-moz-keyframes opacity { 
+    from { opacity: 0; } 
+    to { opacity: 1; } 
+}
+@-ms-keyframes opacity { 
+    from {opacity:0; } 
+    to { opacity: 1; } 
+}
+@-o-keyframes opacity { 
+    from {opacity:0; } 
+    to { opacity: 1; } 
+}
+@-webkit-keyframes opacity { 
+    from { opacity:0; } 
+    to { opacity: 1; } 
+}
+
+
+.sub-menu1 ul{	
+	width: 100%;
 }
 .dropdown-content {
 	text-decoration: none;
@@ -60,11 +84,11 @@ body {
 	list-style: none;
 	margin-bottom: 30px;
 }
-#navbar {
-	transition: .5s
-}
+
+
 /*--barra fija arriba titulo imago--*/
 .title {
+	width: 100%;
 	letter-spacing: 1px;
 	font-size: 65px;
 	align-self: center;
@@ -86,6 +110,8 @@ body {
 .lazy {
 	filter: blur(10px);
 }
+
+
 
 /*--
 .img .blurry-load{
@@ -114,8 +140,11 @@ body {
 	font-size: 15px;
 	justify-content: space-between;
 	align-self: center;
-	width: 35%;
+	width: 40%;
 	letter-spacing: 1px;
+
+	margin-top: 0px;
+	margin-right: 0;
 }
 
 .menu li{
@@ -123,11 +152,11 @@ body {
 	width: 100%;
 }
 
-.wrapper2 {
+.wrapper-2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 1500px;
+	width: 100%
 }
 
 .items {
@@ -152,7 +181,7 @@ body {
 	display: flex;
 	align-self: center;
 	justify-content: space-between;
-	width: 100px;
+	width: 8%;
 	font-size: 15px;}
 
 .social-icon {
@@ -472,7 +501,7 @@ footer p {
 	font-size: 14px;
 	justify-content: space-between;
 	align-self: center;
-	width: 35%;
+	width: 40%;
 	letter-spacing: 1px;}
 
 .hes-gallery {
@@ -556,10 +585,11 @@ footer p {
 	top: 7px;
 }
 
-.navphone ul{
+.navphone-3 ul{
+	list-style-type:none;
 	margin-top: 50px;
 }
-.navphone {
+.navphone-3 {
 	top: 80px;
 	position: absolute;
 	left: 0;
@@ -571,21 +601,23 @@ footer p {
 	transform-origin: top;
 	transition: 400ms ease-in-out;	
 }
-.navphone li {
+.navphone-3 li {
+
+	list-style-type:none;
 	height: 2vh;
 	margin-top: 3vh;
 	margin-bottom: 3.5vh;
 	}
-.navphone li a {
-	list-style-type: circle;
-
+.navphone-3 li a {
+	list-style-type:none;
+	margin-right: 0;
 	color: white;
 	text-decoration: none;
 	font-size: .8rem;
 	opacity: 0;
 	transition: opacity 50ms ease-in-out;
 }
-.navbar {
+.navbar-noboots {
 	display: none;}
 
 .nav-toggle:checked ~ nav {
@@ -630,18 +662,21 @@ footer p {
 }
 
 .flex-icon {
+	margin-right: 0;
 	margin-top: 3vh;
 	display: flex;
 	justify-content: space-around;
 	
 }
 
-.navphone hr {
+.navphone-3 hr {
 	transition: opacity 50ms ease-in-out;
 	margin-top: 30px;
-	margin-left: 25%;
-	width: 50%;
-	opacity: .5;
+	
+	margin-left: 0;
+	margin-left: 10%;
+	width: 80%;
+	opacity: .3;
 }
 
 }

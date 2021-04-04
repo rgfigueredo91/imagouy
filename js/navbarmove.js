@@ -1,5 +1,5 @@
 var lastScrollTop = 100;
-			navbar = document.getElementById("navbar");
+			navbar = document.getElementById("navbar-noboots");
 			window.addEventListener("scroll", function () {
 				var scrollTop = window.pageYOffset || document
 					.documentElement.scrollTop;
