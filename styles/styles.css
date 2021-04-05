@@ -640,7 +640,7 @@ footer p {
 	z-index: 9999;}
 
 .titlephone a {
-	color: #ff0066;
+	color: white;
 	text-decoration: none;}
 
 .phonenavbar {
@@ -651,7 +651,9 @@ footer p {
 	width: 100%;
 	z-index: 999;
 	height: 80px;
-	background-color: black;
+	background: rgb(65,63,88);
+	background: radial-gradient(circle at 15% 50%, rgb(40, 38, 53) 15%, rgb(20, 26, 26) 60%);
+	transition: .5s
 }
 .nav-toggle {
 	display: none;
