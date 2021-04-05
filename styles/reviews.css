@@ -204,10 +204,37 @@ footer{
 
 		text-align: center;
 	}
+	
+	blockquote {
+		border:none;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		margin-bottom:0px;
+		}
+		
+	
+		
+		blockquote p:before { 
+		
+			content: open-quote;
+			font-weight: bold;
+			font-size:25px;
+			color:#ff0066;
+		} 
+		blockquote p:after { 
+			content: close-quote;
+			font-weight: bold;
+			font-size:25px;
+			color:#ff0066;
+		}
 	.comments-1{
 		margin-left: 18%;
 		width: 65%;
 		margin-top: 100px;
+	
+	}
+
+	.comments-1 p{
+		font-size: 15px;
 	
 	}
 	.comments {
@@ -224,7 +251,7 @@ footer{
 		padding: 16px;
 		color: white;
 		font-weight: bold;
-		font-size: 30px;
+		font-size: 15px;
 		border-radius: 0 3px 3px 0;
 		user-select: none;
 	  }
