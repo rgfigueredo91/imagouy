@@ -1,5 +1,28 @@
 /*--parametros generales del cuerpo de imagenes--*/
 
+
+.buttons-students{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.buttons-students a{
+	
+	margin-top: 40px;
+
+}
+
+.buttons-students button{
+	cursor: pointer;
+	background-color: #ff0066;
+	border: 1px solid;
+	width: 10%;
+	height: 40px;
+	
+
+}
 .stages{
 	margin-top: 20px;
 	width: 100%;
@@ -61,6 +84,17 @@ footer{
 
 }
 
+.buttons-students button{
+	color: white;
+	cursor: pointer;
+	background-color: #ff0066;
+	border: 1px solid;
+	width: 15%;
+	height: 40px;
+	
+
+}
+
 /*--mobile responsive--*/
 @media only screen and (max-width: 850px) {
 
@@ -81,6 +115,15 @@ footer{
 	.title-stage p{
 		text-align: center;
 	}
-	  
+	  .buttons-students button{
+		color: white;
+	cursor: pointer;
+	background-color: #ff0066;
+	border: 1px solid;
+	width: 40%;
+	height: 40px;
+	
+
+}
 
 }
