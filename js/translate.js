@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         esp: {
             works: " trabajos",
             about: " conócenos",
-            contact: " contáctanos",
+            contact: " sobre nosotros",
             artists: " artistas",
             process: " procesos",
             pricess: " precios",
