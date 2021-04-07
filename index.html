@@ -24,6 +24,16 @@
 	<link rel="shortcut icon" type="image/png" href="favicon.png" />
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>
+		changeLanguageStart()
+		function changeLanguageStart() {
+			let language = navigator.language
+		if (language === "es-US") {
+			window.location.hash === "#eng"
+		} else {
+			window.location.hash === "#esp"
+		}}
+	</script>
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178424914-1"></script>
 	<script>

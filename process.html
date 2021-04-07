@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="eng">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta charset="UTF-8"/> 
@@ -21,7 +21,17 @@
 		<link rel="stylesheet" type="text/css" href="styles/process.css">
 		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
-        
+        <script>
+            changeLanguageStart()
+            function changeLanguageStart() {
+                let language = navigator.language
+            if (language === "es-US") {
+                window.location.hash === "#eng"
+            } else {
+                window.location.hash === "#esp"
+            }}
+        </script>
+
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 
     
@@ -140,15 +150,15 @@
 		</section>
 
         <div class="toptext">
-            <h1>Cooperation with us</h1>
+            <h1 id="cooperation-translate">Cooperation with us</h1>
         </div>
                     <div class="stages">
                         <div>
-                            <h2>
+                            <h2 id="stage1">
                                 STAGE 1
                             </h2>
                             <div class="title-stage">
-                                <p><b>Previous information</b> </p>
+                                <p id="previous-info"><b>Previous information</b> </p>
                             </div>
                             <p> To draw up a budget as tight as possible, we need some information about the project, 
                                 drawings, sketches, 3D models, number of desired images, delivery time etc. 
@@ -167,7 +177,8 @@
                                  <p><b>3D Model</b> </p>
                              </div>
                             <p>Most of the firms have their own 3D models. Providing this model can reduce time and cost but it is necessary to adjust it to our requirement. 
-                                If you have your own 3d models, please send them to us and we will carry out the necessary checks in order to see if they are useful.</p>
+                                If you have your own 3d models, please send them to us and we will carry out the necessary checks in order to see if they are useful. If you don't have your
+                            3D model, we can do it for you.</p>
                          </div>
                          <div class="arrow">
                              <img src="images/arrow.jpg" alt="">
@@ -286,9 +297,10 @@
              
         </script>
            
-		<script src="js/alert.js"></script>
+
 		<script src="js/navbarmove.js"></script><!--navbar move-->
         <script src="js/translate.js"></script><!--navbar move-->
+        <script src="js/translate-process.js"></script><!--navbar move-->
 
            
 	</body>
