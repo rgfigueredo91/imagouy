@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function(e){
     };
     //define language via window hash
     if (window.location.hash === "#esp") {
-        
+
+        //MENU PRINCIPAL
+
         //desktop
         document.getElementById("link-font").textContent = language.esp.works;
         document.getElementById("link-font-about").textContent = language.esp.about;
@@ -59,8 +61,34 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("360-translate-phone").href = "360.html#esp";
         
     }   
+
  
 });
+
+
+document.addEventListener("DOMContentLoaded", function(e){
+    let language = {
+        esp: {
+            rights: " © 2020 Imago Rendering Studio. Todos los derechos reservados.",
+           
+        }
+    };
+    //define language via window hash
+    if (window.location.hash === "#esp") {
+
+        //MENU PRINCIPAL
+
+        //desktop
+        document.getElementById("rights-reserved").textContent = language.esp.rights;
+       
+    }   
+    
+ 
+});
+
+
+
+
 
 function timedRefresh() {
     setTimeout("location.reload(true);", 600);
