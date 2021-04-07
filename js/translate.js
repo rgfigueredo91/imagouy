@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function(e){
     let language = {
         esp: {
             works: " trabajos",
-            about: " conócenos",
-            contact: " sobre nosotros",
+            about: " sobre nosotros",
+            contact: " contáctanos",
             artists: " artistas",
             process: " procesos",
             pricess: " precios",
