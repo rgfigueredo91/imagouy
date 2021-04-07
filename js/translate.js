@@ -25,9 +25,14 @@ document.addEventListener("DOMContentLoaded", function(e){
         
         
         //phone
-       
+        document.getElementById("artist-translate-phone").textContent = language.esp.artists;
+        document.getElementById("process-translate-phone").textContent = language.esp.process;
+        document.getElementById("prices-translate-phone").textContent = language.esp.pricess;
+        document.getElementById("references-translate-phone").textContent = language.esp.references;
+        document.getElementById("contact-translate-phone").textContent = language.esp.contact;
 
         //mantener el #eng cuando hago click en los links
+
         document.getElementById("link-font").href = "index.html#esp";
         document.getElementById("contactid").href = "contact.html#esp";
         document.getElementById("artist-translate").href = "artists.html#esp";
