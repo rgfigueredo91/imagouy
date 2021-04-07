@@ -16,6 +16,20 @@ document.addEventListener("DOMContentLoaded", function(e){
             stage4:" ETAPA 4",
             whiterender:" Render blanco - Punto de vista",
             paragraph4:" Una vez confirmado que el modelo es correcto, los puntos de vistas seran chequeados con ustedes. Propondremos camaras y enviaremos sugerencias por algunas particularmente. Vamos a sugerir la que nos parece la mejor opcion. Estas imagenes son renders blancos, sin materiales. Las cámaras no se cambian posteriormente.",
+            stage5:" ETAPA 5",
+            overview:" Primera revisión",
+            paragraph5:" En esta etapa la visualización esta completa, con materiales aplicados, luz y atmósferas elegidas. Es la etapa mas importante para los comentarios. La lista de comentarios deberá ser muy precisa. Los comentarios referidos a luces, atmósfera, equipamiento, decoración, vegetación tienen que aparecer.",
+            stage6:" ETAPA 6",
+            overview2:" Segunda revisión",
+            paragraph6:" La idea de esta etapa es ver las correcciones de los comentarios previos, para asegurar que las expectativas fueron cumplidas. Por supuesto, pueden haber comentarios menores que no hayan sido notificados con anterioridad. Este es el ultimo momento antes de renderizar la imagen en alta resolución.",
+            stage7:" ETAPA FINAL",
+            delivery:" Entrega y pago",
+            paragraph7:" Una vez realizado el pago, enviamos las imágenes en alta resolución (formato tiff-jpg) y sin marcas de agua. El tamaño es suficiente para cartelerias, impresión, folletos, catalogos.",
+            studentcoop:' "Esta cooperación no aplica para estudiantes"',
+            download: " Descargar el siguiente documento para conocer los procesos de trabajos para estudiante",
+            english: " Versión en inglés",
+            spanish: " Versión en español",
+
         }
     };
     //define language via window hash
@@ -36,6 +50,19 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("stage4").textContent = language.esp.stage4;
         document.getElementById("whiterender-info").textContent = language.esp.whiterender;
         document.getElementById("paragraph-stage4").textContent = language.esp.paragraph4;
+        document.getElementById("stage5").textContent = language.esp.stage5;
+        document.getElementById("overview-info").textContent = language.esp.overview;
+        document.getElementById("paragraph-stage5").textContent = language.esp.paragraph5;
+        document.getElementById("stage6").textContent = language.esp.stage6;
+        document.getElementById("overview2-info").textContent = language.esp.overview2;
+        document.getElementById("paragraph-stage6").textContent = language.esp.paragraph6;
+        document.getElementById("stage7").textContent = language.esp.stage7;
+        document.getElementById("delivery-info").textContent = language.esp.delivery;
+        document.getElementById("paragraph-stage7").textContent = language.esp.paragraph7;
+        document.getElementById("studentcooperation").textContent = language.esp.studentcoop;
+        document.getElementById("downloaddocument").textContent = language.esp.download;
+        document.getElementById("englishversion").textContent = language.esp.english;
+        document.getElementById("españolversion").textContent = language.esp.spanish;
 
         
 
