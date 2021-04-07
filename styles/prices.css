@@ -42,6 +42,15 @@
 	margin-right: 0%;
 }
 
+.scopeflex {
+	display: flex;
+	flex-direction: column;
+}
+
+.scopeflex input {
+	margin-top: 20px;
+}
+
 .header-prices{
 	margin-top: 90px;
 
