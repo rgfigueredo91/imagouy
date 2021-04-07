@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         esp: {
             
             title: " Vamos a conocernos",
-            paragraph: " Muchos viajes y extensa experiencia recibida en todo el mundo, formaron nuestra visión de la arquitectura, dándonos una dósis de inspiracion que nos llevo a la acción. Fundamos Imago Rendering Studio con passion para evocar emosiones y crear mucho valor.",
+            paragraph: " Muchos viajes y extensa experiencia recibida en todo el mundo, formaron nuestra visión de la arquitectura, dándonos una dósis de inspiracion que nos llevo a la acción. Fundamos Imago Rendering Studio con pasión para evocar emociones y crear mucho valor.",
             title2: " Nuestro viaje",
             title3: " CO-FUNDADOR-ARTISTA 3D",
             paragraph2: " Hola!, soy arquitecto y artista 3D egresado de la Facultad de Arquitectura, Diseño y Urbanismo, Montevideo-Uruguay. Mi forma de pasar el tiempo siempre fue estar conectado con el arte, la arquitectura, la pintura y la fotografía, con el cual luego se transformó en una pasión por crear imágenes y animaciones en la computadora. Soy especialista en el desarrollo de visualizacones arquitectónicas, Arquitectura 3D, Gráficos por computadora y cualquier tipo de visualización en el campo de la arquitectura el urbanismo y la ingeniería civil.",
