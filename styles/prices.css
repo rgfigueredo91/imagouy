@@ -29,6 +29,10 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.amountrenderings input{
+	margin-top: 20px;
+}
 .icons-totals-not{
 
 	justify-content: space-between;
@@ -420,6 +424,7 @@ select {
 	text-align: center;
 }
 .slidecontainer{
+	margin-top: 40px;
 	display: flex;
 	flex-direction: column;
 }
@@ -475,6 +480,13 @@ button {
 	border-radius: 50px;
 	font-size: 30px;	
 }	
+#timeline {
+	margin-top: 20px;
+}
+
+.amountrenderings{
+	margin-top: 20px;
+}
 .p3 {
 	margin-top: 60px;
 	text-align: center;

@@ -121,7 +121,7 @@ body {
 }
 .title a{
 	text-decoration: none;
-	color: #ff0066;
+	color: white;
 }
 
 
@@ -196,6 +196,10 @@ body {
 	transform: scale(1.2)
 }
 
+
+.items .currents {
+	color:#ff0066;;
+}
 
 
 /*--barra fija arriba menu social icon--*/
@@ -593,9 +597,6 @@ footer p {
 	text-align: center;
 }
 
-
-
-
 /*--tablet responsive--*/
 @media only screen and (max-width: 1200px) and (min-width: 700px)  {
 
@@ -619,7 +620,13 @@ footer p {
 	grid-template-rows: repeat(20, 1fr);
 	grid-gap: 1vh;}
 
+	.currentsphone .currents {
+		color:#ff0066;;
+	}
 }
+
+
+
 
 /*--mobile responsive--*/
 
@@ -629,7 +636,9 @@ footer p {
 * {
 	
 	font-family: century-gothic, sans-serif;}
-
+	.currentsphone .currents {
+		color:#ff0066;;
+	}
 .titlephone {
 	margin-top: 5px;
 	font-size: 50px;
