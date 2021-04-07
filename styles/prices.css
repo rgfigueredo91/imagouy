@@ -35,6 +35,13 @@
 	width: 6%;
 }
 
+.amount-interior label{
+	font-weight: bold;
+}
+.amount-exterior label {
+	font-weight: bold;
+}
+
 .experience-select label {
 	font-weight: bold;
 }

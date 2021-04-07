@@ -223,12 +223,12 @@
 				
                 <div class="amount-interior">
 					<div>
-                    	<label><b>Indoor renderings</b></label>
+                    	<label id="interiorrenderingtrans"><b>Indoor renderings</b></label>
 					</div>
 					<div class="slidecontainer">
 						<div class="scopeflex"> 
 							<div>
-								<p>Scope</p>
+								<p id="scoperender">Scope</p>
 								</div>
 									<div>
 									<input type="range" min="1" max="3" value="1" step="1"  id="interior-slider" onchange="addingImageInteriorScope()">
@@ -236,7 +236,7 @@
 							</div>
 					</div>
 					<div class="amountrenderings">
-						<p>Interiors amount</p>
+						<p id="interioramounttrans">Interiors amount</p>
 						<input type="number" value="0" id="interior" min="0"/>
 					</div>
 				</div>
@@ -248,12 +248,12 @@
 				
 				<div class="amount-exterior">
 					<div>
-                    	<label><b>Outdoor renderings</b></label>
+                    	<label id="exteriorrenderingtrans"><b>Outdoor renderings</b></label>
 					</div>
 					<div class="slidecontainer">
 						<div class="scopeflex"> 
 							<div>
-							<p>Scope</p>
+							<p  id="scoperender2">Scope</p>
 							</div>
 								<div>
 								<input type="range" min="1" max="3" value="1" step="1" id="exterior-slider" onchange="addingImageExteriorScope()">
@@ -261,7 +261,7 @@
 						</div>
 					</div>
 					<div class="amountrenderings">
-						<p>Exteriors amount</p>
+						<p id="exterioramounttrans">Exteriors amount</p>
 						<input type="number" value="0" id="exterior" min="0"/>
 					</div>
 					
@@ -277,26 +277,26 @@
 				
 
 				<div class="experience-select ">
-                    <label><b>Timeline</b></label>
+                    <label id="timelinetranslate"><b>Timeline</b></label>
                     <select id="timeline">
 						<option value="" selected hidden> 
 							Select an Option 
 						</option> 
-                        <option class="select-experience" value="light-experience">
+                        <option class="select-experience" value="light-experience" id="rushtranslate">
                             Rush (7-14 days)
                         </option>
-                        <option class="select-experience" value="full-experience">
-                            Standard(14-30 days)
+                        <option class="select-experience" value="full-experience" id="standardtranslate">
+                            Standard(15-30 days)
                         </option>
-						<option class="select-experience" value="full-experience">
-                            Not urgent(30-60 days)
+						<option class="select-experience" value="full-experience" id="norurgenttranslate">
+                            Not urgent(31-60 days)
                         </option>
                     </select>
 				</div>
 
 				
                 <div class="button">
-                    <button onclick="alert('working on it')" type="button">Check Estimated Price</button>
+                    <button onclick="alert('working on it')" type="button" id="checkpricing">Check Estimated Price</button>
 				</div>
 
 			
@@ -310,7 +310,7 @@
 							Si quieres saber con mas exactitud el precio, buscas una experiencia mixta y mas personalizada para las distintas imágenes o 
 							visualizaciones de 360º, contáctanos por privado y con gusto te aclararemos todas
 							las dudas.</p3>-->
-							<p3>This is an estimated price and may vary depending on the project complexities. 
+							<p3 id="lastparagraph">This is an estimated price and may vary depending on the project complexities. 
 								If you want to know the exact price or maybe 360º visualizations and animations, contact us privately and we will answer all your questions.</p3>
 					</div>
 					
