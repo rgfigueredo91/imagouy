@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function(e){
         
         
         //phone
-        document.getElementById("contactenglishphone").textContent = language.eng.contact;
        
 
         //mantener el #eng cuando hago click en los links
