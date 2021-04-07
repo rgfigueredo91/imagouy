@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
 <head>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -25,14 +25,18 @@
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script>
-		changeLanguageStart()
+		
+		
 		function changeLanguageStart() {
 			let language = navigator.language
-		if (language === "es-US") {
-			window.location.hash === "#eng"
+			console.log(language)
+		if (language === "es") {
+			window.location.hash = "#esp"
 		} else {
-			window.location.hash === "#esp"
+			window.location.hash = "#eng"
 		}}
+
+		changeLanguageStart()
 	</script>
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178424914-1"></script>

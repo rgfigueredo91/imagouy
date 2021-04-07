@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="eng">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta charset="UTF-8"/> 
@@ -21,6 +21,21 @@
 		<link rel="stylesheet" type="text/css" href="styles/reviews.css">
 		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+        <script>
+		
+		
+            function changeLanguageStart() {
+                let language = navigator.language
+                console.log(language)
+            if (language === "es") {
+                window.location.hash = "#esp"
+            } else {
+                window.location.hash = "#eng"
+            }}
+    
+            changeLanguageStart()
+        </script>
         
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 
