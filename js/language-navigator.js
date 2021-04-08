@@ -1,5 +1,4 @@
-function changeLanguageStart() {
-		
+function changeLanguageStart() {		
     if (!window.location.hash) {
         const language = navigator.language;
         console.log(language);
