@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function(e){
             title3: " CO-FUNDADOR-ARTISTA 3D",
             paragraph2: " Hola!, soy arquitecto y artista 3D egresado de la Facultad de Arquitectura, Diseño y Urbanismo, Montevideo-Uruguay. Mi forma de pasar el tiempo siempre fue estar conectado con el arte, la arquitectura, la pintura y la fotografía, con el cual luego se transformó en una pasión por crear imágenes y animaciones en la computadora. Soy especialista en el desarrollo de visualizacones arquitectónicas, Arquitectura 3D, Gráficos por computadora y cualquier tipo de visualización en el campo de la arquitectura el urbanismo y la ingeniería civil.",
             phototittle: " Fotos de viaje",
-            cooperation: " Coopera con nosotros"
 
         }
     };
@@ -24,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("paragraph2-translate").textContent = language.esp.paragraph2;
         document.getElementById("photos-tittle-translate").textContent = language.esp.phototittle;
 
-        //process
         
-        document.getElementById("cooperation-translate").textContent = language.esp.cooperation;
+        
+        
     }   
     
  
