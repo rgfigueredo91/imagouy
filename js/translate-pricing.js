@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function(e){
             standard: " Normal (15-30 días)",
             noturgent: " Urgente (31-61 días)",
             check: " Ver precio estimado",
-            lastp: " El precio es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, buscas una experiencia mixta y mas personalizada para las distintas imágenes o visualizaciones de 360º, contáctanos por privado y con gusto te aclararemos todas las dudas.",
+            lastp: " El precio es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, contáctanos por privado y con gusto te aclararemos todas las dudas.",
+            selectanoption2: " Seleccionar opción",
+            ifYouAre: " Si eres estudiante y estas buscando estimar precios, puedes usar la calculadora debajo.",
         }
     };
     //define language via window hash
@@ -53,6 +55,10 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("norurgenttranslate").textContent = language.esp.noturgent;
         document.getElementById("checkpricing").textContent = language.esp.check;
         document.getElementById("lastparagraph").textContent = language.esp.lastp;
+        document.getElementById("fullexperiencetransl").textContent = language.esp.fullexp;
+        document.getElementById("selectanoption2").textContent = language.esp.selectanoption2;
+        document.getElementById("ifYouAreId").textContent = language.esp.ifYouAre;
+
     }   
     
  

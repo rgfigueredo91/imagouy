@@ -15,6 +15,16 @@
 	width: 60%;
 	margin-left: 20%;
 }
+
+.ifYouAre{
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	
+	margin-left: 5%;
+}
 #finalcareerstudents{
 	width: 60%;
 	margin-left: 20%;
@@ -241,6 +251,7 @@ select {
 	margin-top: 20px;
 }
 #prices-form {
+	margin-top:30px ;
 	width: 55%;	
 }
 .amount-interior {
@@ -537,6 +548,16 @@ button {
 }
 .white {
 	height: 30px;	
+}
+
+.ifYouAre{
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	
+	margin-left:0;
 }
 
 }
