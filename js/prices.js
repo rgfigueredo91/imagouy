@@ -55,7 +55,7 @@ function addingParagraphOnExperience() {
 				After this, the final image is rendered, post-produced and sent. This does not affect the quality of the work, 
 				it just speeds up the work process. If you want to find out more about this workflow please download the following file. 
 			</p>
-			<a href="pdf/Workflow for students-light.pdf" download="Workflow for students"  target="_blank">
+			<a href="https://imagouy.com/pdf/Workflow_for_students-light.pdf" download="Workflow for students-light"  target="_blank">
                                         <button id="englishversion"> English version - light  </button> </a>
 				`
 			}
@@ -68,7 +68,7 @@ function addingParagraphOnExperience() {
 				Esto no implica en absoluto una pérdida de calidad en la imagen obtenida, simplemente agiliza el proceso de producción. 
 				Si buscas saber más de este workflow, por favor descarga el archivo a continuación. 
 			</p>
-			<a href="pdf/Proceso de trabajo Estudiantes-simple.pdf" download="Proceso de trabajo Estudiantes"  target="_blank">
+			<a href="https://imagouy.com/pdf/Proceso_de_trabajo_Estudiantes-simple.pdf" download="Proceso de trabajo Estudiantes-simple"  target="_blank">
                                             <button id="españolversion"> Versión en español - Simple </button> </a>
 				`
 			}
@@ -80,7 +80,7 @@ function addingParagraphOnExperience() {
 				If you want to find out more about this workflow please contact us.
 				
 			</p>
-			<a href="pdf/Workflow for students-full.pdf" download="Workflow for students"  target="_blank">
+			<a href="https://imagouy.com/pdf/Workflow_for_students-full.pdf" download="Workflow for students-full"  target="_blank">
                                         <button id="englishversion"> English version - Full </button> </a>
 				`
 			}
@@ -91,10 +91,10 @@ function addingParagraphOnExperience() {
 				htmlContentToAppend = `
 				<p>El concepto de este workflow se basa en un mayor vínculo entre el equipo y ustedes, generando una instancia de corrección, 
 				en las que es posible hacer cambios (texturas materiales, luces y equipamiento) sobre imágenes ya renderizadas, 
-				teniendo un mayor control de las mismas. Si buscas saber más de este workflow, por favor contáctanos.
+				teniendo un mayor control de las mismas. Si buscas saber más de este workflow, por favor descarga el archivo a continuación. 
 				
 			</p>
-			<a href="pdf/Proceso de trabajo Estudiantes-total.pdf" download="Proceso de trabajo Estudiantes"  target="_blank">
+			<a href="https://imagouy.com/pdf/Proceso_de_trabajo_Estudiantes-total.pdf" download="Proceso de trabajo Estudiantes-total"  target="_blank">
                                             <button id="españolversion"> Versión en español - Total  </button> </a>
 				`
 			}
