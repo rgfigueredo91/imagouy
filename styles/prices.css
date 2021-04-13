@@ -16,14 +16,26 @@
 	margin-left: 20%;
 }
 
+.table {
+	text-align: center;
+	
+	margin-right: 150px;
+	margin-top: 50px;
+	width: 100%;
+}
+
 .ifYouAre{
 	font-weight: bold;
 	font-size: 1.3rem;
-	margin-top: 20px;
+	margin-top: 100px;
 	width: 100%;
 	text-align: center;
 	
 	margin-left: 5%;
+}
+
+.table-opacity {
+	opacity: 0;
 }
 #finalcareerstudents{
 	width: 60%;
@@ -553,7 +565,7 @@ button {
 .ifYouAre{
 	font-weight: bold;
 	font-size: 1.3rem;
-	margin-top: 20px;
+	margin-top: 120px;
 	width: 100%;
 	text-align: center;
 	
