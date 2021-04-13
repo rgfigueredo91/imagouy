@@ -20,13 +20,12 @@ document.addEventListener("DOMContentLoaded", function(e){
             exteriorrendering: " Renders exteriores",
             amountext: " Cantidad",
             timeline: " Tiempos",
-            rush: " Urgente (7-14 días)",
-            standard: " Normal (15-30 días)",
-            noturgent: " Sin urgencia (31-61 días)",
+            rush: " Urgente (0-10 días)",
+            standard: " Normal (11-30 días)",
             check: " Ver precio estimado",
             lastp: " El precio es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, contáctanos por privado y con gusto te aclararemos todas las dudas.",
             selectanoption2: " Seleccionar opción",
-            ifYouAre: " Si eres estudiante y estas buscando estimar precios, puedes usar la calculadora debajo.",
+            ifYouAre: " Si eres ESTUDIANTE y estas buscando estimar precios, puedes usar la calculadora debajo.",
         }
     };
     //define language via window hash
@@ -52,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("timelinetranslate").textContent = language.esp.timeline;
         document.getElementById("rushtranslate").textContent = language.esp.rush;
         document.getElementById("standardtranslate").textContent = language.esp.standard;
-        document.getElementById("norurgenttranslate").textContent = language.esp.noturgent;
         document.getElementById("checkpricing").textContent = language.esp.check;
         document.getElementById("lastparagraph").textContent = language.esp.lastp;
         document.getElementById("fullexperiencetransl").textContent = language.esp.fullexp;
