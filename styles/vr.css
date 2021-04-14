@@ -1,69 +1,46 @@
 /*--parametros generales del cuerpo de imagenes 360--*/
 
-
 .main {
 	
-	left: 1vh;
-	margin-top: 160px;
-	position: relative;
-	height: 100%;
-	width: 99.1%;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(1, 30vh);
-	grid-gap: 1vh;	
+	margin-top: 20px;
+	width: 50%;
+	margin-left: 24%;
+	display: flex;
+	
 }
-.box-img iframe{
-    
-	height:100%;
+.box-img img{
+	margin-top: 50px;
+    margin-left: 14.5%;
+	height:50%;
+	width: auto;
+
+}
+
+.header-vr {
+	margin-top: 250px;
 	width: 100%;
-	object-fit: cover;
-	cursor: pointer;
-	-khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-	user-select: none;
-	transition: all 2s;
+
+	
+	text-align: center;
 }
 
-.box-img video{
-	margin-top:0;
-	margin-left: 0;
-	height:100%;
-	width: 100%;
-	object-fit: none;
-	cursor: pointer;
-	-khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-	user-select: none;
+.caption {
+	margin-top: 50px;
+	width: 85%;
+	text-align: center;
+	
 	
 }
-#iframe1 {
-	grid-row: 1/3;
-	grid-column: 1/3;}
 
-#iframe2 {
-	grid-row: 1/3;
-	grid-column: 3/5;}
-
-#iframe3 {
-	grid-row: 3/5;
-	grid-column: 1/3;}
+.caption a{
+	text-decoration: none;
+	list-style-type: none;
+	font-weight: bold;
+	color: black;
 	
-#iframe4 {
-	grid-row: 3/5;
-	grid-column: 3/5;}
 	
-#iframe5 {
-	grid-row: 5/7;
-	grid-column: 1/3;}
+}
 
-#iframe6 {
-	grid-row: 5/7;
-	grid-column: 3/5;}
 			
 
 /*--tablet responsive--*/
@@ -76,25 +53,38 @@
 .main {
 	display: flex;
 	flex-direction: column;
-	margin-top: 90px;
-	width: 96.5%;
-	height: 100%;
-}
-
-.box-img iframe{
-	height:300px;
+	margin-top: 50px;
 	width: 100%;
-	object-fit: cover;
-	cursor: pointer;
-	-khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-	user-select: none;
-	transition: all 2s;
+	height: auto;
+	margin-left: 10%;
 }
 
+.box-img img{
+	margin-left: 10%;
+	margin-top: 10px;
+    margin-left: 0;
+	height:auto;
+	width: 80%;
+}
 
+.header-vr {
+	margin-top: 150px;
+	width: 80%;
+	background-color: none;
+	margin-left: 10%;
+	
+	text-align: center;
+}
 
+.header-vr h1{
+	font-size: 1.3rem;
+}
+.caption {
+	margin-top: 20px;
+	width: 80%;
+	text-align: center;
+	
+	
 
+}
 }

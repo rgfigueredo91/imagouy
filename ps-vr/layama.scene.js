@@ -37,6 +37,11 @@ function getLayamaResolutions()
    return layamaResolutions;
 }
 
+function getOnScreenLogoUsage()
+{
+   return 6;
+}
+
 function getLayamaControls()
 {
    return {defMove: true, defRot: 1, altMove: true, altRot: 2};
