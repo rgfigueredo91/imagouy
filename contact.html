@@ -156,12 +156,12 @@
 							enctype="multipart/form-data">
 						<div>	
 							<label class="label1">
-							<input type="name" class="name" name="name" placeholder="name" required>
+							<input type="name" class="name" name="name" placeholder="name" required id="nameid">
 							</label>
 						</div>
 						<div>	
 							<label class="label1">
-							<input type="text" class="text" name="studio" placeholder="architecture studio, business, etc.">
+							<input type="text" class="text" name="studio" placeholder="architecture studio, business, etc." id="studioarchid">
 							</label>
 						</div>
 						<div>	
@@ -173,14 +173,14 @@
 						
 						<div>
 							<label class="label1">
-							<input type="text" class="subject" name="subject" placeholder="subject" required>
+							<input type="text" class="subject" name="subject" placeholder="subject" required id="subjectid">
 							</label>
 						</div>
 						<div class="uploads">
 							<br />
 							<input type="file" id="files" multiple class="input-file">
 							<br /><br />
-							<button class="send-button" id="send">Click here to Upload the file</button>
+							<button class="send-button" id="send">Click here to Upload the file before send</button>
 							<p id="uploading"></p>
 	
 							
@@ -189,7 +189,7 @@
 
 						<div>
 							<label class="label1">
-							<textarea class="message" name="textarea" placeholder="write your message" required></textarea>
+							<textarea class="message" name="textarea" placeholder="write your message" required id="textareaid"></textarea>
 							</label>
 						</div>
 
@@ -198,7 +198,7 @@
 						
 				
 
-						<button type="submit" class="submit">
+						<button type="submit" class="submit" id="buttoncontact">
 						contact us
 						</button>
 					</form>
@@ -244,6 +244,7 @@
 	
 	</script>
 		<script src="js/translate.js"></script><!--navbar move-->
+		<script src="js/translate-contact.js"></script><!--navbar move-->
 
 	</body>
 </html>
