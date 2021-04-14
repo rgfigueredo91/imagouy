@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     //define language via window hash
     if (window.location.hash === "#esp") {
         
-        //artists
+        //vr
         
         document.getElementById("titlesvr").textContent = language.esp.title;
         document.getElementById("captiontitle").textContent = language.esp.caption;
