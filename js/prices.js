@@ -9,7 +9,9 @@ let STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 180;
 
 const USER_COUNTRY = "UY";
 fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
-	if (json.country === "UY"){		
+	console.log(json)
+
+if (json.country === "UY"){		
 		console.log("Estoy en Uruguay");
 		
 	}
