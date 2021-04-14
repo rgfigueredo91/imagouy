@@ -245,8 +245,9 @@ let sumaCantidadRenders = parseInt(interiorCount()) + parseInt(exteriorCount());
 let sumaPrecioRenders = Math.ceil(exteriorPrices(exteriorCount())) + Math.ceil(interiorPrices(interiorCount()));
 	let experiences = document.getElementById("experience").value
 	let timeline = document.getElementById('timeline').value;
-	/*if(experiences === "full-experience" || experiences === "light-experience"){
-		let contenido = "";
+	if(experiences === "full-experience" || experiences === "light-experience"){
+		alert("Working on it");
+		/* let contenido = "";
 		contenido += `
 			<td>`+ addingImageInteriorScope()+`</td>
 			
@@ -268,7 +269,7 @@ let sumaPrecioRenders = Math.ceil(exteriorPrices(exteriorCount())) + Math.ceil(i
 		document.getElementById("tablacarrito").innerHTML = contenido;
 		document.getElementById("tablacarrito").style.opacity = "1";
 		document.getElementById("opacity-one").style.opacity = "1";
-		}*/
+		*/}
 
 		if(studentYesOrNo === "no") {
 			document.getElementById("tablacarrito").style.opacity = "0";
