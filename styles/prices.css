@@ -15,13 +15,16 @@
 	width: 60%;
 	margin-left: 20%;
 }
-
+.tablemargin {
+	margin-bottom: 90px;
+}
 .table {
+
 	text-align: center;
-	
-	margin-right: 150px;
+	line-height: 3rem;
+	margin-left: 28%;
 	margin-top: 50px;
-	width: 100%;
+	width: 50%;
 }
 
 .ifYouAre{
@@ -291,7 +294,7 @@ select {
 }
 .images img{
 	height: auto;
-	width: 100%;
+	width: 40%;
 }
 .amount-exterior input{
 	text-align: center;
