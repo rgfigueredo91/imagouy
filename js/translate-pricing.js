@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function(e){
             lastp: " El precio es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, contáctanos por privado y con gusto te aclararemos todas las dudas.",
             selectanoption2: " Seleccionar opción",
             ifYouAre: " Si eres ESTUDIANTE y estas buscando estimar precios, puedes usar la calculadora debajo.",
+            scopetranslate: " ALCANCE",
+            amounfinal: " CANTIDAD"
         }
     };
     //define language via window hash
@@ -56,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("fullexperiencetransl").textContent = language.esp.fullexp;
         document.getElementById("selectanoption2").textContent = language.esp.selectanoption2;
         document.getElementById("ifYouAreId").textContent = language.esp.ifYouAre;
+        document.getElementById("scoptranslate").textContent = language.esp.scopetranslate;
+        document.getElementById("amounttranslate").textContent = language.esp.amounfinal;
 
     }   
     

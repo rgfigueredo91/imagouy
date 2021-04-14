@@ -542,6 +542,24 @@ button {
 	margin-top: 20px;
 }
 
+.table {
+	text-align: center;
+	line-height: 2rem;
+	margin-left: 0%;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.table th{
+	font-size: .7rem;
+	
+}
+
+.table tr{
+	font-size: .7rem;
+	
+}
+
 .amountrenderings{
 	margin-top: 20px;
 }

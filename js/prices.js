@@ -1,12 +1,12 @@
 //PRICES VARIABLES
 
-let STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 150;
-let STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 160;
-let STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 220;
-let STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 230;
+let STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 140;
+let STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 145;
+let STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 170;
+let STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 180;
 
 //VARIABLE FOR OTHER COUNTRIES STUDENT
-/*
+
 const USER_COUNTRY = "UY";
 fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
 	if (json.country === "UY"){		
@@ -14,13 +14,13 @@ fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(respons
 		
 	}
 	else {
-		STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 230;
-		STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 250;
-		STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 350;
-		STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 370;
+		STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 200;
+		STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 210;
+		STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 250;
+		STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 270;
 		console.log(json.country);
 	}
-});*/
+});
 
 //VARIABLE FOR CHANGETOGGLE
 
@@ -181,6 +181,7 @@ function interiorPrices(amount, experiences, timeline){
 	let prices = 0
 	experiences = document.getElementById("experience").value
 	console.log(experiences)
+	//light experience
 	if(experiences === "light-experience" && slider.value == "1"){
 		prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*0.95*amount;
 		if(timeline === "rush"){
@@ -190,35 +191,92 @@ function interiorPrices(amount, experiences, timeline){
 	if(experiences === "light-experience" && slider.value == "2"){
 		prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount
 		if(timeline === "rush"){
-			prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.1;
+			prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.05;
 		}
 	}
 
 	if(experiences === "light-experience" && slider.value == "3"){
-		prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*1.3*amount
+		prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*1.1*amount
 		if(timeline === "rush"){
-			prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.3*1.15;
+			prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.06;
 		}
 	}
-	else if(experiences === "full-experience"){
-		prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount;
+	//Full experience
+	else if(experiences === "full-experience" && slider.value == "1"){
+		prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*0.95*amount;
+		if(timeline === "rush"){
+			prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
+		}
 	}
+
+	else if(experiences === "full-experience" && slider.value == "2"){
+		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount;
+		if(timeline === "rush"){
+			prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.05;
+		}
+	}
+
+	else if(experiences === "full-experience" && slider.value == "3"){
+		prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*1.11*amount;
+		if(timeline === "rush"){
+			prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.11*1.06;
+		}
+	}
+	
 	
 	return prices;
 }
 //exteriorPrices
 
-function exteriorPrices(amount){
+function exteriorPrices(amount, experiences, timeline, slide){
+	timeline = document.getElementById('timeline').value;
+	slide = document.getElementById('exterior-slider').value;
 	amount = exteriorCount();
 	let prices = 0
-	let experiences = document.getElementById("experience").value
+	experiences = document.getElementById("experience").value;
 	console.log(experiences)
-	if(experiences === "light-experience"){
-		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount;
+//light experience
+	if(experiences === "light-experience" && slide == "1"){
+		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount;
+		if(timeline === "rush"){
+			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
+		}
 	}
-	else if(experiences === "full-experience"){
+	if(experiences === "light-experience" && slide == "2"){
+		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount
+		if(timeline === "rush"){
+			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.05;
+		}
+	}
+
+	if(experiences === "light-experience" && slide == "3"){
+		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.3*amount
+		if(timeline === "rush"){
+			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.06;
+		}
+	}
+//Full experience
+	else if(experiences === "full-experience" && slide == "1"){
+		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount;
+		if(timeline === "rush"){
+			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
+		}
+	}
+
+	else if(experiences === "full-experience" && slide == "2"){
 		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount;
+		if(timeline === "rush"){
+			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.05;
+		}
 	}
+
+	else if(experiences === "full-experience" && slide == "3"){
+		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.11*amount;
+		if(timeline === "rush"){
+			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.06;
+		}
+	}
+	
 	
 	return prices;
 }
@@ -237,46 +295,42 @@ function tellMeExperience(){
 	return experiences;
 }
 
-
-
 function showPrices(){
-
+	
 let sumaCantidadRenders = parseInt(interiorCount()) + parseInt(exteriorCount());
 let sumaPrecioRenders = Math.ceil(exteriorPrices(exteriorCount())) + Math.ceil(interiorPrices(interiorCount()));
 	let experiences = document.getElementById("experience").value
 	let timeline = document.getElementById('timeline').value;
 	if(experiences === "full-experience" || experiences === "light-experience"){
-		alert("Working on it");
-		/* let contenido = "";
+		let contenido = "";
 		contenido += `
+		<tr>
 			<td>`+ addingImageInteriorScope()+`</td>
 			
 			<td>`+ interiorCount()+`</td>
 			<td>`+  Math.ceil(interiorPrices(interiorCount())*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(interiorPrices(interiorCount())*1.2)+` `+`USD`+`</td>
-			</tr>
-			<tr>
+		</tr>
+		<tr>
 			<td>`+ addingImageExteriorScope()+`</td>
 			
 			<td>`+ exteriorCount()+`</td>
-			<td>`+ exteriorPrices(exteriorCount())+`</td>
-			</tr>
-			<tr>
+			<td>`+ Math.ceil(exteriorPrices(exteriorCount())*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(exteriorPrices(exteriorCount())*1.2)+` `+`USD` +`</td>
+		</tr>
+		<tr>
 			<td>`+ "TOTAL" + `</td>
 			<td>`+ sumaCantidadRenders + `</td>
-			<td>`+ sumaPrecioRenders +`</td>
-			</tr>
+			<td>`+ Math.ceil(sumaPrecioRenders*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(sumaPrecioRenders*1.2)+` `+`USD` +`</td>
+		</tr>
 			`;
 		document.getElementById("tablacarrito").innerHTML = contenido;
 		document.getElementById("tablacarrito").style.opacity = "1";
 		document.getElementById("opacity-one").style.opacity = "1";
-		*/}
+		}
 
 		if(studentYesOrNo === "no") {
 			document.getElementById("tablacarrito").style.opacity = "0";
 			document.getElementById("opacity-one").style.opacity = "0";
 			alert("You are not a student");
-
-		
 		}
 
 		if(experiences === "" && studentYesOrNo === "yes") {
@@ -285,11 +339,13 @@ let sumaPrecioRenders = Math.ceil(exteriorPrices(exteriorCount())) + Math.ceil(i
 			alert("No experience select");
 		}
 
-		if(experiences === "full-experience" || experiences === "light-experience" && studentYesOrNo === "yes" && timeline === "") {
+		if(timeline === "" && studentYesOrNo === "yes") {
 			document.getElementById("tablacarrito").style.opacity = "0";
 			document.getElementById("opacity-one").style.opacity = "0";
 			alert("No timeline select");
 		}
+
+		
 }
 
    
