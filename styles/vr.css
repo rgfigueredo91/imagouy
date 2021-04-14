@@ -1,42 +1,59 @@
 /*--parametros generales del cuerpo de imagenes 360--*/
 
 .main {
-	
-	margin-top: 20px;
-	width: 50%;
-	margin-left: 24%;
+	margin-top: 60px;
+	width: 100%;
+	height: auto;
 	display: flex;
+	height: auto;
+	background-color: red;
+	justify-content: center;
+	background: rgb(65,63,88);
+	background: radial-gradient(circle at 50% 50%, rgb(55, 53, 75) 1%, rgba(15,21,22,1) 50%);
+}
+
+
+
+
+.imagevirtual {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+
+.box-img img{
+	margin-top: 40px;
 	
 }
-.box-img img{
-	margin-top: 50px;
-    margin-left: 14.5%;
-	height:50%;
-	width: auto;
-
-}
-
 .header-vr {
 	margin-top: 250px;
 	width: 100%;
+	text-align: center;
+}
 
-	
+.header-vr img {
+	margin-top: 40px;
+	width: 4%;
+
 	text-align: center;
 }
 
 .caption {
+	color: white;
 	margin-top: 50px;
-	width: 85%;
 	text-align: center;
+	margin-bottom: 40px;
 	
 	
 }
 
 .caption a{
+	
 	text-decoration: none;
 	list-style-type: none;
 	font-weight: bold;
-	color: black;
+	color: white;
 	
 	
 }
@@ -50,41 +67,37 @@
 
 @media only screen and (max-width: 850px) {
 
-.main {
-	display: flex;
-	flex-direction: column;
-	margin-top: 50px;
-	width: 100%;
-	height: auto;
-	margin-left: 10%;
-}
+	.main {
+		background:none;
+	background: none;
+	}
+	.imagevirtual {
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: row;
+	}
+	.header-vr {
+		margin-top: 150px;
+		width: 90%;
+		margin-left: 5%;
+	}
+	.header-vr h1{
+		font-size: 1.3rem;
+	}
 
-.box-img img{
-	margin-left: 10%;
-	margin-top: 10px;
-    margin-left: 0;
-	height:auto;
-	width: 80%;
-}
-
-.header-vr {
-	margin-top: 150px;
-	width: 80%;
-	background-color: none;
-	margin-left: 10%;
+	.header-vr img {
+		margin-top: 10px;
+		width: 14%;
 	
-	text-align: center;
-}
+		text-align: center;
+	}
 
-.header-vr h1{
-	font-size: 1.3rem;
-}
-.caption {
-	margin-top: 20px;
-	width: 80%;
-	text-align: center;
-	
-	
+	.box-img img{
+		margin-top: 40px;
+		width: 90%;
+		margin-left: 5%;
+		
+	}
 
-}
 }

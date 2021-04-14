@@ -701,7 +701,7 @@ footer p {
 
 .navphone-3 ul{
 	list-style-type:none;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 .navphone-3 {
 	top: 80px;
@@ -777,11 +777,23 @@ footer p {
 
 .flex-icon {
 	margin-right: 0;
-	margin-top: 3vh;
+	
 	display: flex;
 	justify-content: space-around;
 	
 }
+
+.flex-icon {
+	
+	margin-top: 10px;
+
+	
+}
+
+.social-icon i{
+	margin-top: 10px;
+}
+
 
 .navphone-3 hr {
 	transition: opacity 50ms ease-in-out;
