@@ -3,6 +3,6 @@ fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(respons
 
 if (json.country === "UY" && window.location.hash != "#eng"){		
 		console.log("Estoy en Uruguay");
-		window.location.hash === "#esp";
+		window.location.hash = "#esp";
 	}
 });
