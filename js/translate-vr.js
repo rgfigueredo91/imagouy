@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         esp: {
             
             title: " Cierra la brecha entre las visualizaciones 360º y la realidad virtual",
-            caption: " Mira la experiencia en este proyecto",
+            caption: " Click en la imagen para interactuar con la experiencia",
             rgf: " R|G|F - Arquitectura",
         }
     };
