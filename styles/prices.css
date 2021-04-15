@@ -130,6 +130,12 @@
 .slidecontainer p{
 	margin-right: 15px;
 }
+
+
+.amountrenderings{
+	margin-left: 3%;	
+	margin-top: 20px;
+}
 /* The switch - the box around the slider */
 .switch {
 	position: relative;
@@ -268,18 +274,20 @@ select {
 	width: 55%;	
 }
 .amount-interior {
+	
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
 }
 .amount-interior input{
+	margin-left: 0;
 	text-align: center;
 	background-color: black;
 	color: white;
-	border-radius: 50px;
+	border-radius: 0x;
 	height: 20px;
-	width: 175px;
+	width: 165px;
 }
 .jsExperience{
 	margin-top: 20px;
@@ -288,23 +296,25 @@ select {
 	text-align: justify;	
 }
 .images {
+	text-align: right;
 	height: 100%;
 	width: 100%;
 	margin-top: 20px;
 }
 .images img{
 	height: auto;
-	width: 40%;
+	width: 18%;
 }
 .amount-exterior input{
 	text-align: center;
 	background-color: black;
 	color: white;
-	border-radius: 50px;
+	border-radius: 0px;
 	height: 20px;
-	width: 175px;
+	width: 170px;
 }
 .amount-exterior {
+	margin-right: 5px;
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -474,7 +484,8 @@ select {
 	display: flex;
 	flex-direction: column;	
 }
-.amount-interior {	
+.amount-interior {
+		
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
@@ -561,6 +572,7 @@ button {
 }
 
 .amountrenderings{
+	
 	margin-top: 20px;
 }
 .p3 {
@@ -589,6 +601,27 @@ button {
 	text-align: center;
 	
 	margin-left:0;
+}
+
+.reverse-columnphone {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.images {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
+}
+.images img{
+	height: auto;
+	width: 70%;
+}
+
+.amountrenderings{
+	margin-left: 0%;	
+	margin-top: 20px;
 }
 
 }

@@ -230,7 +230,13 @@
 					<div>
                     	<label id="interiorrenderingtrans"><b>Indoor renderings</b></label>
 					</div>
+					
+					<div class="amountrenderings">
+						<p id="interioramounttrans">Interiors amount</p>
+						<input type="number" value="0" id="interior" min="0" onchange="interiorPrices()"/>
+					</div>
 					<div class="slidecontainer">
+						
 						<div class="scopeflex"> 
 							<div>
 								<p id="scoperender">Scope</p>
@@ -239,10 +245,6 @@
 									<input type="range" min="1" max="3" value="1" step="1"  id="interior-slider" onchange="addingImageInteriorScope()">
 								</div>
 							</div>
-					</div>
-					<div class="amountrenderings">
-						<p id="interioramounttrans">Interiors amount</p>
-						<input type="number" value="0" id="interior" min="0" onchange="interiorPrices()"/>
 					</div>
 				</div>
 
@@ -255,6 +257,12 @@
 					<div>
                     	<label id="exteriorrenderingtrans"><b>Outdoor renderings</b></label>
 					</div>
+
+					<div class="amountrenderings">
+						<p id="exterioramounttrans">Exteriors amount</p>
+						<input type="number" value="0" id="exterior" min="0" onchange="exteriorPrices()"/>
+					</div>
+					
 					<div class="slidecontainer">
 						<div class="scopeflex"> 
 							<div>
@@ -265,11 +273,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="amountrenderings">
-						<p id="exterioramounttrans">Exteriors amount</p>
-						<input type="number" value="0" id="exterior" min="0" onchange="exteriorPrices()"/>
-					</div>
-					
+				
 
 					
 				</div>
