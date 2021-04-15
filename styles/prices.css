@@ -22,9 +22,9 @@
 
 	text-align: center;
 	line-height: 3rem;
-	margin-left: 28%;
+	margin-left: 0%;
 	margin-top: 50px;
-	width: 50%;
+	width: 100%;
 }
 
 .ifYouAre{
@@ -127,9 +127,7 @@
 .textb p{ 
 	text-align: center;
 }
-.slidecontainer p{
-	margin-right: 15px;
-}
+
 
 
 .amountrenderings{
@@ -314,7 +312,7 @@ select {
 	width: 170px;
 }
 .amount-exterior {
-	margin-right: 5px;
+	margin-right: 0px;
 	margin-top: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -331,6 +329,7 @@ button {
 	border-radius: 50px;
 	cursor: pointer;
 	margin-bottom: 20px;
+	text-align: center;
 }
 button:hover {
 	border: 1px;
@@ -562,12 +561,12 @@ button {
 }
 
 .table th{
-	font-size: .7rem;
+	font-size: .9rem;
 	
 }
 
 .table tr{
-	font-size: .7rem;
+	font-size: .8rem;
 	
 }
 
