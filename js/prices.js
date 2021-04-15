@@ -212,7 +212,7 @@ function interiorPrices(amount, experiences, timeline){
 	}
 
 	else if(experiences === "full-experience" && slider.value == "2"){
-		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount;
+		prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount;
 		if(timeline === "rush"){
 			prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.05;
 		}
@@ -275,7 +275,7 @@ function exteriorPrices(amount, experiences, timeline, slide){
 	else if(experiences === "full-experience" && slide == "3"){
 		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.11*amount;
 		if(timeline === "rush"){
-			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.06;
+			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.11*1.06;
 		}
 	}
 	
