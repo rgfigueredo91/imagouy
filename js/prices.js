@@ -5,8 +5,10 @@ let STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 145;
 let STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 170;
 let STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 180;
 
-//VARIABLE FOR OTHER COUNTRIES STUDENT
 
+
+//VARIABLE FOR OTHER COUNTRIES STUDENT
+/*
 const USER_COUNTRY = "UY";
 fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
 	console.log(json)
@@ -22,7 +24,7 @@ if (json.country === "UY"){
 		STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 270;
 		console.log(json.country);
 	}
-});
+});*/
 
 //VARIABLE FOR CHANGETOGGLE
 
@@ -175,6 +177,9 @@ function exteriorCount()
 	return exteriorAmount;
 }
 
+
+
+
 //InteriorPrices
 function interiorPrices(amount, experiences, timeline){
 	timeline = document.getElementById('timeline').value;
@@ -284,6 +289,44 @@ function exteriorPrices(amount, experiences, timeline, slide){
 }
 
 
+function discountAmountRenderingInteriorAndFinalPrice(amountRendering, interiorPrice){
+	interiorPrice = interiorPrices();
+	amountRenderings = interiorCount() + exteriorCount();
+	if (amountRenderings = 2){
+		return interiorPrice*0.96  
+	} if(amountRenderings = 3) {
+		return interiorPrice*0.92
+	} if(amountRenderings = 4) {
+		return interiorPrice*0.88
+	} if(amountRenderings = 5) {
+		return interiorPrice*0.84
+	} if(amountRenderings = 6) {
+		return interiorPrice*0.8
+	} if(amountRendering > 6) {
+		return interiorPrice*0.8
+	}
+	return interiorPrice;
+}
+
+function discountAmountRenderingExteriorAndFinalPrice(amountRendering, exteriorPrice){
+	exteriorPrice = exteriorPrices();
+	amountRenderings = interiorCount() + exteriorCount();
+	if (amountRenderings = 2){
+		return exteriorPrice*0.96  
+	} if(amountRenderings = 3) {
+		return exteriorPrice*0.92
+	} if(amountRenderings = 4) {
+		return exteriorPrice*0.88
+	} if(amountRenderings = 5) {
+		return exteriorPrice*0.84
+	} if(amountRenderings = 6) {
+		return exteriorPrice*0.8
+	} if(amountRendering > 6) {
+		return exteriorPrice*0.8
+	}
+	return exteriorPrice;
+}
+
 
 function tellMeExperience(){
 	let experiences = document.getElementById("experience").value;
@@ -300,7 +343,7 @@ function tellMeExperience(){
 function showPrices(){
 	
 let sumaCantidadRenders = parseInt(interiorCount()) + parseInt(exteriorCount());
-let sumaPrecioRenders = Math.ceil(exteriorPrices(exteriorCount())) + Math.ceil(interiorPrices(interiorCount()));
+let sumaPrecioRenders = Math.ceil(discountAmountRenderingExteriorAndFinalPrice()) + Math.ceil(discountAmountRenderingInteriorAndFinalPrice());
 	let experiences = document.getElementById("experience").value
 	let timeline = document.getElementById('timeline').value;
 	if(experiences === "full-experience" || experiences === "light-experience"){
@@ -310,18 +353,18 @@ let sumaPrecioRenders = Math.ceil(exteriorPrices(exteriorCount())) + Math.ceil(i
 			<td>`+ addingImageInteriorScope()+`</td>
 			
 			<td>`+ interiorCount()+`</td>
-			<td>`+  Math.ceil(interiorPrices(interiorCount())*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(interiorPrices(interiorCount())*1.2)+` `+`USD`+`</td>
+			<td>`+  Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*1.2)+` `+`USD`+`</td>
 		</tr>
 		<tr>
 			<td>`+ addingImageExteriorScope()+`</td>
 			
 			<td>`+ exteriorCount()+`</td>
-			<td>`+ Math.ceil(exteriorPrices(exteriorCount())*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(exteriorPrices(exteriorCount())*1.2)+` `+`USD` +`</td>
+			<td>`+ Math.ceil(discountAmountRenderingExteriorAndFinalPrice()*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(discountAmountRenderingExteriorAndFinalPrice()*1.2)+` `+`USD` +`</td>
 		</tr>
 		<tr>
 			<td>`+ "TOTAL" + `</td>
 			<td>`+ sumaCantidadRenders + `</td>
-			<td>`+ Math.ceil(sumaPrecioRenders*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(sumaPrecioRenders*1.2)+` `+`USD` +`</td>
+			<td>`+ Math.floor(sumaPrecioRenders*0.9)+` `+`USD`+` `+`-`+` `+ Math.floor(sumaPrecioRenders*1.2)+` `+`USD` +`</td>
 		</tr>
 			`;
 		document.getElementById("tablacarrito").innerHTML = contenido;
