@@ -8,7 +8,7 @@ let STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 180;
 
 
 //VARIABLE FOR OTHER COUNTRIES STUDENT
-/*
+
 const USER_COUNTRY = "UY";
 fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
 	console.log(json)
@@ -24,7 +24,7 @@ if (json.country === "UY"){
 		STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 270;
 		console.log(json.country);
 	}
-});*/
+});
 
 //VARIABLE FOR CHANGETOGGLE
 
