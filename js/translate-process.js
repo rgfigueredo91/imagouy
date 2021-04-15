@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(e){
             previous:" Información previa",
             stage2:" ETAPA 2",
             paragraph:" Para realizar un presupuesto lo más ajustado posible necesitamos información sobre el proyecto, ya sean planos, bocetos, modelos 3D, número de imágenes a realizar, plazo de entrega, etc. No es necesario que el proyecto esté perfectamente definido para generar el mismo.",
-            paragraph2:" La mayoría de estudios elaboran sus propios modelos 3D. De ser proporcionado por el cliente, el mismo debe ajsutarse a nuestros estándares. Si dispone de sus propio modelos 3D, envíenoslo previamente y realizaremos las comprobaciones necesarias.",
+            paragraph2:" La mayoría de estudios elaboran sus propios modelos 3D. De ser proporcionado por el cliente, el mismo debe ajsutarse a nuestros estándares. Si dispone de sus propio modelos 3D, envíenoslo previamente y realizaremos las comprobaciones necesarias. En caso de no contar con un modelo, nosotros procedemos a modelarlo.",
             stage3:" ETAPA 3",
             model:" Modelo 3D",
             beginning:" Comienzo",
