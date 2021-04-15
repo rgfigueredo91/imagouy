@@ -362,7 +362,7 @@ let sumaPrecioRenders = Math.ceil(discountAmountRenderingExteriorAndFinalPrice()
 			<td>`+ Math.ceil(discountAmountRenderingExteriorAndFinalPrice()*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(discountAmountRenderingExteriorAndFinalPrice()*1.2)+` `+`USD` +`</td>
 		</tr>
 		<tr>
-			<td>`+ "TOTAL" + `</td>
+			<td class="totalclass">`+ "TOTAL" + `</td>
 			<td>`+ sumaCantidadRenders + `</td>
 			<td>`+ Math.floor(sumaPrecioRenders*0.9)+` `+`USD`+` `+`-`+` `+ Math.floor(sumaPrecioRenders*1.2)+` `+`USD` +`</td>
 		</tr>
