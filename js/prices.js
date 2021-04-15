@@ -252,7 +252,7 @@ function exteriorPrices(amount, experiences, timeline, slide){
 	}
 
 	if(experiences === "light-experience" && slide == "3"){
-		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.3*amount
+		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.1*amount
 		if(timeline === "rush"){
 			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.06;
 		}
