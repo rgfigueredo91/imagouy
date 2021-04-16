@@ -11,8 +11,9 @@ const USER_COUNTRY = "UY";
 fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
 	console.log(json)
 
-if (json.country === "UY"){		
+if (json.country === "UY" || json.country === "AR" || json.country === "BR" || json.country === "CL" || json.country === "PE" || json.country === "PY" || json.country === "PY" || json.country === "VE" ){		
 		console.log("Estoy en Uruguay");
+
 		
 	}
 	else {
