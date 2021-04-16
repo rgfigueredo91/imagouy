@@ -107,32 +107,32 @@ function addingImageInteriorScope() {
 	let slider = document.getElementById('interior-slider');
 	let name = ""
 	let htmlContentToAppend = "";
-	if (slider.value === "1"){
+	if (slider.value == "1"){
 		htmlContentToAppend = `
 		<img  src="img/imgscope/2x1Vh.jpg" data-src="" >
 		`;
 		name = '<img  src="img/imgscope/2x1Vh.jpg" data-src="" width="100">';
 	}
-	else if (slider.value === "2"){
+	else if (slider.value == "2"){
 		htmlContentToAppend = `
 		<img  src="img/imgscope/1x1Bm.jpg" data-src="" >
 		`;
 		name = '<img  src="img/imgscope/1x1Bm.jpg" data-src="" width="100">';
 	}
-	else if (slider.value === "3"){
+	else if (slider.value == "3"){
 		htmlContentToAppend = 
 		`<img  src="img/imgscope/1x1Bp.jpg" data-src="" >`;
 		name = '<img  src="img/imgscope/1x1Bp.jpg" data-src="" width="100">';
 	}
 	document.getElementById("images-scopes").innerHTML = htmlContentToAppend;
-	console.log(slider.value)
+	console.log(slider.value);
 
-	return name
+	return name;
 };
 
 function addingImageExteriorScope() {
 	let slider = document.getElementById('exterior-slider');
-	let name = ""
+	let name = "";
 	let htmlContentToAppend = "";
 	
 	if (slider.value == "1"){
@@ -155,7 +155,7 @@ function addingImageExteriorScope() {
 		name = '<img  src="img/imgscope/2x1Hza.jpg" data-src="" width="100">';
 	}
 	document.getElementById("images-scopes-exterior").innerHTML = htmlContentToAppend;
-	return name
+	return name;
 };
 
 //RENDERINGS AMOUNT
@@ -166,8 +166,7 @@ function interiorCount()
 
 function exteriorCount()
 {
-	let exteriorAmount = document.getElementById("exterior").value;
-	return parseInt(exteriorAmount);
+	return parseInt(document.getElementById("exterior").value);
 }
 
 //InteriorPrices
@@ -179,43 +178,43 @@ function interiorPrices(amount, experiences, timeline){
 	experiences = document.getElementById("experience").value
 	console.log(experiences)
 	//light experience
-	if(experiences === "light-experience" && slider.value == "1"){
+	if(experiences == "light-experience" && slider.value == "1"){
 		prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*0.95*amount;
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
 		}
 	}
-	if(experiences === "light-experience" && slider.value == "2"){
+	if(experiences == "light-experience" && slider.value == "2"){
 		prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.05;
 		}
 	}
 
-	if(experiences === "light-experience" && slider.value == "3"){
+	if(experiences == "light-experience" && slider.value == "3"){
 		prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*1.1*amount
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.06;
 		}
 	}
 	//Full experience
-	else if(experiences === "full-experience" && slider.value == "1"){
+	else if(experiences == "full-experience" && slider.value == "1"){
 		prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*0.95*amount;
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
 		}
 	}
 
-	else if(experiences === "full-experience" && slider.value == "2"){
+	else if(experiences == "full-experience" && slider.value == "2"){
 		prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount;
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.05;
 		}
 	}
 
-	else if(experiences === "full-experience" && slider.value == "3"){
+	else if(experiences == "full-experience" && slider.value == "3"){
 		prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*1.11*amount;
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE*amount*1.11*1.06;
 		}
 	}
@@ -233,43 +232,43 @@ function exteriorPrices(amount, experiences, timeline, slide){
 	experiences = document.getElementById("experience").value;
 	console.log(experiences)
 //light experience
-	if(experiences === "light-experience" && slide == "1"){
+	if(experiences == "light-experience" && slide == "1"){
 		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount;
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
 		}
 	}
-	if(experiences === "light-experience" && slide == "2"){
+	if(experiences == "light-experience" && slide == "2"){
 		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.05;
 		}
 	}
 
-	if(experiences === "light-experience" && slide == "3"){
+	if(experiences == "light-experience" && slide == "3"){
 		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.1*amount
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.06;
 		}
 	}
 //Full experience
-	else if(experiences === "full-experience" && slide == "1"){
+	else if(experiences == "full-experience" && slide == "1"){
 		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount;
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
 		}
 	}
 
-	else if(experiences === "full-experience" && slide == "2"){
+	else if(experiences == "full-experience" && slide == "2"){
 		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount;
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.05;
 		}
 	}
 
-	else if(experiences === "full-experience" && slide == "3"){
+	else if(experiences == "full-experience" && slide == "3"){
 		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.11*amount;
-		if(timeline === "rush"){
+		if(timeline == "rush"){
 			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.11*1.06;
 		}
 	}
@@ -353,7 +352,7 @@ function showPrices(){
 		<tr>
 			<td class="totalclass">`+ "TOTAL" + `</td>
 			<td>`+ sumaCantidadRenders + `</td>
-			<td>`+ Math.floor(sumaPrecioRenders*0.9)+` `+`USD`+` `+`-`+` `+ Math.floor(sumaPrecioRenders*1.2)+` `+`USD` +`</td>
+			<td>`+ Math.ceil(sumaPrecioRenders*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(sumaPrecioRenders*1.2)+` `+`USD` +`</td>
 		</tr>
 			`;
 		document.getElementById("tablacarrito").innerHTML = contenido;
