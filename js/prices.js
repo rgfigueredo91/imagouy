@@ -55,7 +55,7 @@ function addingParagraphOnExperience() {
 				<p>This experience will give freedoom to the 3d artist to design the image.
 				Reducing contact to an initial meeting and a camera viewpoint correction prior to rendering.
 				After this, the final image is rendered, post-produced and sent. This does not affect the quality of the work, 
-				it just speeds up the work process. If you want to find out more about this workflow please download the following file. 
+				it just speeds up the work process. In this experience you have to bring us the 3D model and adjust it to our requierement. If you want to find out more about this workflow please download the following file. 
 			</p>
 			<a href="pdf/Workflow_for_students-light.pdf" download="Workflow for students-light"  target="_blank">
                                         <button type="button"> English version - light  </button> </a>
@@ -67,10 +67,10 @@ function addingParagraphOnExperience() {
 				htmlContentToAppend = `
 				<p>El contepto de este workflow es dejar libertad a los artistas 3d para diseñar la imagen. 
 				Teniendo un contacto reducido a una instancia de reunión inicial y una instancia de corrección del punto de vista previo al renderizado. 
-				Esto no implica en absoluto una pérdida de calidad en la imagen obtenida, simplemente agiliza el proceso de producción. 
+				Esto no implica en absoluto una pérdida de calidad en la imagen obtenida, simplemente agiliza el proceso de producción. En esta experiencia tienes que brindarnos el modelo 3D y ajsutarlo a nuestros estándares. 
 				Si buscas saber más de este workflow, por favor descarga el archivo a continuación. 
 			</p>
-			<a href=pdf/Proceso_de_trabajo_Estudiantes-simple.pdf" download="Proceso de trabajo Estudiantes-simple"  target="_blank">
+			<a href="pdf/Proceso_de_trabajo_Estudiantes-simple.pdf" download="Proceso de trabajo Estudiantes-simple"  target="_blank">
                                             <button type="button"> Versión en español - Simple </button> </a>
 				`
 			}
@@ -79,7 +79,7 @@ function addingParagraphOnExperience() {
 				htmlContentToAppend = `
 				<p>This experience is based on a greater bond between the team and you, generating correction instances, in which it is possible to make changes 
 				(material textures, lights and equipment) on images already rendered, having more control of the image. 
-				If you want to find out more about this workflow please download the following file. 
+				If you want to find out more about this workflow please download the following file. (The price doesn't include the 3D model)
 				
 			</p>
 			<a href="pdf/Workflow_for_students-full.pdf" download="Workflow for students-full"  target="_blank">
@@ -93,7 +93,7 @@ function addingParagraphOnExperience() {
 				htmlContentToAppend = `
 				<p>El concepto de este workflow se basa en un mayor vínculo entre el equipo y ustedes, generando una instancia de corrección, 
 				en las que es posible hacer cambios (texturas materiales, luces y equipamiento) sobre imágenes ya renderizadas, 
-				teniendo un mayor control de las mismas. Si buscas saber más de este workflow, por favor descarga el archivo a continuación. 
+				teniendo un mayor control de las mismas. Si buscas saber más de este workflow, por favor descarga el archivo a continuación. (El precio no incluye el modelado 3D)
 				
 			</p>
 			<a href="pdf/Proceso_de_trabajo_Estudiantes-total.pdf" download="Proceso de trabajo Estudiantes-total"  target="_blank">
