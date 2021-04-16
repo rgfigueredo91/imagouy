@@ -5,8 +5,6 @@ let STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 145;
 let STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 170;
 let STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 180;
 
-
-
 //VARIABLE FOR OTHER COUNTRIES STUDENT
 
 const USER_COUNTRY = "UY";
@@ -31,23 +29,19 @@ if (json.country === "UY"){
 let clicked = false;
 let studentYesOrNo = "no"
 
-function changeToggleDisabledEnabled(){
-	
-	if(!clicked) {
-		clicked = true;
-		studentYesOrNo = "yes";
-		document.getElementById("experience").disabled=false;
-		document.getElementById("timeline").disabled=false;
-		console.log("Im student");
-		
-	} else{
-		clicked = false;
-		studentYesOrNo = "no";
-		document.getElementById("experience").disabled=true;
-		document.getElementById("timeline").disabled=true;
+function changeToggleDisabledEnabled() {
+	studentYesOrNo = clicked ? "no" : "yes";
+	document.getElementById("experience").disabled = clicked;
+	document.getElementById("timeline").disabled = clicked;
+
+	if (clicked) {
 		console.log("Im not student");
-		
+	} else{
+		console.log("Im student");
 	}
+
+	clicked = !clicked;
+
 	return studentYesOrNo;
 }
 
@@ -167,18 +161,14 @@ function addingImageExteriorScope() {
 //RENDERINGS AMOUNT
 function interiorCount()
 {
-	let interiorAmount = document.getElementById("interior").value;
-	return interiorAmount;
+	return parseInt(document.getElementById("interior").value);
 }
 
 function exteriorCount()
 {
 	let exteriorAmount = document.getElementById("exterior").value;
-	return exteriorAmount;
+	return parseInt(exteriorAmount);
 }
-
-
-
 
 //InteriorPrices
 function interiorPrices(amount, experiences, timeline){
@@ -288,45 +278,46 @@ function exteriorPrices(amount, experiences, timeline, slide){
 	return prices;
 }
 
-
-function discountAmountRenderingInteriorAndFinalPrice(amountRendering, interiorPrice){
+function discountAmountRenderingInteriorAndFinalPrice(amountRenderings, interiorPrice){
 	interiorPrice = interiorPrices();
 	amountRenderings = interiorCount() + exteriorCount();
-	if (amountRenderings = 2){
+	console.log(amountRenderings);
+
+	if (amountRenderings === 2){
 		return interiorPrice*0.96  
-	} if(amountRenderings = 3) {
+	} if(amountRenderings === 3) {
 		return interiorPrice*0.92
-	} if(amountRenderings = 4) {
+	} if(amountRenderings === 4) {
 		return interiorPrice*0.88
-	} if(amountRenderings = 5) {
+	} if(amountRenderings === 5) {
+		console.log("eestoy en el 5 if")
 		return interiorPrice*0.84
-	} if(amountRenderings = 6) {
+	} if(amountRenderings === 6) {
 		return interiorPrice*0.8
-	} if(amountRendering > 6) {
+	} if(amountRenderings > 6) {
 		return interiorPrice*0.8
 	}
 	return interiorPrice;
 }
 
-function discountAmountRenderingExteriorAndFinalPrice(amountRendering, exteriorPrice){
+function discountAmountRenderingExteriorAndFinalPrice(amountRenderings, exteriorPrice){
 	exteriorPrice = exteriorPrices();
 	amountRenderings = interiorCount() + exteriorCount();
-	if (amountRenderings = 2){
+	if (amountRenderings === 2){
 		return exteriorPrice*0.96  
-	} if(amountRenderings = 3) {
+	} if(amountRenderings === 3) {
 		return exteriorPrice*0.92
-	} if(amountRenderings = 4) {
+	} if(amountRenderings === 4) {
 		return exteriorPrice*0.88
-	} if(amountRenderings = 5) {
+	} if(amountRenderings === 5) {
 		return exteriorPrice*0.84
-	} if(amountRenderings = 6) {
+	} if(amountRenderings === 6) {
 		return exteriorPrice*0.8
-	} if(amountRendering > 6) {
+	} if(amountRenderings > 6) {
 		return exteriorPrice*0.8
 	}
 	return exteriorPrice;
 }
-
 
 function tellMeExperience(){
 	let experiences = document.getElementById("experience").value;
@@ -341,19 +332,17 @@ function tellMeExperience(){
 }
 
 function showPrices(){
-	
-let sumaCantidadRenders = parseInt(interiorCount()) + parseInt(exteriorCount());
-let sumaPrecioRenders = Math.ceil(discountAmountRenderingExteriorAndFinalPrice()) + Math.ceil(discountAmountRenderingInteriorAndFinalPrice());
+	let sumaCantidadRenders = parseInt(interiorCount()) + parseInt(exteriorCount());
+	let sumaPrecioRenders = Math.ceil(discountAmountRenderingExteriorAndFinalPrice()) + Math.ceil(discountAmountRenderingInteriorAndFinalPrice());
 	let experiences = document.getElementById("experience").value
 	let timeline = document.getElementById('timeline').value;
 	if(experiences === "full-experience" || experiences === "light-experience"){
-		let contenido = "";
-		contenido += `
+		let contenido = `
 		<tr>
-			<td>`+ addingImageInteriorScope()+`</td>
+			<td>${addingImageInteriorScope()}</td>
 			
-			<td>`+ interiorCount()+`</td>
-			<td>`+  Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*1.2)+` `+`USD`+`</td>
+			<td>${interiorCount()}</td>
+			<td>${Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*0.9)} USD - ${Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*1.2)} USD</td>
 		</tr>
 		<tr>
 			<td>`+ addingImageExteriorScope()+`</td>
