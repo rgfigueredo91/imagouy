@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function(e){
             process: " procesos",
             pricess: " precios",
             references: " referencias",
-            portfolio: " portafolio",
-            visualization: " 360 vis",
+            portfolio: " Arq Vis",
+            visualization: " 360 Vis",
             rights: " © 2020 Imago Rendering Studio. Todos los derechos reservados.",
-            vr: " pseudo - RV",
+            vr: " Ps R.V",
         }
     };
     //define language via window hash
