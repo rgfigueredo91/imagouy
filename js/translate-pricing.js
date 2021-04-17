@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function(e){
             students: " Estudiantes de fin de carrera",
             developers: " Desarrolladores",
             professionals: " Profesionales",
-            paragraph: " Presupuestamos cada trabajo por separado. El precio para cada proyecto esta definido por su complejidad, su alcance, fechas limite, etc. De esta manera podemos asegurar la mejor calidad-precio. Para hacer un presupuesto certero, necesitamos ver el proyecto. Documentación básica sería suficiente, algunos planos, dibujos, no hay necesidad de esperar por un desarrollo completo del mismo. Necesitamos cantidad de imágenes, duración de videos, tours virtuales, dependiendo que tipo de servicio estas buscando. Si estas interesado en nuestros servicios, envíanos una solicitud y podemos cotizarte sin costo alguno. ",
-            imstudent: " SOY ESTUDIANTE",
+            paragraph: " Presupuestamos cada trabajo por separado. El precio para cada proyecto esta definido por su complejidad, su alcance, fechas limite, etc. De esta manera podemos asegurar la mejor calidad-precio. Para hacer un presupuesto certero, necesitamos ver el proyecto. Documentación básica sería suficiente, algunos planos, dibujos, no hay necesidad de esperar por un desarrollo completo del mismo. Necesitamos cantidad de imágenes, duración de videos, tours virtuales, dependiendo que tipo de servicio estas buscando. Si estas interesado en nuestros servicios, envíanos una solicitud y podemos cotizarte sin costo alguno.",
+            imstudent: " SOY ESTUDIANTE DE FIN DE CARRERA",
             experience: " SELECCIONAR EXPERIENCIA",
             selectanoption: " Seleccionar opción",
             lightexp: " Experiencia simple",
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(e){
             check: " Ver precio estimado",
             lastp: " El precio es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, contáctanos por privado y con gusto te aclararemos todas las dudas.",
             selectanoption2: " Seleccionar opción",
-            ifYouAre: " Si eres ESTUDIANTE y estas buscando estimar precios, puedes usar la calculadora debajo.",
+            ifYouAre: " Si eres ESTUDIANTE DE FIN DE CARRERA y estas buscando estimar precios, puedes usar la calculadora debajo.",
             scopetranslate: " ALCANCE",
             amounfinal: " CANTIDAD"
         }
