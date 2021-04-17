@@ -27,6 +27,17 @@
 	width: 50%;
 }
 
+
+.inputlast {
+	margin-left: 0;
+	text-align: center;
+	background-color: black;
+	color: white;
+	border-radius: 0x;
+	height: 20px;
+	width: 165px;
+}
+}
 .ifYouAre{
 	font-weight: bold;
 	font-size: 2rem;
@@ -287,6 +298,8 @@ select {
 	height: 20px;
 	width: 165px;
 }
+
+
 .jsExperience{
 	margin-top: 20px;
 }
