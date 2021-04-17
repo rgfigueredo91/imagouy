@@ -22,9 +22,55 @@
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/prices.css">
 		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-		
-		
-		
+	
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.js"
+			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			crossorigin="anonymous">
+		</script>
+		<script>
+			fetch("https://api.apispreadsheets.com/data/11032/", {
+				method: "POST",
+				body: JSON.stringify({"data": {"name":"","email":""}}),
+			}).then(res =>{
+				if (res.status === 201){
+					// SUCCESS
+				}
+				else{
+					// ERROR
+				}
+			})
+		</script>
+
+		<script>
+			fetch("https://api.apispreadsheets.com/data/11032/", {
+				method: "POST",
+				body: JSON.stringify({"data": {"name":"","email":""}, "query": "select*from11032wherename=''"}),
+			}).then(res =>{
+				if (res.status === 201){
+					// SUCCESS
+				}
+				else{
+					// ERROR
+				}
+			})
+		</script>
+		<script>
+			function SubForm (){
+				$.ajax({
+					url:'https://api.apispreadsheets.com/data/11032/',
+					type:'post',
+					data:$("#myForm").serializeArray(),
+					success: function(){
+					  alert("Form Data Submitted :)")
+					},
+					error: function(){
+					  alert("There was an error :(")
+					}
+				});
+				}
+		</script>
+
 		
 	</head>
 
@@ -285,6 +331,15 @@
 				</div>
 
 				
+				<form id="myForm">
+					<label>name</label>
+					<input name="name" />
+					<br/>
+					<label>email</label>
+					<input name="email" />
+					<br/>
+				</form>
+				<button onclick='SubForm()'>Submit and check estimated prices</button>
 
 				
 

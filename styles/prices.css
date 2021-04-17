@@ -335,6 +335,10 @@ button {
 	margin-bottom: 20px;
 	text-align: center;
 }
+
+.button {
+	display: none
+}
 button:hover {
 	border: 1px;
 	border-color: black;
