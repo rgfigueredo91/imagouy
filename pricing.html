@@ -38,9 +38,13 @@
 					data:$("#myForm").serializeArray(),
 					success: function(){
 						alert("Form Data Submitted :)")
+						document.getElementById("idshow").style.display = "block";
+
 					},
 					error: function(){
 						alert("There was an error :(")
+						
+
 					}
 				});
 			}
@@ -319,7 +323,7 @@
 				
 
 				
-                <div class="button">
+                <div class="button" id="idshow">
                     <button onclick="showPrices()" type="button" id="checkpricing">Check Estimated Price</button>
 				</div>
 
