@@ -24,20 +24,25 @@
 	line-height: 3rem;
 	margin-left: 0%;
 	margin-top: 50px;
-	width: 50%;
+	width: 100%;
 }
 
 
 .inputlast {
-	margin-left: 0;
+	margin-top: 25px;
 	text-align: center;
 	background-color: black;
 	color: white;
 	border-radius: 0x;
 	height: 20px;
-	width: 165px;
+	width: 175px;
 }
+
+.tabledivwith {
+	width: 60%;
+	margin-left:0%;
 }
+
 .ifYouAre{
 	font-weight: bold;
 	font-size: 2rem;
@@ -642,6 +647,26 @@ button {
 .amountrenderings{
 	margin-left: 0%;	
 	margin-top: 20px;
+}
+
+.tabledivwith {
+	width: 100%;
+	margin-left:0%;
+}
+
+.p3 {
+	margin-left: 10%;
+	width: 80%;
+}
+.inputlast {
+	margin-top:30px;
+	margin-left: 10%;
+	text-align: center;
+	background-color: black;
+	color: white;
+	border-radius: 0x;
+	height: 20px;
+	width: 80%;
 }
 
 }
