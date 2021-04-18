@@ -236,41 +236,41 @@ function exteriorPrices(amount, experiences, timeline, slide){
 	if(experiences == "light-experience" && slide == "1"){
 		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount;
 		if(timeline == "rush"){
-			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
+			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.07;
 		}
 	}
 	if(experiences == "light-experience" && slide == "2"){
 		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount
 		if(timeline == "rush"){
-			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.05;
+			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.08;
 		}
 	}
 
 	if(experiences == "light-experience" && slide == "3"){
 		prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.1*amount
 		if(timeline == "rush"){
-			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.06;
+			prices = STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.1*1.1;
 		}
 	}
 //Full experience
 	else if(experiences == "full-experience" && slide == "1"){
 		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount;
 		if(timeline == "rush"){
-			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.05;
+			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*0.95*amount*1.07;
 		}
 	}
 
 	else if(experiences == "full-experience" && slide == "2"){
 		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount;
 		if(timeline == "rush"){
-			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.05;
+			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.08;
 		}
 	}
 
 	else if(experiences == "full-experience" && slide == "3"){
 		prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*1.11*amount;
 		if(timeline == "rush"){
-			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.11*1.06;
+			prices = STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE*amount*1.11*1.1;
 		}
 	}
 	
