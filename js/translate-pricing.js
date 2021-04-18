@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function(e){
             selectanoption2: " Seleccionar opción",
             ifYouAre: " Si eres ESTUDIANTE DE FIN DE CARRERA y estas buscando estimar precios, puedes usar la calculadora debajo.",
             scopetranslate: " ALCANCE",
-            amounfinal: " CANTIDAD"
+            amounfinal: " CANTIDAD",
+            button: " Envía para chequear precios",
+            name: " Nombre"
         }
     };
     //define language via window hash
@@ -60,6 +62,8 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("ifYouAreId").textContent = language.esp.ifYouAre;
         document.getElementById("scoptranslate").textContent = language.esp.scopetranslate;
         document.getElementById("amounttranslate").textContent = language.esp.amounfinal;
+        document.getElementById("ocultarboton").textContent = language.esp.button;
+        document.getElementById("nametranslate").placeholder = language.esp.name;
 
     }   
     
