@@ -353,12 +353,13 @@ function showPrices(){
 		<tr>
 			<td class="totalclass">`+ "TOTAL" + `</td>
 			<td>`+ sumaCantidadRenders + `</td>
-			<td>`+ Math.ceil(sumaPrecioRenders*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(sumaPrecioRenders*1.2)+` `+`USD` +`</td>
+			<td>`+ Math.ceil(sumaPrecioRenders*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(sumaPrecioRenders*1.15)+` `+`USD` +`</td>
 		</tr>
 			`;
 		document.getElementById("tablacarrito").innerHTML = contenido;
 		document.getElementById("tablacarrito").style.opacity = "1";
 		document.getElementById("opacity-one").style.opacity = "1";
+		document.getElementById("idshow").style.display="none";
 		}
 
 		if(studentYesOrNo === "no") {
@@ -376,6 +377,7 @@ function showPrices(){
 		if(timeline === "" && studentYesOrNo === "yes") {
 			document.getElementById("tablacarrito").style.opacity = "0";
 			document.getElementById("opacity-one").style.opacity = "0";
+			document.getElementById("idshow").style.display="block";
 			alert("No timeline select");
 		}
 

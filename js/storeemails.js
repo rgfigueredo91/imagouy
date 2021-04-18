@@ -27,17 +27,26 @@ db.collection('datos').get().then((snapshot) => {
     })
 });
 
+let email = document.getElementById('emailvalid');
+let pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
 //saving data
 
 form.addEventListener('submit', (e) =>{
-        e.preventDefault();
-        db.collection('datos').add({
+       e.preventDefault();
+        
+       if(email.value.match(pattern)){ db.collection('datos').add({
             name: form.name.value,
             email: form.email.value
         })
         document.getElementById("idshow").style.display="block";
         document.getElementById("ocultarboton").style.display="none"
-        alert("Thanks! now you can check estimated prices, Gracias ahora puedes chequear los precios estimados")
+        alert("Thanks! now you can check estimated prices, Gracias ahora puedes chequear los precios estimados")}
+        else
+        {
+            alert("write a valid email")
+        }
         
  })
  
