@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="eng">
+<html lang="en">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta charset="UTF-8"/> 
@@ -9,7 +8,7 @@
 		<meta name="description" content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay."/>
 		<meta name="keywords" content="imago - Rendering Visualization Studio"/>
 		<meta name="author" content="Rodrigo Figueredo"/>
-		<meta name="viewport" content="=width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:title" content="Imago Rendering Studio"/>
 		<meta name="google-site-verification" content="E0SpeRDXnyyyYe_az7hMb6PirOHIawPyVZi6EA_HKSc" />
@@ -22,137 +21,85 @@
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/prices.css">
 		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-	
-		<script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-		<script>
-			fetch("https://api.apispreadsheets.com/data/11034/").then(res=>{
-				if (res.status === 200){
-					// SUCCESS
-					res.json().then(data=>{
-						const yourData = data
-					}).catch(err => console.log(err))
-				}
-				else{
-					// ERROR
-				}
-			})
-		</script>
-		<script>
-				fetch("https://api.apispreadsheets.com/data/11034/", {
-				method: "POST",
-				body: JSON.stringify({"data": {"name":"","email":""}}),
-			}).then(res =>{
-				if (res.status === 201){
-					// SUCCESS
-				}
-				else{
-					// ERROR
-				}
-			})
-		</script>
-	
-		<script>
-			function SubForm (){
-				$.ajax({
-					url:"https://api.apispreadsheets.com/data/11034/",
-					type:"post",
-					data:$("#myForm").serializeArray(),
-					success: function(){
-						alert("Form Data Submitted :)")
-						document.getElementById("idshow").style.display = "block";
 
-					},
-					error: function(){
-						alert("There was an error :(")
-						document.getElementById("idshow").style.display = "block";
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
 
-					}
-				});
-			}
-		</script>
-
-		
 	</head>
 
 	<body>
-				<!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v6.0'
-          });
-        };
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+				xfbml            : true,
+				version          : 'v6.0'
+				});
+			};
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-	  </script>
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 
-      <!-- Your customer chat code -->
-      <div class="fb-customerchat" 
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat" 
 			attribution=setup_tool
 			page_id="108697060701498"
 			theme_color="#ff0066"
 			logged_in_greeting="Hi! How can we help you?"
 			logged_out_greeting="Hi! How can we help you?">
-      </div>
+		</div>
       
-<!--barra fija arriba desktop-->
-<header class="navbar-noboots" id="navbar-noboots">
-	<div class="wrapper-1">
-		<h1 class="title"><a href="/">imago</h1></a>
-	</div>
-	<div class="wrapper-2">
-		<ul class="menu">
-			<li class="items"><a href="#" id="link-font">works</a>
-				<div class="sub-menu1">
-					<ul class="activenavbar">
-						<li class="items dropdown-content "><a href="https://imagouy.com/index.html" id="portfolio-translate">Arch Viz</a></li>
-						<li class="items dropdown-content"><a href="https://imagouy.com/360.html" id="360-translate">360º Viz</a></li>
-						<li class="items dropdown-content"><a href="https://imagouy.com/vr.html" id="vr-translate">Ps V.R</a></li>
-						
-						
-					</ul>
-				</div>
-			</li>
-			<li class="items"><a href="#" id="link-font-about"  class="currents">about us</a>
-				<div class="sub-menu1">
-					<ul class="activenavbar" >
-						<li class="items dropdown-content"><a href="https://imagouy.com/artists.html" id="artist-translate">artists</a></li>
-						<li class="items dropdown-content"><a href="https://imagouy.com/process.html" id="process-translate">process</a></li>
-						<li class="items dropdown-content"><a href="https://imagouy.com/pricing.html" id="prices-translate" class="currents">prices</a></li>
-						<li class="items dropdown-content"><a href="https://imagouy.com/reviews.html" id="references-translate">references</a></li>
-					</ul>
-				</div>
-			</li>	
-			<li class="items"><a href="https://imagouy.com/contact.html"  id="contactid">contact</a></li>
-			
-			<li class="items"><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#esp" onclick="timedRefresh()">esp</a></li>	
-		</ul>
-		<ul class="social-menu">
-			<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i
-						class="fa fa-instagram"></i></a></li>
-			<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i
-						class="fa fa-linkedin"></i></a></li>
-			<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i
-						class="fa fa-facebook"></i></a></li>
-		</ul>
-	</div>
+		<!--barra fija arriba desktop-->
+		<header class="navbar-noboots" id="navbar-noboots">
+			<div class="wrapper-1">
+				<h1 class="title"><a href="/">imago</h1></a>
+			</div>
+			<div class="wrapper-2">
+				<ul class="menu">
+					<li class="items"><a href="#" id="link-font">works</a>
+						<div class="sub-menu1">
+							<ul class="activenavbar">
+								<li class="items dropdown-content "><a href="https://imagouy.com/index.html" id="portfolio-translate">Arch Viz</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/360.html" id="360-translate">360º Viz</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/vr.html" id="vr-translate">Ps V.R</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="items"><a href="#" id="link-font-about"  class="currents">about us</a>
+						<div class="sub-menu1">
+							<ul class="activenavbar" >
+								<li class="items dropdown-content"><a href="https://imagouy.com/artists.html" id="artist-translate">artists</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/process.html" id="process-translate">process</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/pricing.html" id="prices-translate" class="currents">prices</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/reviews.html" id="references-translate">references</a></li>
+							</ul>
+						</div>
+					</li>	
+					<li class="items"><a href="https://imagouy.com/contact.html"  id="contactid">contact</a></li>
+					
+					<li class="items"><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#esp" onclick="timedRefresh()">esp</a></li>	
+				</ul>
+				<ul class="social-menu">
+					<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i
+								class="fa fa-instagram"></i></a></li>
+					<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i
+								class="fa fa-linkedin"></i></a></li>
+					<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i
+								class="fa fa-facebook"></i></a></li>
+				</ul>
+			</div>
 		</header>
 
-<!--barra fija arriba telefono navbar-->
+		<!--barra fija arriba telefono navbar-->
 
 		<section class="phonenavbar" id="phonenavbarid">
-
 			<h1 class="titlephone"><a href="/">imago</h1></a>
 			<input type="checkbox" id="nav-toggle" class="nav-toggle">
 			<nav class="navphone-3">
@@ -176,59 +123,45 @@
 					<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i class="fa fa-facebook"></i></a></li>
 				</ul>
 			</nav>
-				<label for="nav-toggle" class="nav-toggle-label">
-					<span></span>
-				</label>
+			<label for="nav-toggle" class="nav-toggle-label">
+				<span></span>
+			</label>
 		</section>
 		
-<!--seccion imagenes-->
+		<!--seccion imagenes-->
 
 		<div class="main">
-
 			<div class="header-prices">	
 				<h1 id="titleservicefor">Who is our service for?</h>
 			</div>
 		
 			<div class="icons-totals">
-				
-					<div class="icons-prices">
-						<img  src="images/icon.jpg" data-src="">
-						<p id="architecture-studio">Architecture studios</p>
-					</div>
-					<div class="icons-prices">
-						<img  src="images/icon.jpg" data-src="">
-						<p id="finalcareerstudents">Final degree students</p>
-					</div>
-					<div class="icons-prices">
-						<img  src="images/icon.jpg" data-src="">
-						<p id="developers">Developers</p>
-					</div>
-					<div class="icons-prices">
-						<img  src="images/icon.jpg" data-src="">
-						<p id="professionals">Professionals</p>
-					</div>
+				<div class="icons-prices">
+					<img  src="images/icon.jpg" data-src="">
+					<p id="architecture-studio">Architecture studios</p>
+				</div>
+				<div class="icons-prices">
+					<img  src="images/icon.jpg" data-src="">
+					<p id="finalcareerstudents">Final degree students</p>
+				</div>
+				<div class="icons-prices">
+					<img  src="images/icon.jpg" data-src="">
+					<p id="developers">Developers</p>
+				</div>
+				<div class="icons-prices">
+					<img  src="images/icon.jpg" data-src="">
+					<p id="professionals">Professionals</p>
+				</div>
 			</div>
-
-		
-				
-				
-
-			
-			
 
 			<div class="textb"><p id="principalparagraph">We budget every work separately. The price for every project is defined by the complexity of it, the scope of works, deadline, etc. This way we can assure the best value for your money.
 				To set an accurate budget, we need to check the project. Basic documentation should be enough, maybe some plans or sketches. There is no need to wait for a fully developed version.
 				We also need an estimation of the number of images, video length or virtual tour hot spots, depending on what kind of service fits best your needs.
 				If you are interested in our services, send us a request and we will make an offer with no obligation.	</p>
 				<p class="ifYouAre" id="ifYouAreId">If you are a FINAL DEGREE STUDENT looking for estimate prices, you can use the calculator program below.</p>
-		
-	
 			</div>
 			
-
             <form id="prices-form" >
-
-				
 				<div class="model-select">
                     <label id="imstudent"><b>I'M A FINAL DEGREE STUDENT</b></label>
 					<div>
@@ -239,7 +172,6 @@
 						  </label>
 						</div>
 				</div>
-
 
 				<div class="experience-select">
                     <label id="selectexperiencetrans"><b>SELECT EXPERIENCE</b></label>
@@ -270,11 +202,6 @@
                         </option>
                     </select>
 				</div>
-
-
-				
-
-               
 				
                 <div class="amount-interior">
 					<div>
@@ -299,8 +226,8 @@
 				</div>
 
 				<div class="images" id="images-scopes">
-						<img  src="img/imgscope/2x1Vh.jpg" data-src="" id="imageid" >
-					</div>
+					<img src="img/imgscope/2x1Vh.jpg" data-src="" id="imageid">
+				</div>
 					
 				
 				<div class="amount-exterior">
@@ -323,30 +250,21 @@
 							</div>
 						</div>
 					</div>
-				
-
-					
 				</div>
 
-				
 				<div class="images" id="images-scopes-exterior">
-					<img  src="img/imgscope/2x1Hh.jpg" data-src="" >
+					<img src="img/imgscope/2x1Hh.jpg" data-src="">
 				</div>
+			</form>
 
-				
-				<form id="myForm" method="POST" class="form">
-					<label></label>
-					<input name="name" class="inputlast" placeholder="name">
-					<br/>
-					<label></label>
-					<input name="email" class="inputlast" placeholder="e-mail"/>
-					<br/>
+				<form id="formtext">
+					<input type="text" name="name" placeholder="name" class="inputlast" required>
+					<input type="email" name="email" placeholder="E-mail" class="inputlast"required>
+					<button id="ocultarboton">Submit for check prices</button>
 				</form>
-				<button onclick='SubForm()'>Submit for check</button>
 
-				
+		
 
-				
                 <div class="button" id="idshow">
                     <button onclick="showPrices()" type="button" id="checkpricing">Check Estimated Price</button>
 				</div>
@@ -365,19 +283,11 @@
 						</tbody>
 					</table>
 				</div>
-
-			
-
-				
-
 				
 				<div class=bottom>	
 					<div class="p3">
-						<!--<p3>El precio es estimativo y puede variar en función de las complejidades del proyecto. 
-							Si quieres saber con mas exactitud el precio, buscas una experiencia mixta y mas personalizada para las distintas imágenes o 
-							visualizaciones de 360º, contáctanos por privado y con gusto te aclararemos todas
-							las dudas.</p3>-->
-							<p3 id="lastparagraph">This is an estimated price and may vary depending on the project complexities. If you want to know the exact price, contact us privately and we will answer all your questions.</p3>
+					
+						<p3 id="lastparagraph">This is an estimated price and may vary depending on the project complexities. If you want to know the exact price, contact us privately and we will answer all your questions.</p3>
 					</div>
 					
 				</div>
@@ -387,38 +297,45 @@
 					<div class="country"></div>
 					<div class="region"></div>
 				</div>
-
 				
 				<div class="white"></div>
-			</form>
-		
 			
-					
-
 		</div>
 
-<!--precio script-->
+		<footer>
+			<hr>
+			<p id="rights-reserved">&copy; 2021 Imago Rendering Studio. All rights reserved</p>
+		</footer>
+		
+		<script>
+
+			var config = {
+				apiKey: "AIzaSyB-_3cJwipSHk92LPruNvEPd5ZXrNgAdHE",
+				authDomain: "imago-rendering-studio.firebaseapp.com",
+				databaseURL: "https://imago-rendering-studio-default-rtdb.firebaseio.com/",
+				projectId: "imago-rendering-studio",
+				storageBucket: "imago-rendering-studio.appspot.com",
+				messagingSenderId: "1014080498693",
+				appId: "1:1014080498693:web:167d2e1bde1d8998ea006c",
+				measurementId: "G-EGER1EWKPX"
+				};
+			// Initialize Firebase
+			firebase.initializeApp(config);
+
+							
+				const db = firebase.firestore();
+				db.settings({ timestampsInSnapshots: true});
+
+
+		</script>
+
+		<!--precio script-->
+
+		<script src="js/storeemails.js"></script><!--navbar move-->
 		<script src="js/navbarmove.js"></script><!--navbar move-->
 		<script src="js/prices.js"> </script>
 		<script src="js/translate.js"></script><!--navbar move-->
 		<script src="js/translate-pricing.js"></script>
-
-	
-	<script>
-
-
-	
-</script>
-
-
-		
-<!--fin precio script-->
-
-
-<footer>
-	<hr>
-	<p id="rights-reserved">&copy; 2020 Imago Rendering Studio. All rights reserved</p>
-</footer>
+		<!--fin precio script-->
 	</body>
-
 </html>

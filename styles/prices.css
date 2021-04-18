@@ -27,15 +27,28 @@
 	width: 100%;
 }
 
+#formtext {
+	
+	text-align: center;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}
+
+#formtext button{
+margin-left: 42.5%;
+}
+
 
 .inputlast {
+	margin-left: 35%;
 	margin-top: 25px;
 	text-align: center;
 	background-color: black;
 	color: white;
 	border-radius: 0x;
 	height: 20px;
-	width: 175px;
+	width: 30%;
 }
 
 .tabledivwith {
@@ -660,13 +673,26 @@ button {
 }
 .inputlast {
 	margin-top:30px;
-	margin-left: 10%;
+	margin-left: 5%;
 	text-align: center;
 	background-color: black;
 	color: white;
 	border-radius: 0x;
 	height: 20px;
-	width: 80%;
+	width: 90%;
 }
+
+#formtext {
+	text-align: center;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+#formtext button{
+margin-left: 15%;
+}
+
+
 
 }
