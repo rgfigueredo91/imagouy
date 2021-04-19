@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function(e){
             stage7:" ETAPA FINAL",
             delivery:" Entrega y pago",
             paragraph7:" Una vez realizado el pago, enviamos las imágenes en alta resolución (formato tiff-jpg) y sin marcas de agua. El tamaño es suficiente para cartelerías, impresión, folletos, catálogos.",
-            studentcoop:' "Esta cooperación no aplica para estudiantes"',
-            download: " Descargar el siguiente documento para conocer los procesos de trabajos para estudiante",
+            studentcoop:' "Esta cooperación no aplica para estudiantes de fin de carrera"',
+            download: " Descargar el siguiente documento para conocer los procesos de trabajos para estudiante de fin de carrera",
             english: " Versión en inglés",
             spanish: " Versión en español",
 
