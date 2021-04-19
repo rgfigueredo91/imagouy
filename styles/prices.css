@@ -56,6 +56,14 @@ margin-left: 42.5%;
 	margin-left:8%;
 }
 
+#checkpricing {
+	background-color: green;	
+}
+
+#checkpricing:hover {
+	background-color: #f60e6b;	
+}
+
 .ifYouAre{
 	font-weight: bold;
 	font-size: 2rem;
