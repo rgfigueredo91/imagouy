@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function(e){
         esp: {
             works: " trabajos",
             about: " sobre nosotros",
-            contact: " contáctanos",
+            contact: " contacto",
             artists: " artistas",
             process: " procesos",
             pricess: " precios",
             references: " referencias",
-            portfolio: " Arq Vis",
-            visualization: " 360 Vis",
+            portfolio: " Vis Arq",
+            visualization: " Vis 360",
             rights: " © 2020 Imago Rendering Studio. Todos los derechos reservados.",
             vr: " Ps R.V",
         }
