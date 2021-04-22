@@ -58,9 +58,11 @@ let timeline = document.getElementById('timeline');
 //saving data
 
 function button(){
-       
+       if(experience.value == "" && studentYesOrNo == "yes"){
+            alert("please select experience")
+       }
         
-       if(email2.value.match(pattern) && timeline.value === "rush" || timeline.value === "standard"){ db.collection('datos').add({
+       else if(email2.value.match(pattern) && experience !== "" && studentYesOrNo == "yes" && (timeline.value === "rush" || timeline.value === "standard")){ db.collection('datos').add({
             name: form.name.value,
             email: form.email.value,
             country: form.country.value,
@@ -74,13 +76,38 @@ function button(){
             timeline: timeline.value
 
         })
-        document.getElementById("ocultarboton").style.display="block"
-        document.getElementById("idbutton").style.display="none"
+
+
+        
+   
         document.getElementById("textareaidnow").value = "timeline: " + timeline.value + "\n" + "Exerience: " + experience.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
-        alert("Thanks! now sent!, Gracias! ahora envía!")}
+        alert("Thanks!")
+        setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
+    }
+
+       else if(email2.value.match(pattern) && studentYesOrNo == "no" && (timeline.value === "rush" || timeline.value === "standard")){
+             db.collection('datos').add({
+                name: form.name.value,
+                email: form.email.value,
+                country: form.country.value,
+                exteriorslide: exteriorSlide.value,
+                interiorslide: interiorSlide.value,
+                interiorAmount: interiorAmount.value,
+                exteriorAmount: exteriorAmount.value,
+                student: studentYesOrNo,
+                company: company.value,
+                timeline: timeline.value
+    
+            })
+            
+            document.getElementById("textareaidnow").value = "timeline: " + timeline.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
+            alert("Thanks!")
+            setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
+
+        }
         else
         {
-            alert("timeline need")
+            alert("please select timeline")
         }
         
  }
