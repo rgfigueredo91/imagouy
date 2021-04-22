@@ -81,7 +81,7 @@ function button(){
         
    
         document.getElementById("textareaidnow").value = "timeline: " + timeline.value + "\n" + "Exerience: " + experience.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
-        alert("Thanks!")
+        document.getElementById("spinner-wrapper").style.display = "block"
         setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
     }
 
@@ -101,7 +101,7 @@ function button(){
             })
             
             document.getElementById("textareaidnow").value = "timeline: " + timeline.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
-            alert("Thanks!")
+            document.getElementById("spinner-wrapper").style.display = "block"
             setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
 
         }
