@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta charset="UTF-8"/> 
+		<title>Imago Rendering Studio</title>
+
+		<meta name="description" content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay."/>
+		<meta name="keywords" content="imago - Rendering Visualization Studio"/>
+		<meta name="author" content="Rodrigo Figueredo"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="Imago Rendering Studio"/>
+		<meta name="google-site-verification" content="E0SpeRDXnyyyYe_az7hMb6PirOHIawPyVZi6EA_HKSc" />
+		<meta property="og:description" content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay."/>
+		<meta property="og:url" content="https://imago.uy"/>
+		
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="styles/private-prices.css">
+		<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+	</head>
+
+	<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+				xfbml            : true,
+				version          : 'v6.0'
+				});
+			};
+
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat" 
+			attribution=setup_tool
+			page_id="108697060701498"
+			theme_color="#ff0066"
+			logged_in_greeting="Hi! How can we help you?"
+			logged_out_greeting="Hi! How can we help you?">
+		</div>
+      
+		<!--barra fija arriba desktop-->
+		<header class="navbar-noboots" id="navbar-noboots">
+			<div class="wrapper-1">
+				<h1 class="title"><a href="/">imago</h1></a>
+			</div>
+			<div class="wrapper-2">
+				<ul class="menu">
+					<li class="items"><a href="#" id="link-font">works</a>
+						<div class="sub-menu1">
+							<ul class="activenavbar">
+								<li class="items dropdown-content "><a href="https://imagouy.com/index.html" id="portfolio-translate">Arch Viz</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/360.html" id="360-translate">360º Viz</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/vr.html" id="vr-translate">Ps V.R</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="items"><a href="#" id="link-font-about"  class="currents">about us</a>
+						<div class="sub-menu1">
+							<ul class="activenavbar" >
+								<li class="items dropdown-content"><a href="https://imagouy.com/artists.html" id="artist-translate">artists</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/process.html" id="process-translate">process</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/pricing.html" id="prices-translate" class="currents">prices</a></li>
+								<li class="items dropdown-content"><a href="https://imagouy.com/reviews.html" id="references-translate">references</a></li>
+							</ul>
+						</div>
+					</li>	
+					<li class="items"><a href="https://imagouy.com/contact.html"  id="contactid">contact</a></li>
+					
+					<li class="items"><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#esp" onclick="timedRefresh()">esp</a></li>	
+				</ul>
+				<ul class="social-menu">
+					<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i
+								class="fa fa-instagram"></i></a></li>
+					<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i
+								class="fa fa-linkedin"></i></a></li>
+					<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i
+								class="fa fa-facebook"></i></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<!--barra fija arriba telefono navbar-->
+
+		<section class="phonenavbar" id="phonenavbarid">
+			<h1 class="titlephone"><a href="/">imago</h1></a>
+			<input type="checkbox" id="nav-toggle" class="nav-toggle">
+			<nav class="navphone-3">
+				<ul>
+					<li class="currentsphone"><a href="https://imagouy.com/index.html" id="portfolio-translate-phone">Arch Viz</a></li>	
+					<li class="currentsphone"><a href="https://imagouy.com/360.html" id="360-translate-phone">360º Viz</a></li>
+					<li class="currentsphone"><a href="https://imagouy.com/vr.html" id="psvr-translate-phone">Ps V.R</a></li>
+					<hr></hr>
+					<li class="currentsphone"><a href="https://imagouy.com/artists.html" id="artist-translate-phone">artists</a></li>
+					<li class="currentsphone"><a href="https://imagouy.com/process.html" id="process-translate-phone">process</a></li>
+					<li class="currentsphone"><a href="https://imagouy.com/pricing.html" id="prices-translate-phone" class="currents">prices</a></li>
+					<li class="currentsphone"><a href="https://imagouy.com/reviews.html" id="references-translate-phone">references</a></li>
+					<li class="currentsphone"><a href="https://imagouy.com/contact.html" id="contact-translate-phone">contact</a></li>
+					<hr></hr>
+					<li><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#esp" onclick="timedRefresh()">esp</a></li>	
+					<hr></hr>
+				</ul>
+				<ul class="flex-icon">
+					<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i class="fa fa-instagram"></i></a></li>
+					<li class="social-icon" id="linkedin"><a href="https://www.linkedin.com/company/imagouy" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+					<li class="social-icon" id="facebook"><a href="https://www.facebook.com/Imago-Rendering-Studio-108697060701498" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				</ul>
+			</nav>
+			<label for="nav-toggle" class="nav-toggle-label">
+				<span></span>
+			</label>
+		</section>
+		
+		<!--seccion imagenes-->
+
+		<div class="main">
+			
+			
+            <form id="prices-form" >
+				<div class="model-select">
+                    <label id="imstudent"><b>I'M A FINAL DEGREE STUDENT</b></label>
+					<div>
+						<label class="switch">
+							<input type="checkbox" id="switchValue" onclick="changeToggleDisabledEnabled()">
+							<span class="slider round"></span>
+							<input type="checkbox" id="otro">
+						  </label>
+						</div>
+				</div>
+
+				<div class="experience-select">
+                    <label id="selectexperiencetrans"><b>SELECT EXPERIENCE</b></label>
+                    <select id="experience" onchange="addingParagraphOnExperience() " disabled>
+						<option class="select-experience" value="" id="selectanoption" selected>
+							Select an option
+						</option>
+                        <option class="select-experience" value="light-experience"  id="lightexperiencetransl">Light Experience</option>
+                        <option class="select-experience" value="full-experience" id="fullexperiencetransl">Full Experience</option>
+                    </select>
+				</div>
+
+				<div class="jsExperience" id="jsExperienceid">
+					
+				</div>
+
+				<div class="experience-select ">
+                    <label id="timelinetranslate"><b>TIMELINE</b></label>
+                    <select id="timeline">
+						<option value="" selected id="selectanoption2" > 
+							Select an Option 
+						</option> 
+                        <option class="select-experience" value="rush" id="rushtranslate">
+                            Rush (0-10 days)
+                        </option>
+                        <option class="select-experience" value="full-experience" id="standardtranslate">
+                            Standard(11-30 days)
+                        </option>
+                    </select>
+				</div>
+				
+                <div class="amount-interior">
+					<div>
+                    	<label id="interiorrenderingtrans"><b>INDOOR &nbsp RENDERINGS</b></label>
+					</div>
+					
+					<div class="amountrenderings">
+						<p id="interioramounttrans">Interiors amount</p>
+						<input type="number" value="0" id="interior" min="0" onchange="interiorPrices()"/>
+					</div>
+					<div class="slidecontainer">
+						
+						<div class="scopeflex"> 
+							<div>
+								<p id="scoperender">Scope</p>
+								</div>
+									<div>
+									<input type="range" min="1" max="3" value="1" step="1"  id="interior-slider" onchange="addingImageInteriorScope()">
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<div class="images" id="images-scopes">
+					<img src="img/imgscope/2x1Vh.jpg" data-src="" id="imageid">
+				</div>
+					
+				
+				<div class="amount-exterior">
+					<div>
+                    	<label id="exteriorrenderingtrans"><b>OUTDOOR RENDERINGS</b></label>
+					</div>
+
+					<div class="amountrenderings">
+						<p id="exterioramounttrans">Exteriors amount</p>
+						<input type="number" value="0" id="exterior" min="0" onchange="exteriorPrices()"/>
+					</div>
+					
+					<div class="slidecontainer">
+						<div class="scopeflex"> 
+							<div>
+							<p  id="scoperender2">Scope</p>
+							</div>
+								<div>
+								<input type="range" min="1" max="3" value="1" step="1" id="exterior-slider" onchange="addingImageExteriorScope()">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="images" id="images-scopes-exterior">
+					<img src="img/imgscope/2x1Hh.jpg" data-src="">
+				</div>
+			</form>
+
+			
+				<button id="idbutton" onclick="showPrices()">Submit for check prices</button>
+		
+
+              <!-- <div class="button" id="idshow">
+                    <button onclick="showPrices()" type="button" id="checkpricing">Check Estimated Price</button>
+				</div>--> 
+				<div class="tabledivwith">
+					<table class="table table-hover">
+					
+						<tbody id="tablacarrito">
+							<thead>
+								<tr class="table-opacity" id="opacity-one">
+									
+									<th id="scoptranslate">SCOPE</th>
+									<th id="amounttranslate">AMOUNT</th>
+									<th>SUB-TOTAL</th>
+								</tr>
+							</thead>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class=bottom>	
+					<div class="p3">
+					
+						<p3 id="lastparagraph">This is an estimated price and may vary depending on the project complexities. If you want to know the exact price, contact us privately and we will answer all your questions.</p3>
+					</div>
+					
+				</div>
+			
+				
+				<div class="white"></div>
+			
+		</div>
+
+		<footer>
+			<hr>
+			<p id="rights-reserved">&copy; 2021 Imago Rendering Studio. All rights reserved</p>
+		</footer>
+		
+		<script>
+
+			var config = {
+				apiKey: "AIzaSyB-_3cJwipSHk92LPruNvEPd5ZXrNgAdHE",
+				authDomain: "imago-rendering-studio.firebaseapp.com",
+				databaseURL: "https://imago-rendering-studio-default-rtdb.firebaseio.com/",
+				projectId: "imago-rendering-studio",
+				storageBucket: "imago-rendering-studio.appspot.com",
+				messagingSenderId: "1014080498693",
+				appId: "1:1014080498693:web:167d2e1bde1d8998ea006c",
+				measurementId: "G-EGER1EWKPX"
+				};
+			// Initialize Firebase
+			firebase.initializeApp(config);
+
+							
+				const db = firebase.firestore();
+				db.settings({ timestampsInSnapshots: true});
+
+
+		</script>
+
+		<!--precio script-->
+
+		
+		<script src="js/navbarmove.js"></script><!--navbar move-->
+		<script src="js/private-prices.js"> </script>
+		<script src="js/translate.js"></script><!--navbar move-->
+		<script src="js/translate-pricing.js"></script>
+		<!--fin precio script-->
+	</body>
+</html>
