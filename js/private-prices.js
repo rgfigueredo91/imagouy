@@ -4,8 +4,8 @@ let STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 155;
 let STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 160;
 let STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 180;
 let STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 190;
-let NO_STUDENT_PRICE_INTERIOR = 300;
-let NO_STUDENT_PRICE_EXTERIOR = 350;
+let NO_STUDENT_PRICE_INTERIOR = 250;
+let NO_STUDENT_PRICE_EXTERIOR = 265;
 
 //VARIABLE FOR OTHER COUNTRIES STUDENT
 
@@ -32,6 +32,7 @@ if (json.country === "UY" || json.country === "AR" || json.country === "BR" || j
 let clicked = false;
 let studentYesOrNo = "no"
 console.log(document.getElementById("experience").value)
+
 function changeToggleDisabledEnabled() {
 	studentYesOrNo = clicked ? "no" : "yes";
 	document.getElementById("experience").disabled = clicked;
@@ -384,33 +385,21 @@ function tellMeExperience(){
 function showPrices(){
 	let sumaCantidadRenders = parseInt(interiorCount()) + parseInt(exteriorCount());
 	let sumaPrecioRenders = Math.ceil(discountAmountRenderingExteriorAndFinalPrice()) + Math.ceil(discountAmountRenderingInteriorAndFinalPrice());
-	let timeline = document.getElementById('timeline').value;
 
-	if(timeline === "") {
-		document.getElementById("tablacarrito").style.opacity = "0";
-		document.getElementById("opacity-one").style.opacity = "0";
-		alert("No timeline select");
-	}
-    
-    if(tellMeExperience() == "" && studentYesOrNo == "yes") {
-		document.getElementById("tablacarrito").style.opacity = "0";
-		document.getElementById("opacity-one").style.opacity = "0";
-		alert("No experience select");
-	} 
-    
-    else {
+
+	
 		let contenido = `
 		<tr>
 			<td>${addingImageInteriorScope()}</td>
 			
 			<td>${interiorCount()}</td>
-			<td>${Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*0.9)} USD - ${Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*1.2)} USD</td>
+			<td>${Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*0.9)} USD - ${Math.ceil(discountAmountRenderingInteriorAndFinalPrice()*1.15)} USD</td>
 		</tr>
 		<tr>
 			<td>`+ addingImageExteriorScope()+`</td>
 			
 			<td>`+ exteriorCount()+`</td>
-			<td>`+ Math.ceil(discountAmountRenderingExteriorAndFinalPrice()*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(discountAmountRenderingExteriorAndFinalPrice()*1.2)+` `+`USD` +`</td>
+			<td>`+ Math.ceil(discountAmountRenderingExteriorAndFinalPrice()*0.9)+` `+`USD`+` `+`-`+` `+ Math.ceil(discountAmountRenderingExteriorAndFinalPrice()*1.15)+` `+`USD` +`</td>
 		</tr>
 		<tr>
 			<td class="totalclass">`+ "TOTAL" + `</td>
@@ -422,7 +411,7 @@ function showPrices(){
 		document.getElementById("tablacarrito").style.opacity = "1";
 		document.getElementById("opacity-one").style.opacity = "1";
 	
-	}
+	
 		
 }
 

@@ -60,7 +60,7 @@ let timeline = document.getElementById('timeline');
 function button(){
        
         
-       if(email2.value.match(pattern) && timeline != ""){ db.collection('datos').add({
+       if(email2.value.match(pattern) && timeline.value === "rush" || timeline.value === "standard"){ db.collection('datos').add({
             name: form.name.value,
             email: form.email.value,
             country: form.country.value,
@@ -77,7 +77,7 @@ function button(){
         document.getElementById("ocultarboton").style.display="block"
         document.getElementById("idbutton").style.display="none"
         document.getElementById("textareaidnow").value = "timeline: " + timeline.value + "\n" + "Exerience: " + experience.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
-        alert("Thanks! now you can check estimated prices, Gracias ahora puedes chequear los precios estimados")}
+        alert("Thanks! now sent!, Gracias! ahora envía!")}
         else
         {
             alert("timeline need")
