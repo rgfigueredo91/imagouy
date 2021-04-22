@@ -158,7 +158,7 @@
 				To set an accurate budget, we need to check the project. Basic documentation should be enough, maybe some plans or sketches. There is no need to wait for a fully developed version.
 				We also need an estimation of the number of images, video length or virtual tour hot spots, depending on what kind of service fits best your needs.
 				If you are interested in our services, send us a request and we will make an offer with no obligation.	</p>
-				<p class="ifYouAre" id="ifYouAreId">If you are a FINAL DEGREE STUDENT looking for estimate prices, you can use the calculator program below.</p>
+				<p class="ifYouAre" id="ifYouAreId">If you are looking for estimate prices automatically, use the calculator program below, submit and we wil sent you an email with the information.</p>
 			</div>
 			
             <form id="prices-form" >
@@ -190,7 +190,7 @@
 
 				<div class="experience-select ">
                     <label id="timelinetranslate"><b>TIMELINE</b></label>
-                    <select id="timeline" disabled>
+                    <select id="timeline">
 						<option value="" selected id="selectanoption2" > 
 							Select an Option 
 						</option> 
@@ -257,17 +257,24 @@
 				</div>
 			</form>
 
-				<form id="formtext">
+				<form id="formtext"
+							action="https://formsubmit.co/imago.rendering.studio@gmail.com"
+							method="POST"
+							enctype="multipart/form-data">
 					<input type="text" name="name" placeholder="name" class="inputlast" id="nametranslate" required>
+					<input type="text" name="company" placeholder="company, university" class="inputlast" id="companyvalid">
+					<input type="text" name="country" placeholder="country" class="inputlast" id="countrytranslate" required>
 					<input type="email" name="email" placeholder="E-mail" class="inputlast" id="emailvalid" required>
-					<button id="ocultarboton">Submit for check prices</button>
+					
+					<textarea class="message" name="textarea" placeholder="Input data - No fill" required id="textareaidnow" readonly></textarea>
+					<button id="ocultarboton">sent</button>
 				</form>
-
+				<button id="idbutton" onclick="button()">Submit for check prices</button>
 		
 
-                <div class="button" id="idshow">
+              <!-- <div class="button" id="idshow">
                     <button onclick="showPrices()" type="button" id="checkpricing">Check Estimated Price</button>
-				</div>
+				</div>--> 
 				<div class="tabledivwith">
 					<table class="table table-hover">
 					
@@ -291,12 +298,7 @@
 					</div>
 					
 				</div>
-				<div>
-					<div class="ip"></div>
-					<div class="city"></div>
-					<div class="country"></div>
-					<div class="region"></div>
-				</div>
+			
 				
 				<div class="white"></div>
 			

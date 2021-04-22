@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function(e){
     let language = {
         esp: {
@@ -25,11 +24,14 @@ document.addEventListener("DOMContentLoaded", function(e){
             check: " Ver precio estimado",
             lastp: " El precio es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, contáctanos por privado y con gusto te aclararemos todas las dudas.",
             selectanoption2: " Seleccionar opción",
-            ifYouAre: " Si eres ESTUDIANTE DE FIN DE CARRERA y estas buscando estimar precios, puedes usar la calculadora debajo.",
+            ifYouAre: " Si estas buscando estimar precios automáticamente, usa la calculadora debajo, envía tus datos y te enviaremos un e-mail con la información.",
             scopetranslate: " ALCANCE",
             amounfinal: " CANTIDAD",
             button: " Envía para chequear precios",
-            name: " Nombre"
+            name: " Nombre",
+            country: " país",
+            company: " compañía, universidad",
+            submitforcheck: " envía para chequear precios"
         }
     };
     //define language via window hash
@@ -55,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("timelinetranslate").textContent = language.esp.timeline;
         document.getElementById("rushtranslate").textContent = language.esp.rush;
         document.getElementById("standardtranslate").textContent = language.esp.standard;
-        document.getElementById("checkpricing").textContent = language.esp.check;
+       // document.getElementById("checkpricing").textContent = language.esp.check;
         document.getElementById("lastparagraph").textContent = language.esp.lastp;
         document.getElementById("fullexperiencetransl").textContent = language.esp.fullexp;
         document.getElementById("selectanoption2").textContent = language.esp.selectanoption2;
@@ -64,6 +66,9 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("amounttranslate").textContent = language.esp.amounfinal;
         document.getElementById("ocultarboton").textContent = language.esp.button;
         document.getElementById("nametranslate").placeholder = language.esp.name;
+        document.getElementById("countrytranslate").placeholder = language.esp.country;
+        document.getElementById("companyvalid").placeholder = language.esp.company;
+        document.getElementById("idbutton").textContent = language.esp.submitforcheck;
 
     }   
     
