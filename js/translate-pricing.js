@@ -29,8 +29,6 @@ document.addEventListener("DOMContentLoaded", function(e){
             amounfinal: " CANTIDAD",
             button: " Envía para chequear precios",
             name: " Nombre",
-            country: " país",
-            company: " compañía, universidad",
             submitforcheck: " envía para chequear precios"
         }
     };
@@ -66,8 +64,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("amounttranslate").textContent = language.esp.amounfinal;
         document.getElementById("ocultarboton").textContent = language.esp.button;
         document.getElementById("nametranslate").placeholder = language.esp.name;
-        document.getElementById("countrytranslate").placeholder = language.esp.country;
-        document.getElementById("companyvalid").placeholder = language.esp.company;
+     
         document.getElementById("idbutton").textContent = language.esp.submitforcheck;
 
     }   

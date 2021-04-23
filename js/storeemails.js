@@ -7,7 +7,6 @@ function renderDatos(doc){
     let li = document.createElement('li');
     let name = document.createElement('span');
     let email = document.createElement('span');
-    let country = document.createElement('span');
     let exteriorScope = document.createElement('span');
     let interiorScope = document.createElement('span');
     let exteriorAmount = document.createElement('span');
@@ -20,7 +19,6 @@ function renderDatos(doc){
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
     email.textContent = doc.data().email;
-    country.textContent = doc.data().country;
     exteriorScope.textContent = doc.data().exteriorScope;
     interiorScope.textContent = doc.data().exteriorScope;
     interiorAmount.textContent = doc.data().interiorAmount;
@@ -52,7 +50,6 @@ let interiorSlide = document.getElementById('interior-slider');
 let interiorAmount = document.getElementById('interior');
 let exteriorAmount = document.getElementById('exterior');
 let experience = document.getElementById('experience');
-let company = document.getElementById('companyvalid');
 let timeline = document.getElementById('timeline');
 
 //saving data
@@ -64,15 +61,13 @@ function button(){
         
        else if(email2.value.match(pattern) && experience !== "" && studentYesOrNo == "yes" && (timeline.value === "rush" || timeline.value === "standard")){ db.collection('datos').add({
             name: form.name.value,
-            email: form.email.value,
-            country: form.country.value,
+            email: form.email.value,    
             exteriorslide: exteriorSlide.value,
             interiorslide: interiorSlide.value,
             interiorAmount: interiorAmount.value,
             exteriorAmount: exteriorAmount.value,
             student: studentYesOrNo,
             experience: experience.value,
-            company: company.value,
             timeline: timeline.value
 
         })
