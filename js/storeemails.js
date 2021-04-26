@@ -83,6 +83,16 @@ let image360previous = document.getElementById('render360');
 let vrFreedom = document.getElementById('movements');
 let vrPrevious = document.getElementById('renderVR');
 let vrScope = document.getElementById('VR-slider');
+let country = ""
+
+fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
+	console.log(json)
+    country = json.country
+});
+
+console.log(country)
+
+
 
 
 //saving data
@@ -93,6 +103,7 @@ function button(){
        }
         
        else if(email2.value.match(pattern) && experience !== "" && studentYesOrNo == "yes" && (timeline.value === "rush" || timeline.value === "standard")){ db.collection('datos').add({
+            
             date: date,
             name: form.name.value,
             email: form.email.value,    
