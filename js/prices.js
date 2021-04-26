@@ -19,6 +19,7 @@ let VR_EXPERIENCE_PREVIOUS_YES = 200;
 //VARIABLE FOR OTHER COUNTRIES
 
 const USER_COUNTRY = "UY";
+
 fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
 	console.log(json)
 

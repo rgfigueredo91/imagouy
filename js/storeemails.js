@@ -3,6 +3,8 @@
 const form = document.getElementById('formtext');
 console.log(form);
 
+
+
 function renderDatos(doc){
     let li = document.createElement('li');
     let name = document.createElement('span');
@@ -23,6 +25,7 @@ function renderDatos(doc){
     let vrPrevious = document.createElement('span');
     let vrScope = document.createElement('span');
     let brochure = document.createElement('span');
+    let date = document.createElement('span');
 
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
@@ -43,6 +46,7 @@ function renderDatos(doc){
     vrPrevious.textContent = doc.data().vrPrevious;
     vrScope.textContent = doc.data().vrScope;
     brochure.textContent = doc.data().brochure;
+    date.textContent = doc.data().date;
 
     li.appendChild(name);
     li.appendChild(email);
@@ -62,6 +66,7 @@ db.collection('datos').get().then((snapshot) => {
 
 let today = new Date();
 let date = today.getDate() + "-"+ today.getMonth()+ "-" + today.getFullYear();
+console.log(date)
 let email2 = document.getElementById('emailvalid');
 let pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let exteriorSlide = document.getElementById('exterior-slider');
@@ -104,7 +109,7 @@ function button(){
 
         
    
-        document.getElementById("textareaidnow").value = "timeline: " + timeline.value + "\n" + "Exerience: " + experience.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
+        document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "timeline: " + timeline.value + "\n" + "Exerience: " + experience.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
         document.getElementById("spinner-wrapper").style.display = "block"
         setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
     }
