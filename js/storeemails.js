@@ -63,12 +63,13 @@ db.collection('datos').get().then((snapshot) => {
     })
 });
 
-
+/////////////////////////
 let today = new Date();
 let date = today.getDate() + "-"+ today.getMonth()+ "-" + today.getFullYear();
-console.log(date)
+/////////////////////////
 let email2 = document.getElementById('emailvalid');
 let pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+/////////////////////////
 let exteriorSlide = document.getElementById('exterior-slider');
 let interiorSlide = document.getElementById('interior-slider');
 let interiorAmount = document.getElementById('interior');
@@ -83,11 +84,16 @@ let image360previous = document.getElementById('render360');
 let vrFreedom = document.getElementById('movements');
 let vrPrevious = document.getElementById('renderVR');
 let vrScope = document.getElementById('VR-slider');
+/////////////////////////
 let country = ""
 
 fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
-	console.log(json)
-    country = json.country
+    if (json.country !== "UY"){		
+		country  = json.country
+	}
+	else {
+		country = "UY"
+	}
 });
 
 console.log(country)
