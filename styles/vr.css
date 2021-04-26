@@ -24,7 +24,8 @@
 
 .box-img img{
 	margin-top: 40px;
-	
+	width: 50%;
+	margin-left: 25%;
 }
 .header-vr {
 	margin-top: 250px;
