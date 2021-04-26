@@ -85,7 +85,7 @@
 }
 
 #formtext {
-	
+	margin-top: 120px;
 	text-align: center;
 	width: 60%;
 	display: flex;
@@ -168,13 +168,16 @@ textarea {
 }
 
 .amount-interior label{
+	color: #f60e6b;
 	font-weight: bold;
 }
 .amount-exterior label {
+	color: #f60e6b;
 	font-weight: bold;
 }
 
 .experience-select label {
+	color: #f60e6b;
 	font-weight: bold;
 }
 .correct-text{
@@ -237,6 +240,28 @@ textarea {
 	text-align: center;
 }
 
+.model-select label{
+	margin-top: 15px;
+}
+
+.jsExperience2 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.experience-select-timeline {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.experience-select-timeline label{
+	color: #f60e6b;
+	font-weight: bold;
+}
+	
+
 
 
 .amountrenderings{
@@ -249,6 +274,14 @@ textarea {
 	display: inline-block;
 	width: 60px;
 	height: 34px;
+	
+  }
+  .switch2 {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin-top: 15px;
   }
   /* Hide default HTML checkbox */
   .switch input {
@@ -355,6 +388,38 @@ select {
 	color: white;
 	background-color:black;
 }
+
+
+#movements {
+
+	height: 25px;
+	width: 180px;
+	text-align: center;
+	color: white;
+	background-color:black;
+	margin-top: 20px;
+}	
+
+#render360 {
+
+	height: 25px;
+	width: 180px;
+	text-align: center;
+	color: white;
+	background-color:black;
+	margin-top: 20px;
+}	
+
+#renderVR {
+
+	height: 25px;
+	width: 180px;
+	text-align: center;
+	color: white;
+	background-color:black;
+	margin-top: 20px;
+}	
+
 #timeline {
 	border-radius: 50px;
 	height: 25px;
@@ -362,16 +427,20 @@ select {
 	text-align: center;
 	color: white;
 	background-color:black;
-}	
+}
 .model-select {
+	
+	border-radius: 20px;
+
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	text-align: center;
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-bottom: 20px;
 }
 .experience-select {
-	display: flex;
+	display: none;
 	justify-content: space-between;
 	text-align: center;
 	margin-top: 20px;
@@ -382,7 +451,7 @@ select {
 }
 .amount-interior {
 	
-	margin-top: 20px;
+	margin-top: 40px;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
@@ -423,11 +492,13 @@ select {
 	width: 170px;
 }
 .amount-exterior {
+	
 	margin-right: 0px;
-	margin-top: 20px;
+	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	
 }
 
 .totalclass{
@@ -497,10 +568,9 @@ margin-top: 20px;
 	height: 30px;
 }
 /*--tablet responsive--*/
-@media only screen and (max-width: 1000px) and (min-width: 850px)  {
-}
+
 /*--mobile responsive--*/
-@media only screen and (max-width: 849px) {
+@media only screen and (max-width: 1300px) {
 /*cuerpo*/	
 .main {
 	margin-top: 80px;
@@ -569,6 +639,7 @@ select {
 	background-color:black;
 	margin-top: 20px;
 }
+
 .model-select {
 	display: flex;
 	flex-direction: column;
@@ -577,8 +648,9 @@ select {
 	margin-bottom: 16px;
 }	
 .model-select label{
-	margin-top: 8px;
+	margin-top: 15px;
 }
+
 #experience {
 	border-radius: 50px;
 	height: 25px;
@@ -589,12 +661,14 @@ select {
 	margin-top: 20px;
 }	
 .experience-select {
-	display: flex;
+	display: none;
+	
 	flex-direction: column;
 	align-items: center;		
 	text-align: center;
 }
 .experience-select label{
+	color: #f60e6b;
 	margin-top: 8px;
 }	
 #prices-form {
@@ -774,6 +848,24 @@ button {
 margin-left: 0%;
 }
 
+.switch2 {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin-top: 0px;
+  }
+  .experience-select-timeline {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+ 
 
 
 }

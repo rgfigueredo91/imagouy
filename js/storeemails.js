@@ -13,8 +13,16 @@ function renderDatos(doc){
     let interiorAmount = document.createElement('span');
     let student = document.createElement('span');
     let experience = document.createElement('span');
-    let company = document.createElement('span');
     let timeline = document.createElement('span');
+    let animationSeconds = document.createElement('span');
+    let animationScope = document.createElement('span');
+    let image360Amount = document.createElement('span');
+    let image360Scope = document.createElement('span');
+    let image360previous = document.createElement('span');
+    let vrFreedom = document.createElement('span');
+    let vrPrevious = document.createElement('span');
+    let vrScope = document.createElement('span');
+    let brochure = document.createElement('span');
 
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
@@ -25,8 +33,16 @@ function renderDatos(doc){
     exteriorAmount.textContent = doc.data().exteriorAmount;
     experience.textContent = doc.data().experience;
     student.textContent = doc.data().student;
-    company.textContent = doc.data().company;
     timeline.textContent = doc.data().timeline;
+    animationSeconds.textContent = doc.data().animationSeconds;
+    animationScope.textContent = doc.data().animationScope;
+    image360Amount.textContent = doc.data().image360Amount;
+    image360Scope.textContent = doc.data().image360Scope;
+    image360previous.textContent = doc.data().image360previous;
+    vrFreedom.textContent = doc.data().vrFreedom;
+    vrPrevious.textContent = doc.data().vrPrevious;
+    vrScope.textContent = doc.data().vrScope;
+    brochure.textContent = doc.data().brochure;
 
     li.appendChild(name);
     li.appendChild(email);
@@ -43,6 +59,9 @@ db.collection('datos').get().then((snapshot) => {
     })
 });
 
+
+let date = new Date();
+date.getDate() + "-"+ date.getMonth()+ "-" +date.getFullYear();
 let email2 = document.getElementById('emailvalid');
 let pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let exteriorSlide = document.getElementById('exterior-slider');
@@ -51,6 +70,15 @@ let interiorAmount = document.getElementById('interior');
 let exteriorAmount = document.getElementById('exterior');
 let experience = document.getElementById('experience');
 let timeline = document.getElementById('timeline');
+let animationSeconds = document.getElementById('animation');
+let animationScope = document.getElementById('animation-slider');
+let image360Amount = document.getElementById('360vis');
+let image360Scope = document.getElementById('360-slider');
+let image360previous = document.getElementById('render360');
+let vrFreedom = document.getElementById('movements');
+let vrPrevious = document.getElementById('renderVR');
+let vrScope = document.getElementById('VR-slider');
+
 
 //saving data
 
@@ -60,6 +88,7 @@ function button(){
        }
         
        else if(email2.value.match(pattern) && experience !== "" && studentYesOrNo == "yes" && (timeline.value === "rush" || timeline.value === "standard")){ db.collection('datos').add({
+            date: date,
             name: form.name.value,
             email: form.email.value,    
             exteriorslide: exteriorSlide.value,
@@ -80,29 +109,40 @@ function button(){
         setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
     }
 
-       else if(email2.value.match(pattern) && studentYesOrNo == "no" && (timeline.value === "rush" || timeline.value === "standard")){
+       else if(email2.value.match(pattern) && studentYesOrNo == "no" && (timeline.value === "rush" || timeline.value === "standard") && (secondsCount() == 0 || secondsCount() >= 10)){
              db.collection('datos').add({
+                date: date,
                 name: form.name.value,
                 email: form.email.value,
-                country: form.country.value,
                 exteriorslide: exteriorSlide.value,
                 interiorslide: interiorSlide.value,
                 interiorAmount: interiorAmount.value,
                 exteriorAmount: exteriorAmount.value,
                 student: studentYesOrNo,
-                company: company.value,
-                timeline: timeline.value
-    
+                timeline: timeline.value,
+                animationSeconds: animationSeconds.value,
+                animationScope: animationScope.value,
+                image360Amount: image360Amount.value,
+                image360Scope: image360Scope.value,
+                image360previous: image360previous.value,
+                vrFreedom: vrFreedom.value,
+                vrPrevious: vrPrevious.value,
+                vrScope: vrScope.value,
+                brochure: brochureYesOrNo,
             })
             
-            document.getElementById("textareaidnow").value = "timeline: " + timeline.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
+            document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "timeline: " + timeline.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo + "\n" + "Animation Seconds: " + animationSeconds.value  + "\n" + "Animation Scope: " + animationScope.value + "\n" + "360 amount: " + image360Amount.value + "\n" + "360 Scope: " + image360Scope.value  + "\n" + "360 previous: " + image360previous.value + "\n" + "Movement Freedom: " + vrFreedom.value + "\n" + "VR-previous: " + vrPrevious.value + "\n" + "VR-Scope: " + vrScope.value + "\n" + "Brochure: " + brochureYesOrNo;
             document.getElementById("spinner-wrapper").style.display = "block"
             setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
 
         }
+
+        else if(secondsCount() > 0 && secondsCount() < 10){
+            alert("Animation has to be more or equal than 10 seconds")
+        }
         else
         {
-            alert("please select timeline")
+            alert("Please select timeline and fill the form")
         }
         
  }

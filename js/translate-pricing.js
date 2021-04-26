@@ -18,18 +18,39 @@ document.addEventListener("DOMContentLoaded", function(e){
             amountint: " Cantidad",
             exteriorrendering: " RENDERS EXTERIORES",
             amountext: " Cantidad",
-            timeline: " TIEMPOS",
+            timeline: " SELECCIONAR TIEMPOS",
             rush: " Urgente (0-10 días)",
             standard: " Normal (11-30 días)",
             check: " Ver precio estimado",
-            lastp: " El precio es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, contáctanos por privado y con gusto te aclararemos todas las dudas.",
+            lastp: " El precio enviado es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, contáctanos por privado y con gusto te aclararemos todas las dudas.",
             selectanoption2: " Seleccionar opción",
-            ifYouAre: " Si estas buscando estimar precios automáticamente, usa la calculadora debajo, envía tus datos y te enviaremos un e-mail con la información.",
+            ifYouAre: " Puedes enviarnos la información de los diferentes servicios para recibir un precio estimado en tu casilla.  Para saber un precio exacto, por favor contáctanos.",
             scopetranslate: " ALCANCE",
             amounfinal: " CANTIDAD",
             button: " Envía para chequear precios",
             name: " Nombre",
-            submitforcheck: " envía para chequear precios"
+            submitforcheck: " envía para chequear precios",
+            latestTrends: " Usando las últimas tendencias en el campo de la psicología de ventas y marketing, los folletos y las páginas web son un gran atractivo para que los usuarios puedan conocerte. Como desarrolladores y apasionados por el diseño en todos sus aspectos, podemos brindarte una solución creativa que atraiga la atención de los mismos, incrementando tus ventas.",
+            brochure: " BROCHURES DE VENTA Y SITIOS WEB",
+            movements: " La experiencia de movimientos da la posibilidad de moverte en la escena de una manera mas fluida y mirar el proyecto de varios puntos de vista. La experiencia a elegir depende mucho del tamaño del proyecto.",
+            vrScope: " RV-Alcance",
+            realExp: " Experiencia Real (más de 30 cámaras)",
+            highExp: " Experiencia Alta (21 a 30 cámaras)",
+            medExp: " Experiencia Media (11 a 20 cámaras)",
+            lowExp: " Experiencia Baja (1 a 10 cámaras)",
+            selectOptVR: " Seleccionar opción",
+            vrtransFreedom: " Experiencia de movimientos",
+            VRtransprev: "¿De los renders anteriores?",
+            previousYesTranslateVR: " Sí",
+            previousYesTranslateVR: " EXP. REALIDAD VIRTUAL",
+            scoperender360: " 360-Alcance",
+            amount360trans: " 360-Cantidad",
+            trans360: " ¿De los renders anteriores?",
+            rendering360trans: " VISUALIZACIÓN 360",
+            scoperender3: " Anim-Alcance",
+            animationamounttrans: " Tiempo (segundos)",
+            animationrenderingtrans: " ANIMACIONES REND."
+
         }
     };
     //define language via window hash
@@ -66,7 +87,26 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("nametranslate").placeholder = language.esp.name;
      
         document.getElementById("idbutton").textContent = language.esp.submitforcheck;
-
+        document.getElementById("latestTrends").textContent = language.esp.latestTrends;
+        document.getElementById("brochure").textContent = language.esp.brochure;
+        document.getElementById("freedomMovements").textContent = language.esp.movements;
+        document.getElementById("vrscoperender3").textContent = language.esp.vrScope;
+        document.getElementById("realtranslate").textContent = language.esp.realExp;
+        document.getElementById("hightranslate").textContent = language.esp.highExp;
+        document.getElementById("mediumTranslate").textContent = language.esp.medExp;
+        document.getElementById("lowTranslate").textContent = language.esp.lowExp;
+        document.getElementById("selectanoptionVR").textContent = language.esp.selectOptVR;
+        document.getElementById("vrtransFreedom").textContent = language.esp.vrtransFreedom;
+        document.getElementById("VRtransprev").textContent = language.esp.VRtransprev;
+        document.getElementById("previousYesTranslateVR").textContent = language.esp.previousYesTranslateVR;
+        document.getElementById("VRrenderingtrans").textContent = language.esp.previousYesTranslateVR;
+        document.getElementById("scoperender360").textContent = language.esp.scoperender360;
+        document.getElementById("amount360trans").textContent = language.esp.amount360trans;
+        document.getElementById("360trans").textContent = language.esp.trans360;
+        document.getElementById("rendering360trans").textContent = language.esp.rendering360trans;
+        document.getElementById("scoperender3").textContent = language.esp.scoperender3;
+        document.getElementById("animationamounttrans").textContent = language.esp.animationamounttrans;
+        document.getElementById("animationrenderingtrans").textContent = language.esp.animationrenderingtrans;
     }   
     
  
