@@ -142,7 +142,7 @@ function button(){
         }
         else
         {
-            alert("Please select timeline and fill the form")
+            alert("Please select timeline and fill the form. Por favor seleccionar tiempos y llena tus datos.")
         }
         
  }
