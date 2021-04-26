@@ -60,8 +60,8 @@ db.collection('datos').get().then((snapshot) => {
 });
 
 
-let date = new Date();
-date.getDate() + "-"+ date.getMonth()+ "-" +date.getFullYear();
+let today = new Date();
+let date = today.getDate() + "-"+ today.getMonth()+ "-" + today.getFullYear();
 let email2 = document.getElementById('emailvalid');
 let pattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let exteriorSlide = document.getElementById('exterior-slider');
