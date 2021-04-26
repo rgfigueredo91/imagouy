@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(e){
             exteriorrendering: " RENDERS EXTERIORES",
             amountext: " Cantidad",
             timeline: " SELECCIONAR TIEMPOS",
-            rush: " Urgente (0-10 días)",
+            rush: " Urgente (2-10 días)",
             standard: " Normal (11-30 días)",
             check: " Ver precio estimado",
             lastp: " El precio enviado es estimativo y puede variar en función de las complejidades del proyecto. Si quieres saber con mas exactitud el precio, contáctanos por privado y con gusto te aclararemos todas las dudas.",
