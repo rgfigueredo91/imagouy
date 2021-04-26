@@ -26,6 +26,7 @@ function renderDatos(doc){
     let vrScope = document.createElement('span');
     let brochure = document.createElement('span');
     let date = document.createElement('span');
+    let country = document.createElement('span');
 
     li.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
@@ -47,6 +48,7 @@ function renderDatos(doc){
     vrScope.textContent = doc.data().vrScope;
     brochure.textContent = doc.data().brochure;
     date.textContent = doc.data().date;
+    country.textContent = doc.data().country;
 
     li.appendChild(name);
     li.appendChild(email);
@@ -111,6 +113,7 @@ function button(){
        else if(email2.value.match(pattern) && experience !== "" && studentYesOrNo == "yes" && (timeline.value === "rush" || timeline.value === "standard")){ db.collection('datos').add({
             
             date: date,
+            country: country,
             name: form.name.value,
             email: form.email.value,    
             exteriorslide: exteriorSlide.value,
@@ -126,7 +129,7 @@ function button(){
 
         
    
-        document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "timeline: " + timeline.value + "\n" + "Exerience: " + experience.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
+        document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "Country: " + country + "\n" + "timeline: " + timeline.value + "\n" + "Exerience: " + experience.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
         document.getElementById("spinner-wrapper").style.display = "block"
         setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
     }
@@ -134,6 +137,7 @@ function button(){
        else if(email2.value.match(pattern) && studentYesOrNo == "no" && (timeline.value === "rush" || timeline.value === "standard") && (secondsCount() == 0 || secondsCount() >= 10)){
              db.collection('datos').add({
                 date: date,
+                country: country,
                 name: form.name.value,
                 email: form.email.value,
                 exteriorslide: exteriorSlide.value,
@@ -153,7 +157,7 @@ function button(){
                 brochure: brochureYesOrNo,
             })
             
-            document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "timeline: " + timeline.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo + "\n" + "Animation Seconds: " + animationSeconds.value  + "\n" + "Animation Scope: " + animationScope.value + "\n" + "360 amount: " + image360Amount.value + "\n" + "360 Scope: " + image360Scope.value  + "\n" + "360 previous: " + image360previous.value + "\n" + "Movement Freedom: " + vrFreedom.value + "\n" + "VR-previous: " + vrPrevious.value + "\n" + "VR-Scope: " + vrScope.value + "\n" + "Brochure: " + brochureYesOrNo;
+            document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "Country: " + country + "\n" +"timeline: " + timeline.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo + "\n" + "Animation Seconds: " + animationSeconds.value  + "\n" + "Animation Scope: " + animationScope.value + "\n" + "360 amount: " + image360Amount.value + "\n" + "360 Scope: " + image360Scope.value  + "\n" + "360 previous: " + image360previous.value + "\n" + "Movement Freedom: " + vrFreedom.value + "\n" + "VR-previous: " + vrPrevious.value + "\n" + "VR-Scope: " + vrScope.value + "\n" + "Brochure: " + brochureYesOrNo;
             document.getElementById("spinner-wrapper").style.display = "block"
             setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
 
