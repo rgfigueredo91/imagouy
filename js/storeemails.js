@@ -138,7 +138,7 @@ function button(){
         }
 
         else if(secondsCount() > 0 && secondsCount() < 10){
-            alert("Animation has to be more or equal than 10 seconds")
+            alert("Animation has to be more or equal than 10 seconds. La animación tiene que ser igual o mayor a 10 segundos.")
         }
         else
         {
