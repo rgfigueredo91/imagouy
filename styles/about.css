@@ -33,7 +33,24 @@
     -moz-user-select: none;
     -webkit-user-select: none;
 	user-select: none;
-	transition: all 2s;
+	
+	filter: grayscale(100%);
+	
+}
+
+.box-img img:hover{
+	height:auto;
+	width: 100%;
+	object-fit: cover;
+	cursor: auto;
+	-khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+	user-select: none;
+	transition: all .3s;
+	filter: grayscale(0%);
+	
 }
 
 .top-about2{

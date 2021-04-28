@@ -1,4 +1,4 @@
-// Created with Motiva Layama v1.22 https://www.motivacg.com
+// Created with Motiva Layama v1.5 https://www.motivacg.com/layama
 
 function getLayamaCameras()
 {
@@ -44,7 +44,7 @@ function getOnScreenLogoUsage()
 
 function getLayamaControls()
 {
-   return {defMove: true, defRot: 1, altMove: true, altRot: 2};
+   return {defMove: false, defRot: 1, altMove: true, altRot: 2};
 }
 
 function getLayamaAlternatives()
@@ -52,6 +52,8 @@ function getLayamaAlternatives()
    var layamaAlternatives = new BABYLON.SmartArray(0);
    layamaAlternatives.push({n: "base", u: "./jpg/base/", i:"./jpg/alternative.png"});
    layamaAlternatives.push({n: "Alternative_1", u: "./jpg/Alternative_1/", i:"./jpg/alternative.png"});
+   layamaAlternatives.push({n: "Alternative_2", u: "./jpg/Alternative_2/", i:"./jpg/alternative.png"});
+   layamaAlternatives.push({n: "Alternative_3", u: "./jpg/Alternative_3/", i:"./jpg/alternative.png"});
    return layamaAlternatives;
 }
 
