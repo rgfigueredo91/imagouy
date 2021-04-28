@@ -42,9 +42,10 @@ document.addEventListener("DOMContentLoaded", function(e){
             vrtransFreedom: " Experiencia de movimientos",
             VRtransprev: "¿De los renders anteriores?",
             previousYesTranslateVR: " Sí",
-            previousYesTranslateVR: " EXP. REALIDAD VIRTUAL",
+            previousTranslateVR: " EXP. REALIDAD VIRTUAL",
             scoperender360: " 360-Alcance",
             amount360trans: " 360-Cantidad",
+            transyes360: "Sí",
             trans360: " ¿De los renders anteriores?",
             rendering360trans: " VISUALIZACIÓN 360",
             scoperender3: " Anim-Alcance",
@@ -99,10 +100,11 @@ document.addEventListener("DOMContentLoaded", function(e){
         document.getElementById("vrtransFreedom").textContent = language.esp.vrtransFreedom;
         document.getElementById("VRtransprev").textContent = language.esp.VRtransprev;
         document.getElementById("previousYesTranslateVR").textContent = language.esp.previousYesTranslateVR;
-        document.getElementById("VRrenderingtrans").textContent = language.esp.previousYesTranslateVR;
+        document.getElementById("VRrenderingtrans").textContent = language.esp.previousTranslateVR;
         document.getElementById("scoperender360").textContent = language.esp.scoperender360;
         document.getElementById("amount360trans").textContent = language.esp.amount360trans;
         document.getElementById("360trans").textContent = language.esp.trans360;
+        document.getElementById("previousYesTranslate").textContent = language.esp.transyes360;
         document.getElementById("rendering360trans").textContent = language.esp.rendering360trans;
         document.getElementById("scoperender3").textContent = language.esp.scoperender3;
         document.getElementById("animationamounttrans").textContent = language.esp.animationamounttrans;
