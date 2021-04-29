@@ -283,12 +283,12 @@ font-weight: bold;
     -moz-user-select: none;
     -webkit-user-select: none;
 	user-select: none;
-	transition: all .05s;
+	transition: all 1s;
 }
 	
 
 .img {
-	transition: all .02s;
+	transition: all 1s;
 	-khtml-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;
@@ -332,8 +332,8 @@ font-weight: bold;
     -moz-user-select: none;
     -webkit-user-select: none;
 	user-select: none;
-	transition: all .05s;
-	transform: scale(1.02);
+	transition: all 1s;
+	transform: scale(1.01);
 }
 
 
