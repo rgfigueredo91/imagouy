@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function(e){
             visualization: " Vis 360",
             rights: " © 2020 Imago Rendering Studio. Todos los derechos reservados.",
             vr: " Ps R.V",
-            facebook1: "Hola!, como podemos ayudarte",
-            facebook2: "Hola!, como podemos ayudarte"
+            facebook1: "Hola!, como podemos ayudarte?",
+            facebook2: "Hola!, como podemos ayudarte?"
         }
     };
     //define language via window hash
