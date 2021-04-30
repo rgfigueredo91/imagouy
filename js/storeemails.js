@@ -170,9 +170,9 @@ function button(){
         }
         else if(timeline.value === "" && window.location.hash != "#esp")
         {
-            alert("Please select timeline and fill the form.")
+            alert("Please select timeline and complete the form.")
         } else if(timeline.value === "" && window.location.hash === "#esp") {
-           alert("Por favor seleccionar tiempos y llena tus datos.") 
+           alert("Por favor seleccionar tiempos y completa tus datos.") 
         }
         
  }
