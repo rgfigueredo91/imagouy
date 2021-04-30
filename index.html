@@ -58,6 +58,21 @@
 				}(document, 'script', 'facebook-jssdk'));
 				</script>
 				<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+				<script>
+					function changeChatLanguage(){
+					let chat = document.getElementsByClassName("fb-customerchat");
+					let chat2 = document.getElementsByClassName("fb-customerchat");
+				
+					if(window.location.hash === "#esp") {
+					  chat[0].attributes[4].textContent = "Hola! como podemos ayudarte?";
+					  chat2[0].attributes[5].textContent = "Hola! como podemos ayudarte?";
+					  console.log(chat);
+					}
+					
+					}
+					
+					
+				</script>
 				<div id="fb-root"></div>
 				<!-- Your customer chat code -->
 				<div class="fb-customerchat" 
@@ -67,17 +82,7 @@
 					  logged_in_greeting="Hi! How can we help you?"
 					  logged_out_greeting="Hi! How can we help you?">
 				</div>
-				<script>
-					let chat = document.getElementsByClassName("fb-customerchat")[0].attributes[4].textContent;
-					let chat2 = document.getElementsByClassName("fb-customerchat")[0].attributes[5].textContent;
-				
-					if(window.location.hash === "#esp") {
-					  chat = "Hola! como podemos ayudarte?"
-					  chat2 = "Hola! como podemos ayudarte?"
-					
-					}
-					
-				</script>
+			
 <!-- fin load Facebook SDK for JavaScript -->
 <!--barra fija arriba desktop-->
 <header class="navbar-noboots" id="navbar-noboots">
@@ -107,7 +112,7 @@
 			</li>	
 			<li class="items"><a href="https://imagouy.com/contact.html"  id="contactid">contact</a></li>
 			
-			<li class="items"><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#esp" onclick="timedRefresh()">esp</a></li>	
+			<li class="items"><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#esp" onclick="timedRefresh(), changeChatLanguage()">esp</a></li>	
 		</ul>
 		<ul class="social-menu">
 			<li class="social-icon" id="instagram"><a href="https://www.instagram.com/imago_uy" target="_blank"><i
@@ -138,7 +143,7 @@
 					<li class="currentsphone"><a href="https://imagouy.com/reviews.html" id="references-translate-phone">references</a></li>
 					<li class="currentsphone"><a href="https://imagouy.com/contact.html" id="contact-translate-phone">contact</a></li>
 					<hr></hr>
-					<li><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#esp" onclick="timedRefresh()">esp</a></li>	
+					<li><a href="#eng" onclick="timedRefresh()">eng <a>|</a></a> <a href="#esp" onclick="timedRefresh(), changeChatLanguage() ">esp</a></li>	
 					<hr></hr>
 				</ul>
 				<ul class="flex-icon">
