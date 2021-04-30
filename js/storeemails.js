@@ -168,9 +168,11 @@ function button(){
         } else if((secondsCount() > 0 && secondsCount() < 10 && window.location.hash === "#esp")){
             alert("La animacion tiene que ser 0 o mayor a 9 segundos.")
         }
-        else
+        else if(timeline.value === "" && window.location.hash != "#esp")
         {
-            alert("Please select timeline and fill the form. Por favor seleccionar tiempos y llena tus datos.")
+            alert("Please select timeline and fill the form.")
+        } else if(timeline.value === "" && window.location.hash === "#esp") {
+           alert("Por favor seleccionar tiempos y llena tus datos.") 
         }
         
  }
