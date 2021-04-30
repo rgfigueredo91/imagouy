@@ -67,6 +67,17 @@
 					  logged_in_greeting="Hi! How can we help you?"
 					  logged_out_greeting="Hi! How can we help you?">
 				</div>
+				<script>
+					let chat = document.getElementsByClassName("fb-customerchat")[0].attributes[4].textContent;
+					let chat2 = document.getElementsByClassName("fb-customerchat")[0].attributes[5].textContent;
+				
+					if(window.location.hash === "#esp") {
+					  chat = "Hola! como podemos ayudarte?"
+					  chat2 = "Hola! como podemos ayudarte?"
+					
+					}
+					
+				</script>
 <!-- fin load Facebook SDK for JavaScript -->
 <!--barra fija arriba desktop-->
 <header class="navbar-noboots" id="navbar-noboots">
