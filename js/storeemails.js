@@ -163,8 +163,10 @@ function button(){
 
         }
 
-        else if(secondsCount() > 0 && secondsCount() < 10){
-            alert("Animation has to be more or equal than 10 seconds. La animación tiene que ser igual o mayor a 10 segundos.")
+        else if(secondsCount() > 0 && secondsCount() < 10 && window.location.hash != "#esp"){
+            alert("Animation has to be 0 or more than 9 seconds.")
+        } else if((secondsCount() > 0 && secondsCount() < 10 && window.location.hash === "#esp")){
+            alert("La animacion tiene que ser 0 o mayor a 9 segundos.")
         }
         else
         {
