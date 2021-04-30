@@ -58,21 +58,7 @@
 				}(document, 'script', 'facebook-jssdk'));
 				</script>
 				<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-				<script>
-					function changeChatLanguage(){
-					let chat = document.getElementsByClassName("fb-customerchat")[0].attributes[4];
-					let chat2 = document.getElementsByClassName("fb-customerchat")[0].attributes[5];
-				
-					if(window.location.hash === "#esp") {
-					  chat.textContent = " Hola! como podemos ayudarte?";
-					  chat2.textContent = " Hola! como podemos ayudarte?";
-					  console.log(chat);
-					}
-					
-					}
-					
-					
-				</script>
+			
 				<div id="fb-root"></div>
 				<!-- Your customer chat code -->
 				<div class="fb-customerchat" 
