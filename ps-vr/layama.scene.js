@@ -54,6 +54,7 @@ function getLayamaAlternatives()
    layamaAlternatives.push({n: "Alternative_1", u: "./jpg/Alternative_1/", i:"./jpg/alternative.png"});
    layamaAlternatives.push({n: "Alternative_2", u: "./jpg/Alternative_2/", i:"./jpg/alternative.png"});
    layamaAlternatives.push({n: "Alternative_3", u: "./jpg/Alternative_3/", i:"./jpg/alternative.png"});
+   layamaAlternatives.push({n: "Alternative_4", u: "./jpg/Alternative_4/", i:"./jpg/alternative.png"});
    return layamaAlternatives;
 }
 
