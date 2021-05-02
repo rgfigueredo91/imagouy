@@ -106,6 +106,13 @@ console.log(country)
 //saving data
 
 function button(){
+
+    let text = document.getElementById("textError");
+    let htmlContentToAppend = "";
+
+   
+
+
        if(experience.value == "" && studentYesOrNo == "yes"){
             alert("please select experience")
        }
@@ -128,7 +135,7 @@ function button(){
 
 
         
-   
+        
         document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "Country: " + country + "\n" + "timeline: " + timeline.value + "\n" + "Exerience: " + experience.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo;
         document.getElementById("spinner-wrapper").style.display = "block"
         setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
@@ -156,7 +163,7 @@ function button(){
                 vrScope: vrScope.value,
                 brochure: brochureYesOrNo,
             })
-            
+            text.style.display = "none";
             document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "Country: " + country + "\n" +"timeline: " + timeline.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo + "\n" + "Animation Seconds: " + animationSeconds.value  + "\n" + "Animation Scope: " + animationScope.value + "\n" + "360 amount: " + image360Amount.value + "\n" + "360 Scope: " + image360Scope.value  + "\n" + "360 previous: " + image360previous.value + "\n" + "Movement Freedom: " + vrFreedom.value + "\n" + "VR-previous: " + vrPrevious.value + "\n" + "VR-Scope: " + vrScope.value + "\n" + "Brochure: " + brochureYesOrNo;
             document.getElementById("spinner-wrapper").style.display = "block"
             setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
@@ -164,15 +171,39 @@ function button(){
         }
 
         else if(secondsCount() > 0 && secondsCount() < 10 && window.location.hash != "#esp"){
-            alert("Animation has to be 0 or more than 9 seconds.")
+            htmlContentToAppend = 
+            `<p>Animation has to be 0 or more than 9 seconds.</p>`;
+        
+        
+            text.innerHTML = htmlContentToAppend;
+           
         } else if((secondsCount() > 0 && secondsCount() < 10 && window.location.hash === "#esp")){
-            alert("La animacion tiene que ser 0 o mayor a 9 segundos.")
+
+            htmlContentToAppend = 
+            `<p>La animacion tiene que ser 0 o mayor a 9 segundos.</p>`;
+        
+        
+            text.innerHTML = htmlContentToAppend;
         }
         else if(timeline.value === "" && window.location.hash != "#esp")
         {
-            alert("Please select timeline and complete the form.")
+           
+            htmlContentToAppend = 
+            `<p>Please select timeline and complete the form.</p>`;
+        
+        
+            text.innerHTML = htmlContentToAppend;
+
+
         } else if(timeline.value === "" && window.location.hash === "#esp") {
-           alert("Por favor seleccionar tiempos y completa tus datos.") 
+
+            htmlContentToAppend = 
+            `<p>Por favor seleccionar tiempos y completa tus datos.</p>`;
+        
+        
+            text.innerHTML = htmlContentToAppend;
+
+        
         }
         
  }

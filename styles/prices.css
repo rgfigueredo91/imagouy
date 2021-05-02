@@ -132,6 +132,10 @@ textarea {
 	background-color: green;	
 }
 
+#textError {
+	color: red;
+}
+
 #checkpricing:hover {
 	background-color: #f60e6b;	
 }
