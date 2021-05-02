@@ -106,11 +106,23 @@ console.log(country)
 //saving data
 
 function button(){
+    
+    let formInputName = document.forms["Form"]["name"]
 
-    let text = document.getElementById("textError");
+    let formInputEmail = document.forms["Form"]["email"]
+
+    console.log(formInputEmail)
+    console.log(formInputName)
+
+
+    let animation = document.getElementById("animationError");
+    let timeLine = document.getElementById("timeLineError");
+
+
     let htmlContentToAppend = "";
 
-   
+    animation.style.display = "none";
+    timeLine.style.display = "none";
 
 
        if(experience.value == "" && studentYesOrNo == "yes"){
@@ -163,7 +175,7 @@ function button(){
                 vrScope: vrScope.value,
                 brochure: brochureYesOrNo,
             })
-            text.style.display = "none";
+         animation.style.display = "none";
             document.getElementById("textareaidnow").value = "Date: " + date + "\n" + "Country: " + country + "\n" +"timeline: " + timeline.value + "\n" + "Exterior Scope: " + exteriorSlide.value + "\n" + "InteriorScope: " + interiorSlide.value + "\n" + "Interior amount: " + interiorAmount.value + "\n" + "Exterior Amount: " +  exteriorAmount.value + "\n" + "Student: " + studentYesOrNo + "\n" + "Animation Seconds: " + animationSeconds.value  + "\n" + "Animation Scope: " + animationScope.value + "\n" + "360 amount: " + image360Amount.value + "\n" + "360 Scope: " + image360Scope.value  + "\n" + "360 previous: " + image360previous.value + "\n" + "Movement Freedom: " + vrFreedom.value + "\n" + "VR-previous: " + vrPrevious.value + "\n" + "VR-Scope: " + vrScope.value + "\n" + "Brochure: " + brochureYesOrNo;
             document.getElementById("spinner-wrapper").style.display = "block"
             setTimeout(function() { document.getElementById("formtext").submit(); }, 1000);
@@ -171,40 +183,77 @@ function button(){
         }
 
         else if(secondsCount() > 0 && secondsCount() < 10 && window.location.hash != "#esp"){
+         animation.style.display = "block";
+            timeLine.style.display = "none";
+
             htmlContentToAppend = 
             `<p>Animation has to be 0 or more than 9 seconds.</p>`;
         
         
-            text.innerHTML = htmlContentToAppend;
+         animation.innerHTML = htmlContentToAppend;
            
         } else if((secondsCount() > 0 && secondsCount() < 10 && window.location.hash === "#esp")){
+         animation.style.display = "block";
+            timeLine.style.display = "none";
 
             htmlContentToAppend = 
             `<p>La animacion tiene que ser 0 o mayor a 9 segundos.</p>`;
         
         
-            text.innerHTML = htmlContentToAppend;
+         animation.innerHTML = htmlContentToAppend;
         }
         else if(timeline.value === "" && window.location.hash != "#esp")
         {
+
+            timeLine.style.display = "block";
+            animation.style.display = "none";
            
             htmlContentToAppend = 
             `<p>Please select timeline and complete the form.</p>`;
         
         
-            text.innerHTML = htmlContentToAppend;
+            timeLine.innerHTML = htmlContentToAppend;
 
 
         } else if(timeline.value === "" && window.location.hash === "#esp") {
+
+            animation.style.display = "block";
+            timeLine.style.display = "none";
 
             htmlContentToAppend = 
             `<p>Por favor seleccionar tiempos y completa tus datos.</p>`;
         
         
-            text.innerHTML = htmlContentToAppend;
+            timeLine.innerHTML = htmlContentToAppend;
 
         
         }
+
+        else if((formInputName.value === "" || formInputEmail.value === "")  && window.location.hash != "#esp") {
+         animation.style.display = "none";
+            timeLine.style.display = "block";
+
+            htmlContentToAppend = 
+            `<p>Please select timeline and complete the form.</p>`;
+        
+        
+            timeLine.innerHTML = htmlContentToAppend;
+
+
+        } 
+
+        else if((formInputName.value === "" || formInputEmail.value === "") && window.location.hash === "#esp") {
+            animation.style.display = "none";
+               timeLine.style.display = "block";
+   
+               htmlContentToAppend = 
+               `<p>Por favor seleccionar tiempos y completa tus datos.</p>`;
+           
+           
+               timeLine.innerHTML = htmlContentToAppend;
+   
+   
+           } 
         
  }
  

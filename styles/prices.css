@@ -132,10 +132,15 @@ textarea {
 	background-color: green;	
 }
 
-#textError {
+#animationError {
 	color: red;
 }
 
+
+
+#timeLineError {
+	color: red;
+}
 #checkpricing:hover {
 	background-color: #f60e6b;	
 }
