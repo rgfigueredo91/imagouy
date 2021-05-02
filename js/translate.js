@@ -1,3 +1,6 @@
+let chat = document.getElementsByClassName("fb-customerchat");
+console.log(chat)
+
 
 document.addEventListener("DOMContentLoaded", function(e){
     let language = {
@@ -22,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
 
         //fbChat
-
+       
         document.getElementsByClassName("fb-customerchat")[0].attributes[4].textContent = language.esp.facebook1;
         document.getElementsByClassName("fb-customerchat")[0].attributes[5].textContent = language.esp.facebook2;
         //MENU PRINCIPAL
