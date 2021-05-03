@@ -114,7 +114,7 @@ function button(){
     console.log(formInputEmail)
     console.log(formInputName)
 
-
+    let experienceError = document.getElementById("experienceError");
     let animation = document.getElementById("animationError");
     let timeLine = document.getElementById("timeLineError");
 
@@ -123,11 +123,29 @@ function button(){
 
     animation.style.display = "none";
     timeLine.style.display = "none";
+    experienceError.style.display = "none";
 
-
-       if(experience.value == "" && studentYesOrNo == "yes"){
-            alert("please select experience")
+       if((experience.value == "" && studentYesOrNo == "yes")  && window.location.hash != "#esp"){
+        animation.style.display = "none";
+        timeLine.style.display = "none";
+        experienceError.style.display = "block";
+        htmlContentToAppend = 
+        `<p>Please select experience.</p>`;
+    
+    
+     experienceError.innerHTML = htmlContentToAppend;
        }
+
+       else if((experience.value == "" && studentYesOrNo == "yes") && window.location.hash === "#esp"){
+        animation.style.display = "none";
+        timeLine.style.display = "none";
+        experienceError.style.display = "block";
+        htmlContentToAppend = 
+        `<p>Por favor seleccionar experiencia.</p>`;
+    
+    
+     experienceError.innerHTML = htmlContentToAppend;
+        }
         
        else if(email2.value.match(pattern) && experience !== "" && studentYesOrNo == "yes" && (timeline.value === "rush" || timeline.value === "standard")){ db.collection('datos').add({
             

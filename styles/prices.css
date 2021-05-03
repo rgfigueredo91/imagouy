@@ -136,7 +136,9 @@ textarea {
 	color: red;
 }
 
-
+#experienceError {
+	color: red;
+}
 
 #timeLineError {
 	color: red;
