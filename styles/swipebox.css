@@ -13,7 +13,7 @@ html.swipebox-html.swipebox-touch {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99999 !important;
+  z-index: 999999999999 !important;
   overflow: hidden;
   -webkit-user-select: none;
      -moz-user-select: none;
