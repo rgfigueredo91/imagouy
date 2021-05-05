@@ -43,7 +43,7 @@ body {
 	margin: 0;
 	height: 150px;
 	position: fixed;
-	z-index: 999;
+	z-index: 9999999;
 	width: 100%;
 	background: rgb(65,63,88);
 	background: radial-gradient(circle at 50% 50%, rgb(40, 38, 53) 15%, rgb(20, 26, 26) 60%);
@@ -675,7 +675,7 @@ footer p {
 	margin-left: 15px;
 	color: black;
 	text-decoration: none;
-	z-index: 9999;}
+	z-index: 99999999;}
 
 .titlephone a {
 	color: white;
@@ -687,7 +687,7 @@ footer p {
 	text-align: center;
 	position: fixed;
 	width: 100%;
-	z-index: 999;
+	z-index: 9999999;
 	height: 80px;
 	background: rgb(65,63,88);
 	background: radial-gradient(circle at 15% 50%, rgb(40, 38, 53) 15%, rgb(20, 26, 26) 60%);
