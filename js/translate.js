@@ -1,5 +1,5 @@
-let chat = document.getElementsByClassName("fb-customerchat");
-console.log(chat)
+let chat22 = document.getElementsByClassName("fb-customerchat");
+
 
 
 document.addEventListener("DOMContentLoaded", function(e){
