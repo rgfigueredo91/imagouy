@@ -16,25 +16,6 @@ let IMAGE_360_PREVIOUS_YES = 130;
 let VR_EXPERIENCE = 300
 let VR_EXPERIENCE_PREVIOUS_YES = 200; 
 
-//VARIABLE FOR OTHER COUNTRIES
-
-const USER_COUNTRY = "UY";
-fetch("https://ipinfo.io", {headers: {Accept: "application/json"}}).then(response => response.json()).then(json => {
-	console.log(json)
-
-if (json.country === "UY" || json.country === "AR" || json.country === "BR" || json.country === "CL" || json.country === "PE" || json.country === "PY" || json.country === "PY" || json.country === "VE" ){		
-		console.log("Estoy en Uruguay");
-
-		
-	}
-	else {
-		STUDENT_LIGHT_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 200;
-		STUDENT_LIGHT_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 210;
-		STUDENT_FULL_EXPERIENCE_OUTDOOR_RENDERING_UNIT_PRICE = 250;
-		STUDENT_FULL_EXPERIENCE_INDOOR_RENDERING_UNIT_PRICE = 270;
-		console.log(json.country);
-	}
-});
 
 
 //----------------------------
@@ -353,9 +334,11 @@ function interiorPrices(amount, experiences, timeline, slider){
 
 	//NOSTUDENTES
 	if(slider.value == "1" && studentYesOrNo == "no"){
-		prices = NO_STUDENT_PRICE_EXTERIOR*0.95*amount;
+		prices = NO_STUDENT_PRICE_INTERIOR*0.95*amount;
 		if(timeline == "rush"){
-			prices =  NO_STUDENT_PRICE_EXTERIOR*0.95*amount*1.05;
+			prices =  NO_STUDENT_PRICE_INTERIOR*0.95*amount*1.05;
+			console.log(slider)
+			console.log(prices)
 		}
 	}
 
@@ -363,6 +346,8 @@ function interiorPrices(amount, experiences, timeline, slider){
 		prices = NO_STUDENT_PRICE_INTERIOR*amount;
 		if(timeline == "rush"){
 			prices =  NO_STUDENT_PRICE_INTERIOR*amount*1.05;
+			console.log(slider)
+			console.log(prices)
 		}
 	}
 
