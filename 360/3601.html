@@ -14,7 +14,8 @@
 		<meta name="google-site-verification" content="E0SpeRDXnyyyYe_az7hMb6PirOHIawPyVZi6EA_HKSc" />
 		<meta property="og:description" content="Imago was founded in 2018 by Andres Baptista and Rodrigo Figueredo. We are a Rendering and 3dart imaging studio based in Montevideo, Uruguay."/>
 		<meta property="og:url" content="https://imagouy.com"/>
-        <link rel="stylesheet" type="text/css" href="css/pano.css">
+        <link rel="stylesheet" type="text/css" href="css/stylespiner.css">
+       <link rel="stylesheet" type="text/css" href="css/pano.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
      
@@ -23,8 +24,17 @@
 <body>
 
 
-    <p class="logo">.imago</p>
+<p class="logo">.imago</p>
+<div id="spinner-wrapper">
+    <div class="lds-ring">
+        <div> </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
 
+<script src="js/spinner.js"></script>
 <script src="../js/three.min.js"></script>
 <script src="../js/panolens.min.js"></script>
 
@@ -39,7 +49,7 @@
     });
 
     const viewer = new PANOLENS.Viewer();
-    viewer.add( panorama );</script> 
+    viewer.add( panorama );</script> -->
 
 </body>
 </html>
