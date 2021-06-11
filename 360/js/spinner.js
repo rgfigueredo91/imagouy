@@ -8,6 +8,6 @@ function withTime(){
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-  setTimeout(withTime, 6000)
+  setTimeout(withTime, 4000)
 });
   
