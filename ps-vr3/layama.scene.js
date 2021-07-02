@@ -26,8 +26,15 @@ function getLayamaCameras()
    layamaCameras.push({n: "RECORRIDO0020", a: "VRayCam026", p: new BABYLON.Vector3(1955.38, 128.398, -984.642), l: new BABYLON.Vector3(2055.38, 128.398, -984.618)});
    layamaCameras.push({n: "RECORRIDO0021", a: "VRayCam027", p: new BABYLON.Vector3(1244.69, 99.9419, -396.683), l: new BABYLON.Vector3(1244.71, 99.9419, -496.683)});
    layamaCameras.push({n: "RECORRIDO0022", a: "VRayCam028", p: new BABYLON.Vector3(1897.91, 99.9419, -396.683), l: new BABYLON.Vector3(1897.93, 99.9419, -496.683)});
-   layamaCameras.push({n: "RECORRIDO0023", a: "VRayCam029", p: new BABYLON.Vector3(1681.1, 99.9419, -396.683), l: new BABYLON.Vector3(1681.13, 99.9419, -496.683)});
+   layamaCameras.push({n: "RECORRIDO0023", a: "VRayCam029", p: new BABYLON.Vector3(1608.29, 99.9419, -396.683), l: new BABYLON.Vector3(1608.31, 99.9419, -496.683)});
    layamaCameras.push({n: "RECORRIDO0024", a: "VRayCam030", p: new BABYLON.Vector3(1900.32, 128.398, -1124.66), l: new BABYLON.Vector3(2000.32, 128.398, -1124.63)});
+   layamaCameras.push({n: "RECORRIDO0025", a: "VRayCam031", p: new BABYLON.Vector3(1790.15, 99.9419, -396.683), l: new BABYLON.Vector3(1790.17, 99.9419, -496.683)});
+   layamaCameras.push({n: "RECORRIDO0026", a: "VRayCam032", p: new BABYLON.Vector3(1244.69, 99.9419, -553.239), l: new BABYLON.Vector3(1244.71, 99.9419, -653.239)});
+   layamaCameras.push({n: "RECORRIDO0027", a: "VRayCam033", p: new BABYLON.Vector3(1493.01, 99.9419, -553.239), l: new BABYLON.Vector3(1493.04, 99.9419, -653.239)});
+   layamaCameras.push({n: "RECORRIDO0028", a: "VRayCam034", p: new BABYLON.Vector3(1369.79, 99.9419, -476.208), l: new BABYLON.Vector3(1369.82, 99.9419, -576.208)});
+   layamaCameras.push({n: "RECORRIDO0029", a: "VRayCam035", p: new BABYLON.Vector3(1706.01, 99.9419, -476.208), l: new BABYLON.Vector3(1706.03, 99.9419, -576.208)});
+   layamaCameras.push({n: "RECORRIDO0030", a: "VRayCam036", p: new BABYLON.Vector3(1907.57, 99.9419, -634.904), l: new BABYLON.Vector3(1907.6, 99.9419, -734.904)});
+   layamaCameras.push({n: "RECORRIDO0031", a: "VRayCam037", p: new BABYLON.Vector3(1968.46, 99.9419, -469.821), l: new BABYLON.Vector3(1968.49, 99.9419, -569.821)});
    return layamaCameras;
 }
 
