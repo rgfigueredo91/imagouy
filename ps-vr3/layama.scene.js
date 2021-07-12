@@ -41,8 +41,8 @@ function getLayamaCameras()
 function getLayamaResolutions()
 {
    var layamaResolutions = new BABYLON.SmartArray(0);
-   layamaResolutions.push("512");
-   layamaResolutions.push("512");
+   layamaResolutions.push("1024");
+   layamaResolutions.push("1024");
    return layamaResolutions;
 }
 
