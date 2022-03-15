@@ -1,6 +1,8 @@
 /*--parametros generales del cuerpo de imagenes 360--*/
 
 .main {
+	display: flex;
+	flex-direction: column;
 	margin-top: 60px;
 	width: 100%;
 	height: auto;
@@ -8,8 +10,8 @@
 	height: auto;
 	background-color: red;
 	justify-content: center;
-	background: rgb(65,63,88);
-	background: radial-gradient(circle at 50% 50%, rgb(55, 53, 75) 1%, rgba(15,21,22,1) 50%);
+	background: white;
+
 }
 
 
@@ -18,14 +20,16 @@
 .imagevirtual {
 	margin-top: 60px;
 	display: flex;
+	
 	justify-content: space-evenly;
-	flex-direction: row;
 }
-
+.box-img {
+	display: flex;
+}
 .box-img img{
 	margin-top: 40px;
-	width: 50%;
-	margin-left: 25%;
+	width: 95%;
+	margin-left: 2.5%;
 }
 .header-vr {
 	margin-top: 250px;
@@ -41,7 +45,7 @@
 }
 
 .caption {
-	color: white;
+	color: black;
 	margin-top: 50px;
 	text-align: center;
 	margin-bottom: 40px;
@@ -91,6 +95,11 @@
 		margin-top: 10px;
 		width: 14%;
 		text-align: center;
+	}
+
+	.box-img {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.box-img img{
